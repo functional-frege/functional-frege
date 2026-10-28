@@ -1,0 +1,11 @@
+import FregeanECA.Positive
+
+#print axioms FregeanECA.Positive.push_predicate_preserves_inclusion
+#print axioms FregeanECA.Positive.positive_truth_is_monotone
+#print axioms FregeanECA.Positive.positive_truth_depends_only_on_assigned_extensions
+#print axioms FregeanECA.Positive.exists_predicate_iff_top
+#print axioms FregeanECA.Positive.forall_predicate_iff_bottom
+#print axioms FregeanECA.Positive.constant_program_returns_value
+#print axioms FregeanECA.Positive.equality_and_preimages_supply_top
+#print axioms FregeanECA.Positive.equality_and_preimages_supply_bottom
+#print axioms FregeanECA.Positive.closure_supplies_predicate_quantifier_collapse

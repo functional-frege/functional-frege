@@ -1,0 +1,9 @@
+THREE-WAY CERTIFICATE PASS: all six proof-transfer directions, equiconsistency, and optional FE extension; standard Lean axioms only.
+'FregeanECA.Certificates.ThreeWay.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Research.Z2Reverse.ReverseProofTransfer.source_semantics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Research.Z2Reverse.ReverseProofTransfer.translation_preserves_falsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.ArithmeticInterpretation.interpretation_preserves_falsum' depends on axioms: [propext, Quot.sound]

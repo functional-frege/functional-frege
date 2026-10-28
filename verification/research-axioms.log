@@ -1,0 +1,5 @@
+'FregeanECA.Research.HigherOrderAudit.rows_give_abstraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Research.HigherOrderAudit.row_existence_gives_abstraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Research.HigherOrderAudit.diagonal_instance_is_inconsistent' does not depend on any axioms

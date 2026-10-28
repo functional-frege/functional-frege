@@ -1,0 +1,13 @@
+import FregeanECA.Part2.Models
+
+#print axioms FregeanECA.Part2.fullRelations_comprehend_all_formulas
+#print axioms FregeanECA.Part2.copyExpansion_comprehends_all_functional_formulas
+#print axioms FregeanECA.Part2.duplicateExpansion_comprehends_all_functional_formulas
+#print axioms FregeanECA.Part2.fullRelations_satisfies_full_TS
+#print axioms FregeanECA.Part2.copyExpansion_satisfies_full_TF
+#print axioms FregeanECA.Part2.duplicateExpansion_satisfies_full_TF
+#print axioms FregeanECA.Part2.openSpecification_satisfies_full_TS
+#print axioms FregeanECA.Part2.openFunctional_satisfies_full_TF
+#print axioms FregeanECA.Part2.openDuplicate_satisfies_full_TF
+#print axioms FregeanECA.Part2.full_comprehension_has_a_model_without_FE
+#print axioms FregeanECA.Part2.full_comprehension_excludes_unrestricted_predicate_representation

@@ -1,0 +1,2 @@
+FUNCTION EXTENSIONALITY CERTIFICATE PASS: proof interpretations, pure-language conservativity, consistency; standard Lean axioms only.
+'FregeanECA.Certificates.FunctionExtensionality.checked' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,11 @@
+import FregeanECA.Comprehension
+
+#print axioms FregeanECA.Positive.reversed_application_agrees
+#print axioms FregeanECA.Positive.terms_have_codes
+#print axioms FregeanECA.Positive.closure_under_term_preimages
+#print axioms FregeanECA.Positive.closure_projects_first_exists
+#print axioms FregeanECA.Positive.closure_projects_first_forall
+#print axioms FregeanECA.Positive.positive_closure_implies_comprehension
+#print axioms FregeanECA.Positive.positive_comprehension_implies_closure
+#print axioms FregeanECA.Positive.positive_closure_iff_comprehension
+

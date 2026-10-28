@@ -1,0 +1,43 @@
+'FregeanECA.Representation.application_graph' depends on axioms: [Classical.choice]
+'FregeanECA.Representation.application_graph_unique' depends on axioms: [Classical.choice]
+'FregeanECA.Representation.application_of_representative' depends on axioms: [Classical.choice]
+'FregeanECA.Representation.application_extensional' depends on axioms: [Classical.choice]
+'FregeanECA.Representation.extracted_algebra_extensional' depends on axioms: [Classical.choice]
+'FregeanECA.Representation.function_extensionality_iff_injective' does not depend on any axioms
+'FregeanECA.duplicateRepresentation_not_extensional' does not depend on any axioms
+'FregeanECA.closeTerm_spec' depends on axioms: [propext, Quot.sound]
+'FregeanECA.a_fregean_model_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.a_fregean_model_without_function_extensionality_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Positive.positive_truth_is_monotone' depends on axioms: [propext]
+'FregeanECA.Positive.positive_truth_depends_only_on_assigned_extensions' depends on axioms: [propext]
+'FregeanECA.Positive.closure_supplies_predicate_quantifier_collapse' depends on axioms: [propext]
+'FregeanECA.Counterexample.the_invariant_relations_satisfy_all_five_families' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Counterexample.positive_specification_closure_does_not_supply_parameter_singletons' depends on axioms: [propext,
+ Quot.sound]
+'FregeanECA.Guarded.sentence_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Guarded.models_sortTheory_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Guarded.extractedRealization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Guarded.taggedRealization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.specification_comprehension_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.functional_specification_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Interpretability.mutual_interpretations_preserve_proofs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Encoded.bare_eca_specification_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.bare_eca_functional_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.open_model_functional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.open_model_specification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.consistency_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.specification_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.functional_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.both_theories_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.neither_theory_proves_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.relative_consistency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Axioms.actual_FE_iff_delta_injective' depends on axioms: [propext, Classical.choice]
+'FregeanECA.Axioms.actual_FE_iff_function_sort_isomorphism' depends on axioms: [propext, Classical.choice]
+'FregeanECA.Encoded.function_extensionality_not_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Encoded.closure_does_not_prove_positive_comprehension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

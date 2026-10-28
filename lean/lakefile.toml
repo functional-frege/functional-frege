@@ -1,0 +1,15 @@
+name = "fregean_eca_equivalence"
+version = "0.1.0"
+defaultTargets = ["FregeanECA"]
+
+[[require]]
+name = "frege_kernel"
+path = "vendor"
+
+[[require]]
+name = "Foundation"
+git = "https://github.com/FormalizedFormalLogic/Foundation"
+rev = "81810b9f22c49fbb32bd89c1e9737059d83a37e6"
+
+[[lean_lib]]
+name = "FregeanECA"

@@ -1,0 +1,5 @@
+V2 CERTIFICATE PASS: PC/FC equivalences, consistency, computation, HP over a domain of numbers, and three-way mutual interpretability with Z2; standard Lean axioms only.
+'FregeanECA.V2.Certificate.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.V2.fcAlgebra_iff_fullComprehension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.V2.fullTSConditions_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.V2.openSpecification_satisfies_fcAlgebra' depends on axioms: [propext, Classical.choice, Quot.sound]

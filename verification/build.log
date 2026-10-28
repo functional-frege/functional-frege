@@ -1,0 +1,516 @@
+ℹ [944/973] Replayed Foundation.FirstOrder.Basic.BinderNotation
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:256:0: op(+).operator
+  ![op(+).operator
+      ![&1,
+        op(+).operator
+          ![↑4,
+            op(*).operator
+              ![&0, (Operator.npow ℒₒᵣ 2).operator ![op(+).operator ![(Operator.npow ℒₒᵣ 4).operator ![#0], #2]]]]],
+    ↑4] : Semiterm ℒₒᵣ ℕ 1
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:257:0: #0 : Semiterm ?m.1 ?m.2 ?m.3
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:339:0: ‘(&4 + (((4 + 2) * #0) + #1))’ : Semiterm ?m.69 ℕ ?m.71
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:381:0: HTilde.hTilde : ?m.3 → ?m.3
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:512:0: ∀¹ ∀¹ ∀¹ ∀¹ ∀¹ op(=).operator ![‘((((#4 + #3) + #2) + #1) + #0)’, ↑0] : Semiformula ?m.95 ?m.99 ?m.3
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:513:0: ∀¹ ∀¹ ∀¹ ∀¹ ∀¹ op(=).operator ![‘((((#4 + #3) + #2) + #1) + #0)’, ↑0] : Semiformula ?m.95 ?m.99 ?m.3
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:514:0: ∃¹
+  ∃¹
+    ballLT (‘((&2 + #1) + 7)’)
+      (∀¹
+        (op(=).operator ![‘((&0 + &1) + #3)’, &0] 🡘
+          op(=).operator ![&2, (Rew.embSubsts ![&0, &1]) (‘(#0 + #1)’)])) : Semiformula ?m.159 ℕ ?m.3
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:515:0: ballLT (↑0) (ballLT (#2) (op(=).operator ![#2, ‘(#1 + #0)’])) : Semiformula ?m.52 ?m.53 ?m.10
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:692:0: ∃¹ ∃¹ ballLT (‘(#4 + #1)’) (“((#4 + #2) ≤ #3 ↔ #5 = #1)”) : Semiformula ?m.86 ?m.87 ?m.3
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:693:0: (“&0 = &1”) 🡒 (“&1 = &0”) : Semiformula ?m.42 ℕ ?m.44
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:694:0: (“#0 = #1”) 🡒 (“(4 * #1) = 3”) : Semiformula ?m.61 ?m.65 ?m.66
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:695:0: ∀¹ ∀¹ ((“#1 = #0”) 🡒 (“#0 = #1”)) : Semiformula ?m.48 ?m.49 ?m.3
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:805:0: “#0 = #1” : Semiformula ?m.16 ?m.17 ?m.18
+info: Foundation/FirstOrder/Basic/BinderNotation.lean:817:0: ∀¹ ((“#0 = #1”) 🡒 ∀¹ ((“#0 = #3”) 🡒 (“#1 = #0”))) : Semiformula ?m.43 ?m.44 ?m.3
+⚠ [963/986] Replayed FregeanECA.GuardedModels
+warning: FregeanECA/GuardedModels.lean:284:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/GuardedModels.lean:291:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [1065/1087] Replayed FregeanECA.Concrete
+warning: FregeanECA/Concrete.lean:17:18: Variable name `source` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _source
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: FregeanECA/Concrete.lean:17:25: Variable name `target` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _target
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1073/1112] Replayed FregeanECA.TheoryEncoding
+warning: FregeanECA/TheoryEncoding.lean:20:33: Variable name `p` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _p
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: FregeanECA/TheoryEncoding.lean:50:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/TheoryEncoding.lean:51:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/TheoryEncoding.lean:52:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/TheoryEncoding.lean:59:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/TheoryEncoding.lean:70:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/TheoryEncoding.lean:75:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [1077/1112] Replayed FregeanECA.Bare
+warning: FregeanECA/Bare.lean:188:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Bare.lean:196:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Bare.lean:197:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Bare.lean:202:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Bare.lean:203:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [1083/1112] Replayed FregeanECA.ComputationalAbstraction
+info: FregeanECA/ComputationalAbstraction.lean:73:0: 'FregeanECA.ComputationalAbstraction.range_equality_iff_same_values' does not depend on any axioms
+info: FregeanECA/ComputationalAbstraction.lean:74:0: 'FregeanECA.ComputationalAbstraction.canonical_abstraction_exact' depends on axioms: [propext, Quot.sound]
+info: FregeanECA/ComputationalAbstraction.lean:75:0: 'FregeanECA.ComputationalAbstraction.beta_eta_iff_same_values' depends on axioms: [propext, Quot.sound]
+info: FregeanECA/ComputationalAbstraction.lean:76:0: 'FregeanECA.ComputationalAbstraction.beta_eta_iff_same_values_on_terms' depends on axioms: [propext, Quot.sound]
+info: FregeanECA/ComputationalAbstraction.lean:77:0: 'FregeanECA.ComputationalAbstraction.canonical_fregean_ranges_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [1084/1112] Replayed FregeanECA.Theorems
+warning: FregeanECA/Theorems.lean:37:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Theorems.lean:50:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Theorems.lean:87:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Theorems.lean:90:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [1085/1112] Replayed FregeanECA.Countertheorems
+warning: FregeanECA/Countertheorems.lean:34:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [1086/1112] Replayed FregeanECA.Interpretability
+warning: FregeanECA/Interpretability.lean:77:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Interpretability.lean:98:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [1087/1112] Replayed FregeanECA.Conservativity
+warning: FregeanECA/Conservativity.lean:39:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [1096/1112] Replayed FregeanECA.LambdaInterpretation
+info: FregeanECA/LambdaInterpretation.lean:280:0: 'FregeanECA.LambdaInterpretation.conversion_sound' depends on axioms: [propext, Quot.sound]
+info: FregeanECA/LambdaInterpretation.lean:281:0: 'FregeanECA.LambdaInterpretation.canonical_meaning' depends on axioms: [propext, Quot.sound]
+info: FregeanECA/LambdaInterpretation.lean:282:0: 'FregeanECA.LambdaInterpretation.canonical_equation_reflects_conversion' depends on axioms: [propext, Quot.sound]
+⚠ [1099/1116] Replayed FregeanECA.Part2.Theorems
+warning: FregeanECA/Part2/Theorems.lean:27:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Part2/Theorems.lean:41:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Part2/Theorems.lean:62:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [1101/1116] Replayed FregeanECA.Part2.Conservativity
+warning: FregeanECA/Part2/Conservativity.lean:21:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [1102/1116] Replayed FregeanECA.Part2.ProgramEquations
+info: FregeanECA/Part2/ProgramEquations.lean:96:0: 'FregeanECA.Part2.ProgramEquations.bare_program_equation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/Part2/ProgramEquations.lean:97:0: 'FregeanECA.Part2.ProgramEquations.full_functional_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Part2/ProgramEquations.lean:98:0: 'FregeanECA.Part2.ProgramEquations.full_algebra_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Part2/ProgramEquations.lean:99:0: 'FregeanECA.Part2.ProgramEquations.full_functional_pointwise_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Part2/ProgramEquations.lean:100:0: 'FregeanECA.Part2.ProgramEquations.full_algebra_pointwise_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [1132/1270] Replayed FregeanECA.Part2.Consequences
+warning: FregeanECA/Part2/Consequences.lean:13:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: FregeanECA/Part2/Consequences.lean:27:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+ℹ [1139/1270] Replayed FregeanECA.Part2.FunctionExtensionality
+info: FregeanECA/Part2/FunctionExtensionality.lean:157:0: 'FregeanECA.Part2.FunctionExtensionality.mutual_proof_interpretations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Part2/FunctionExtensionality.lean:158:0: 'FregeanECA.Part2.FunctionExtensionality.shared_v2_provability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Part2/FunctionExtensionality.lean:159:0: 'FregeanECA.Part2.FunctionExtensionality.pure_conservativity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/Part2/FunctionExtensionality.lean:160:0: 'FregeanECA.Part2.FunctionExtensionality.consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1142/1270] Replayed FregeanECA.V3.Specifications
+info: FregeanECA/V3/Specifications.lean:74:0: 'FregeanECA.V3.Specifications.composition_correct' does not depend on any axioms
+info: FregeanECA/V3/Specifications.lean:75:0: 'FregeanECA.V3.Specifications.composition_specification' does not depend on any axioms
+info: FregeanECA/V3/Specifications.lean:76:0: 'FregeanECA.V3.Specifications.graph_specification' depends on axioms: [propext, Classical.choice]
+ℹ [1143/1270] Replayed FregeanECA.V3.RelationalComprehension
+info: FregeanECA/V3/RelationalComprehension.lean:27:0: 'FregeanECA.V3.RelationalComprehension.closure_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1148/1270] Replayed FregeanECA.Part2.ArithmeticGraphs
+warning: FregeanECA/Part2/ArithmeticGraphs.lean:236:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: FregeanECA/Part2/ArithmeticGraphs.lean:421:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ℹ [1161/1270] Replayed FregeanECA.V3.Cleaner
+info: FregeanECA/V3/Cleaner.lean:355:0: 'FregeanECA.V3.Cleaner.provability_iff_fullFE' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/Cleaner.lean:356:0: 'FregeanECA.V3.Cleaner.coverage_from_zero' does not depend on any axioms
+info: FregeanECA/V3/Cleaner.lean:357:0: 'FregeanECA.V3.Cleaner.zero_instance_proves_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/Cleaner.lean:358:0: 'FregeanECA.V3.Cleaner.inverse_application' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1162/1270] Replayed FregeanECA.V3.ModelReconstruction
+info: FregeanECA/V3/ModelReconstruction.lean:68:0: 'FregeanECA.V3.ModelReconstruction.reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/ModelReconstruction.lean:69:0: 'FregeanECA.V3.ModelReconstruction.formula_round_trip' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1163/1270] Replayed FregeanECA.V3.Nontriviality
+info: FregeanECA/V3/Nontriviality.lean:78:0: 'FregeanECA.V3.Nontriviality.A5_not_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1164/1270] Replayed FregeanECA.V3.PaperResults
+info: FregeanECA/V3/PaperResults.lean:151:0: 'FregeanECA.V3.PaperResults.inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/PaperResults.lean:152:0: 'FregeanECA.V3.PaperResults.unique_preimage_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/PaperResults.lean:153:0: 'FregeanECA.V3.PaperResults.basic_law_V_and_extensionality_provable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/V3/PaperResults.lean:154:0: 'FregeanECA.V3.PaperResults.concrete_models' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/PaperResults.lean:155:0: 'FregeanECA.V3.PaperResults.concrete_encoded_models' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/PaperResults.lean:156:0: 'FregeanECA.V3.PaperResults.specification' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1171/1270] Replayed FregeanECA.Research.Z2Reverse.ArithmeticSentenceTruth
+info: FregeanECA/Research/Z2Reverse/ArithmeticSentenceTruth.lean:67:0: 'FregeanECA.Research.Z2Reverse.ArithmeticModel.sentence_truth_backward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/ArithmeticSentenceTruth.lean:68:0: 'FregeanECA.Research.Z2Reverse.ArithmeticModel.sentence_truth_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [1177/1270] Replayed FregeanECA.Part2.HumeInternal
+warning: FregeanECA/Part2/HumeInternal.lean:129:68: This simp argument is unused:
+  and_imp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [finiteBijectionFormula, Applicative.Formula.truth, binary_truth, on_numbers_at_truth,
+    segment_at_truth, functional_graph_formula_truth, injective_graph_formula_truth, Positive.Term.value, pushObject]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [1181/1270] Replayed FregeanECA.V3.SuccessorVerification
+info: FregeanECA/V3/SuccessorVerification.lean:138:0: 'FregeanECA.V3.SuccessorVerification.verifies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/SuccessorVerification.lean:139:0: 'FregeanECA.V3.SuccessorVerification.available_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/SuccessorVerification.lean:140:0: 'FregeanECA.V3.SuccessorVerification.code_identity_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/SuccessorVerification.lean:141:0: 'FregeanECA.V3.SuccessorVerification.specification_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1184/1270] Replayed FregeanECA.Research.Z2Reverse.NativeOrder
+warning: FregeanECA/Research/Z2Reverse/NativeOrder.lean:127:0: automatically included section variable(s) unused in theorem `FregeanECA.Research.Z2Reverse.ArithmeticModel.add_eq_of_lt`:
+  model
+  sets
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit model sets in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1185/1270] Replayed FregeanECA.Part2.FregeArithmeticInterpretation
+warning: FregeanECA/Part2/FregeArithmeticInterpretation.lean:46:4: Variable name `k` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _k
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: FregeanECA/Part2/FregeArithmeticInterpretation.lean:95:26: This simp argument is unused:
+  nextNatural
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [predicateIndex, pushPredicate]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [1187/1270] Replayed FregeanECA.Part2.FregeArithmeticTranslation
+info: FregeanECA/Part2/FregeArithmeticTranslation.lean:187:0: 'FregeanECA.Part2.FregeArithmeticInterpretation.translation_truth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Part2/FregeArithmeticTranslation.lean:188:0: 'FregeanECA.Part2.FregeArithmeticInterpretation.interpreted_full_conditions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1188/1270] Replayed FregeanECA.Part2.FregeArithmeticProofTransfer
+info: FregeanECA/Part2/FregeArithmeticProofTransfer.lean:142:0: 'FregeanECA.Part2.FregeArithmeticProofTransfer.via_hume_Z2_proof_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Part2/FregeArithmeticProofTransfer.lean:143:0: 'FregeanECA.Part2.FregeArithmeticProofTransfer.via_hume_Z2_proof_transfer_fregean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1191/1270] Replayed FregeanECA.Certificates.HumeRoute
+info: FregeanECA/Certificates/HumeRoute.lean:60:0: HUME-ROUTE CERTIFICATE PASS: standard Lean axioms only; require exit code 0.
+info: FregeanECA/Certificates/HumeRoute.lean:66:0: 'FregeanECA.Certificates.HumeRoute.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1192/1270] Replayed FregeanECA.V4.HumeBridge
+info: FregeanECA/V4/HumeBridge.lean:80:0: 'FregeanECA.V4.HumeBridge.internal_hume_cleaner' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V4/HumeBridge.lean:81:0: 'FregeanECA.V4.HumeBridge.internal_hume_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V4/HumeBridge.lean:82:0: 'FregeanECA.V4.HumeBridge.via_hume_Z2_to_cleaner' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V4/HumeBridge.lean:83:0: 'FregeanECA.V4.HumeBridge.via_hume_Z2_to_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V4/HumeBridge.lean:84:0: 'FregeanECA.V4.HumeBridge.whole_domain_hume_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1230/1270] Replayed FregeanECA.Research.Z2Reverse.InternalBindFree
+info: FregeanECA/Research/Z2Reverse/InternalBindFree.lean:175:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.preserves_scope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalBindFree.lean:176:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.fresh_bindFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalBindFree.lean:177:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.abstractFree_scoped' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1232/1270] Replayed FregeanECA.Research.Z2Reverse.InternalCombinedConfluence
+info: FregeanECA/Research/Z2Reverse/InternalCombinedConfluence.lean:131:0: 'FregeanECA.Research.Z2Reverse.InternalCombinedConfluence.union_confluent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalCombinedConfluence.lean:132:0: 'FregeanECA.Research.Z2Reverse.InternalCombinedConfluence.union_conversion_common' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalCombinedConfluence.lean:133:0: 'FregeanECA.Research.Z2Reverse.InternalCombinedConfluence.union_stationary_conversion_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1234/1270] Replayed FregeanECA.Research.Z2Reverse.InternalTermQuotient
+info: FregeanECA/Research/Z2Reverse/InternalTermQuotient.lean:149:0: 'FregeanECA.Research.Z2Reverse.InternalTermQuotient.Conversion.decode_onto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalTermQuotient.lean:150:0: 'FregeanECA.Research.Z2Reverse.InternalTermQuotient.Conversion.decode_eq_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalTermQuotient.lean:151:0: 'FregeanECA.Research.Z2Reverse.InternalTermQuotient.Conversion.application_decode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1240/1270] Replayed FregeanECA.Research.Z2Reverse.InternalAvoidsIndex
+info: FregeanECA/Research/Z2Reverse/InternalAvoidsIndex.lean:225:0: 'FregeanECA.Research.Z2Reverse.InternalAvoidsIndex.shift_avoids' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalAvoidsIndex.lean:226:0: 'FregeanECA.Research.Z2Reverse.InternalAvoidsIndex.shift_substitute_of_avoids' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalAvoidsIndex.lean:227:0: 'FregeanECA.Research.Z2Reverse.InternalAvoidsIndex.avoids_iff_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1243/1270] Replayed FregeanECA.Research.Z2Reverse.InternalAbstraction
+info: FregeanECA/Research/Z2Reverse/InternalAbstraction.lean:72:0: 'FregeanECA.Research.Z2Reverse.InternalAbstraction.substitute_bindFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalAbstraction.lean:73:0: 'FregeanECA.Research.Z2Reverse.InternalAbstraction.beta_bindFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalAbstraction.lean:74:0: 'FregeanECA.Research.Z2Reverse.InternalAbstraction.abstractFree_fresh_application' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1244/1270] Replayed FregeanECA.Research.Z2Reverse.InternalBindFreeLaws
+info: FregeanECA/Research/Z2Reverse/InternalBindFreeLaws.lean:104:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.bindFree_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalBindFreeLaws.lean:105:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.bindFree_substitute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalBindFreeLaws.lean:106:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.bindFree_beta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1245/1270] Replayed FregeanECA.Research.Z2Reverse.InternalIdentitySubstitution
+info: FregeanECA/Research/Z2Reverse/InternalIdentitySubstitution.lean:51:0: 'FregeanECA.Research.Z2Reverse.InternalBoundSubstitution.substitute_shift_above' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalIdentitySubstitution.lean:52:0: 'FregeanECA.Research.Z2Reverse.InternalBoundSubstitution.beta_shift_one_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1256/1270] Replayed FregeanECA.Research.Z2Reverse.InternalExtensionality
+info: FregeanECA/Research/Z2Reverse/InternalExtensionality.lean:137:0: 'FregeanECA.Research.Z2Reverse.InternalExtensionality.extensional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Research/Z2Reverse/InternalExtensionality.lean:138:0: 'FregeanECA.Research.Z2Reverse.InternalExtensionality.quotient_extensional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1262/1270] Replayed FregeanECA.Part2.MutualInterpretability
+info: FregeanECA/Part2/MutualInterpretability.lean:87:0: 'FregeanECA.Part2.MutualInterpretability.three_way' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/Part2/MutualInterpretability.lean:88:0: 'FregeanECA.Part2.MutualInterpretability.equiconsistency' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/Part2/MutualInterpretability.lean:89:0: 'FregeanECA.Part2.MutualInterpretability.FE_to_Z2' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1263/1270] Replayed FregeanECA.Certificates.ThreeWay
+info: FregeanECA/Certificates/ThreeWay.lean:32:0: THREE-WAY CERTIFICATE PASS: all six proof-transfer directions, equiconsistency, and optional FE extension; standard Lean axioms only.
+info: FregeanECA/Certificates/ThreeWay.lean:46:0: 'FregeanECA.Certificates.ThreeWay.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/Certificates/ThreeWay.lean:47:0: 'FregeanECA.Research.Z2Reverse.ReverseProofTransfer.source_semantics' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Certificates/ThreeWay.lean:48:0: 'FregeanECA.Research.Z2Reverse.ReverseProofTransfer.translation_preserves_falsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Certificates/ThreeWay.lean:49:0: 'FregeanECA.Part2.ArithmeticInterpretation.interpretation_preserves_falsum' depends on axioms: [propext, Quot.sound]
+ℹ [1264/1270] Replayed FregeanECA.V2.Certificate
+info: FregeanECA/V2/Certificate.lean:119:0: V2 CERTIFICATE PASS: PC/FC equivalences, consistency, computation, HP over a domain of numbers, and three-way mutual interpretability with Z2; standard Lean axioms only.
+info: FregeanECA/V2/Certificate.lean:130:0: 'FregeanECA.V2.Certificate.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V2/Certificate.lean:131:0: 'FregeanECA.V2.fcAlgebra_iff_fullComprehension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V2/Certificate.lean:132:0: 'FregeanECA.V2.fullTSConditions_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V2/Certificate.lean:133:0: 'FregeanECA.V2.openSpecification_satisfies_fcAlgebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1265/1270] Replayed FregeanECA.V3.Certificate
+info: FregeanECA/V3/Certificate.lean:165:0: V3 CERTIFICATE PASS: literal cleaner A1--A5 bridge, zero-input coverage, six proof-transfer directions, equiconsistency, consistency, pure conservativity, and exact beta-eta equations; standard Lean axioms only.
+info: FregeanECA/V3/Certificate.lean:200:0: 'FregeanECA.V3.Certificate.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1266/1270] Replayed FregeanECA.V4.BiInterpretability
+info: FregeanECA/V4/BiInterpretability.lean:122:0: 'FregeanECA.V4.BiInterpretability.double_translation_provability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/V4/BiInterpretability.lean:123:0: 'FregeanECA.V4.BiInterpretability.bi_interpretability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1267/1270] Built FregeanECA.V4.TruthValues (100s)
+info: FregeanECA/V4/TruthValues.lean:711:0: 'FregeanECA.V4.TruthValues.collapse_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V4/TruthValues.lean:712:0: 'FregeanECA.V4.TruthValues.concepts_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V4/TruthValues.lean:713:0: 'FregeanECA.V4.TruthValues.strokes_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1268/1270] Built FregeanECA.V4.Certificate (20s)
+info: FregeanECA/V4/Certificate.lean:108:0: V4 CERTIFICATE PASS: every V3 endpoint, bi-interpretability, exact beta-eta equations, conservativity over NECA, Hume's Principle on the number domain, the Hume-route Z2 transfer, the whole-domain Hume model, the connectives as objects, the collapse of total concepts, and the impossibility of Frege's horizontal; standard Lean axioms only.
+info: FregeanECA/V4/Certificate.lean:150:0: 'FregeanECA.V4.Certificate.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1269/1270] Built FregeanECA (17s)
+Build completed successfully (1270 jobs).

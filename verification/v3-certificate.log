@@ -1,0 +1,2 @@
+V3 CERTIFICATE PASS: literal cleaner A1--A5 bridge, zero-input coverage, six proof-transfer directions, equiconsistency, consistency, pure conservativity, and exact beta-eta equations; standard Lean axioms only.
+'FregeanECA.V3.Certificate.checked' depends on axioms: [propext, Classical.choice, Quot.sound]

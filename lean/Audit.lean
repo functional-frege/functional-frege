@@ -1,0 +1,45 @@
+import FregeanECA
+import FregeanECA.Theorems
+import FregeanECA.Interpretability
+import FregeanECA.Conservativity
+import FregeanECA.Countertheorems
+import FregeanECA.RelativeConsistency
+
+#print axioms FregeanECA.Representation.application_graph
+#print axioms FregeanECA.Representation.application_graph_unique
+#print axioms FregeanECA.Representation.application_of_representative
+#print axioms FregeanECA.Representation.application_extensional
+#print axioms FregeanECA.Representation.extracted_algebra_extensional
+#print axioms FregeanECA.Representation.function_extensionality_iff_injective
+#print axioms FregeanECA.duplicateRepresentation_not_extensional
+#print axioms FregeanECA.closeTerm_spec
+#print axioms FregeanECA.a_fregean_model_exists
+#print axioms FregeanECA.a_fregean_model_without_function_extensionality_exists
+#print axioms FregeanECA.Positive.positive_truth_is_monotone
+#print axioms FregeanECA.Positive.positive_truth_depends_only_on_assigned_extensions
+#print axioms FregeanECA.Positive.closure_supplies_predicate_quantifier_collapse
+#print axioms FregeanECA.Counterexample.the_invariant_relations_satisfy_all_five_families
+#print axioms FregeanECA.Counterexample.positive_specification_closure_does_not_supply_parameter_singletons
+
+-- Concrete syntax, actual Foundation LK proof predicates, and model lifts.
+#print axioms FregeanECA.Guarded.sentence_truth
+#print axioms FregeanECA.Guarded.models_sortTheory_iff
+#print axioms FregeanECA.Guarded.extractedRealization
+#print axioms FregeanECA.Guarded.taggedRealization
+#print axioms FregeanECA.Encoded.specification_comprehension_provability
+#print axioms FregeanECA.Encoded.functional_specification_provability
+#print axioms FregeanECA.Interpretability.mutual_interpretations_preserve_proofs
+#print axioms FregeanECA.Encoded.bare_eca_specification_provability
+#print axioms FregeanECA.Encoded.bare_eca_functional_provability
+#print axioms FregeanECA.Encoded.open_model_functional
+#print axioms FregeanECA.Encoded.open_model_specification
+#print axioms FregeanECA.Encoded.consistency_equivalence
+#print axioms FregeanECA.Encoded.specification_consistent
+#print axioms FregeanECA.Encoded.functional_consistent
+#print axioms FregeanECA.Encoded.both_theories_consistent
+#print axioms FregeanECA.Encoded.neither_theory_proves_false
+#print axioms FregeanECA.Encoded.relative_consistency
+#print axioms FregeanECA.Axioms.actual_FE_iff_delta_injective
+#print axioms FregeanECA.Axioms.actual_FE_iff_function_sort_isomorphism
+#print axioms FregeanECA.Encoded.function_extensionality_not_provable
+#print axioms FregeanECA.Encoded.closure_does_not_prove_positive_comprehension

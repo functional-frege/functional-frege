@@ -1,0 +1,3 @@
+lean/.lake/
+lean/vendor/.lake/
+__pycache__/

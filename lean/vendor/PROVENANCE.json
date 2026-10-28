@@ -1,0 +1,25 @@
+{
+  "origin": "../frege-duc-pe/lean",
+  "root_module": "Frege.BetaEtaSeparation",
+  "method": "transitive Frege import closure, copied byte-for-byte; no compiled artifacts; hashes are SHA-256 of the file with CRLF normalised to LF",
+  "files": {
+    "Frege\\Application.lean": "960bb2216874668c0bcc9dc8abed66e28f24695ae0f027708f034f1b6b11a4b8",
+    "Frege\\BetaConfluence.lean": "1b8148d2016308e87768b160a4bb603860fa8cf6e48b09abacc13a0d0a611ff0",
+    "Frege\\BetaEtaCommutation.lean": "1ebc3837672ed82f008f44b9988ee399b8a8f5ec13dcb992db0999f22be59b51",
+    "Frege\\BetaEtaConfluence.lean": "c26b3935054d739380945b7bef3a75f43563b627cef50d10b43882ead038053f",
+    "Frege\\BetaEtaConversion.lean": "d599f739c3b3416ea428c31feb6e949d62006590def4fd4300c68c8cddbce830",
+    "Frege\\BetaEtaSeparation.lean": "bd74aef4aa62018ac9c48b9f55b6cb4e01bab90f15e7fd199394791e4c136986",
+    "Frege\\CombinatoryAlgebra.lean": "3b15dc78eda254609df4c5feec1aab7a067446f998c70035b12b4ad916e094b7",
+    "Frege\\EtaConfluence.lean": "d114ed108484cdeb122562941663b37ba65f8f461aea96aa9f1552deb76c68fc",
+    "Frege\\EtaReduction.lean": "d2db37e4e72871f73bfe89a80684e8d63869ae62054b2d76986589064c3d69c6",
+    "Frege\\Execution.lean": "7189003636fb6b050014e7c305ed689b3c5d0518b0f0f90c3a107c11a0f66c75",
+    "Frege\\OpenLambdaAlgebra.lean": "3ff4324df8cdd84c99bbd0e2cbbc58579dc793d24a5414caf266368ebe16b122",
+    "Frege\\OpenLambdaInstantiation.lean": "b8bf6728736b7f2e95c996ae8769473c2606906d851f5a0fc77030bf0d869085",
+    "Frege\\OpenLambdaSyntax.lean": "4d163781ce480bd25a8ac5d1280a2931728a9d8456b7b2ad3ca5c8ebc7e8d848",
+    "Frege\\ParallelBeta.lean": "63d0f8aaec81952c955ee327fa4127e67523246243b2d5e518cd5f14f12ff33d",
+    "Frege\\Programs.lean": "5de8d4f589869821c87455c10abfcf07a7011ccadd3c81ea0cfdbe9b1b9da85e",
+    "Frege\\Reduction.lean": "6f1c49ccbd08c8892aedbb51d3c06a04e9067a49952286eaf3e88e5cffb1749a",
+    "Frege\\RelationClosure.lean": "f12b3c4e4f975de5fabde6a8ec22238fef52627b57b4f0a80387ede464180b6a",
+    "Frege\\VariableSupport.lean": "bb192237324d453ccab7637aea061a0e38a0923784dcca061f86856d1b43a77d"
+  }
+}

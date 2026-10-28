@@ -1,0 +1,214 @@
+'FregeanECA.Part2.classical_closure_iff_full_comprehension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_comprehension_implies_classical_closure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.fullRelations_comprehend_all_formulas' depends on axioms: [propext]
+'FregeanECA.Part2.copyExpansion_comprehends_all_functional_formulas' depends on axioms: [propext]
+'FregeanECA.Part2.duplicateExpansion_comprehends_all_functional_formulas' depends on axioms: [propext]
+'FregeanECA.Part2.fullRelations_satisfies_full_TS' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.copyExpansion_satisfies_full_TF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.duplicateExpansion_satisfies_full_TF' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.openSpecification_satisfies_full_TS' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.openFunctional_satisfies_full_TF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.openDuplicate_satisfies_full_TF' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.full_comprehension_has_a_model_without_FE' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.full_comprehension_excludes_unrestricted_predicate_representation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Arithmetic.successor_injective' does not depend on any axioms
+'FregeanECA.Part2.Arithmetic.zero_not_successor' does not depend on any axioms
+'FregeanECA.Part2.Arithmetic.numeral_injective' does not depend on any axioms
+'FregeanECA.Part2.Arithmetic.least_inductive_formula_truth' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.Arithmetic.least_inductive_domain' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.Arithmetic.represented_formula_induction' does not depend on any axioms
+'FregeanECA.Part2.Arithmetic.peano_domain_checkpoint' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.Arithmetic.full_comprehension_supplies_least_instance' depends on axioms: [propext]
+'FregeanECA.Part2.Arithmetic.positive_closure_supplies_unary_intersections' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.Arithmetic.full_ts_has_peano_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Arithmetic.open_specification_has_peano_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.fullRelationalComprehension_truth' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.full_functional_axioms_iff_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_relational_axioms_iff_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.algebra_axioms_iff_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_applicative_implies_full_copy' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.full_tf_reduct_satisfies_full_ts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_ts_expansion_satisfies_full_tf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.algebra_comprehension_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_functional_algebra_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_functional_proof_interprets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_consistency_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_algebra_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_algebra_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_functional_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_neither_theory_proves_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Arithmetic.full_has_least_addition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Arithmetic.addition_inversion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Arithmetic.addition_total_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Arithmetic.full_has_least_multiplication' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Arithmetic.multiplication_inversion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Arithmetic.multiplication_total_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Arithmetic.full_ts_has_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.SecondOrderArithmetic.Formula.translation_preserves_truth' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.SecondOrderArithmetic.source_formula_comprehension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.SecondOrderArithmetic.source_formula_induction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.SecondOrderArithmetic.all_axioms_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.SecondOrderArithmetic.full_ts_interprets_all_Z2_axioms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.SecondOrderArithmetic.open_specification_interprets_all_Z2_axioms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.SecondOrderArithmetic.guarded_translation_of_valid' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.ArithmeticEncoding.sentence_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.ArithmeticEncoding.arithmetic_taggedModel_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.ArithmeticEncoding.arithmetic_proof_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.ArithmeticInterpretation.definitions_truth' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.ArithmeticInterpretation.definitions_exist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.ArithmeticInterpretation.Z2_proof_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.ArithmeticInterpretation.Z2_proof_transfer_fregean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.ArithmeticInterpretation.interpretation_preserves_falsum' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.Generated.open_satisfies_literal_complemented_axioms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Generated.specification_with_complements' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.Generated.satisfies_literal_complemented_axioms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.preserves_part_one_functional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.preserves_part_one_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.full_relative_consistency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.NaturalECA.natural_extensional_combinatory_algebra' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Oracle.fixedPoint_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Oracle.no_relation_correct_on_sentence_codes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Oracle.finite_definable_tables_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Oracle.satisfactionMatrix_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Oracle.exists_definable_tables_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Oracle.target_satisfaction_on_sentence_codes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Oracle.definable_model_fails_predicate_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Oracle.definable_model_fails_full_comprehension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Oracle.complemented_specification_without_predicate_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Oracle.literal_complemented_specification_without_predicate_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.ComputationalAbstraction.range_equality_iff_same_values' does not depend on any axioms
+'FregeanECA.ComputationalAbstraction.canonical_abstraction_exact' depends on axioms: [propext, Quot.sound]
+'FregeanECA.ComputationalAbstraction.beta_eta_iff_same_values' depends on axioms: [propext, Quot.sound]
+'FregeanECA.ComputationalAbstraction.beta_eta_iff_same_values_on_terms' depends on axioms: [propext, Quot.sound]
+'FregeanECA.ComputationalAbstraction.canonical_fregean_ranges_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.Hume.equinumerous_iff_equiv' depends on axioms: [Classical.choice, Quot.sound]
+'FregeanECA.Part2.Hume.humes_principle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Hume.model_equinumerous_iff' depends on axioms: [propext]
+'FregeanECA.Part2.Hume.model_humes_principle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Hume.every_bijection_graph_is_available' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.Hume.part_two_has_hume_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Certificate.canonical_computation' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Certificate.hume_model_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Certificate.checked_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.bare_eca_full_algebra_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.bare_eca_full_functional_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.LambdaInterpretation.meaning_rename' depends on axioms: [propext, Quot.sound]
+'FregeanECA.LambdaInterpretation.meaning_subst' depends on axioms: [propext, Quot.sound]
+'FregeanECA.LambdaInterpretation.conversion_sound' depends on axioms: [propext, Quot.sound]
+'FregeanECA.LambdaInterpretation.canonical_meaning' depends on axioms: [propext, Quot.sound]
+'FregeanECA.LambdaInterpretation.translation_value' depends on axioms: [propext, Quot.sound]
+'FregeanECA.LambdaInterpretation.canonical_equation_reflects_conversion' depends on axioms: [propext, Quot.sound]
+'FregeanECA.LambdaInterpretation.pointwise_iff_equation' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.ProgramEquations.bare_program_equation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.ProgramEquations.bare_pointwise_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.ProgramEquations.full_functional_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.ProgramEquations.full_algebra_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.ProgramEquations.full_functional_pointwise_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.ProgramEquations.full_algebra_pointwise_program_equation_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Certificate.native_program_equations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Certificate.native_pointwise_equations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeOrder.least_available_member' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeCounting.full_has_count_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeCounting.predicate_cardinality_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeFinite.injection_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeFinite.bijection_bounds_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeFinite.no_natural_injection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeBijections.finite_size_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeBijections.not_finite_of_enumerable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeInternal.code_total_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeInternal.humes_principle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeInternal.internal_hume_formulas' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeInternal.internal_hume_sentence_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeInternal.internal_hume_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.HumeInternal.internal_hume_provable_fregean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.HumeInternal.ExpandedFormula.eliminate_truth' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.HumeInternal.expanded_comprehension' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Certificate.internal_hume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Certificate.internal_hume_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Certificate.internal_hume_comprehension' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.FregeArithmetic.natural_has_successor_candidate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.FregeArithmetic.hume_implies_frege_peano' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.FregeArithmeticDefinable.full_comprehension_of_graph' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Part2.FregeArithmeticAdapter.arithmetic_on_inductive_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.FregeArithmeticRecursion.model_has_full_comprehension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.FregeArithmeticRecursion.hume_supplies_arithmetic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.FregeArithmeticZ2.hume_implies_Z2_axioms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.FregeArithmeticZ2.hume_proof_truth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.FregeArithmeticZ2.hume_constructs_Z2_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Certificate.standard_hume_to_Z2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.ArithmeticModelInterpretation.interpreted_proof_truth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.FregeArithmeticProofTransfer.source_formula_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.FregeArithmeticProofTransfer.via_hume_Z2_proof_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Part2.FregeArithmeticProofTransfer.via_hume_Z2_proof_transfer_fregean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FregeanECA.Certificate.arithmetic_via_hume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Part2.FregeArithmeticProofTransfer.interpretation_preserves_falsum' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Certificate.hume_translation_preserves_false' depends on axioms: [propext, Quot.sound]
+'FregeanECA.Certificates.PartOne.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Certificates.PartTwo.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FregeanECA.Certificates.HumeRoute.checked' depends on axioms: [propext, Classical.choice, Quot.sound]

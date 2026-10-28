@@ -1,0 +1,21 @@
+Starting fresh-build.log; live output: <repo>\verification\fresh-build.log
+fresh-build.log: exit 0 (475.8s)
+Starting v4-certificate.log; live output: <repo>\verification\v4-certificate.log
+v4-certificate.log: exit 0 (14.4s)
+Starting v3-certificate.log; live output: <repo>\verification\v3-certificate.log
+v3-certificate.log: exit 0 (14.2s)
+Starting v2-certificate.log; live output: <repo>\verification\v2-certificate.log
+v2-certificate.log: exit 0 (14.8s)
+Starting fe-certificate.log; live output: <repo>\verification\fe-certificate.log
+fe-certificate.log: exit 0 (13.9s)
+Starting three-way-certificate.log; live output: <repo>\verification\three-way-certificate.log
+three-way-certificate.log: exit 0 (14.9s)
+Starting terminal-axioms.log; live output: <repo>\verification\terminal-axioms.log
+terminal-axioms.log: exit 0 (15.7s)
+Starting part2-axioms.log; live output: <repo>\verification\part2-axioms.log
+part2-axioms.log: exit 0 (14.5s)
+Starting research-axioms.log; live output: <repo>\verification\research-axioms.log
+research-axioms.log: exit 0 (5.1s)
+Starting axioms.log; live output: <repo>\verification\axioms.log
+axioms.log: exit 0 (16.5s)
+Verification: PASS
