@@ -90,7 +90,7 @@ relations on objects. An operator δ assigns to each function *f* an object
 | A2 | Functional comprehension | a function for every term built by application (f(x̄) = t); in particular every object is an abstract | `V3.Cleaner.A2` |
 | A3 | Functional Basic Law V | two functions have the same abstract exactly when they agree at every argument | `V4.Printed.A3` (= `lawV`) |
 | A4 | Functional extensionality | functions that agree everywhere are equal | `V3.Cleaner.A4` |
-| A5 | Distinct truth values | T ≠ F, the abstracts of the two projections (Church's truth values); equivalent over A1–A4 to the existence of two distinct objects | `V3.Cleaner.A5` (encoded as ∃x,y x ≠ y; the printed form is `V4.Printed.A5`) |
+| A5 | Nontriviality | T ≠ F, the abstracts of the two projections (Church's truth values); equivalent over A1–A4 to the existence of two distinct objects | `V3.Cleaner.A5` (encoded as ∃x,y x ≠ y; the printed form is `V4.Printed.A5`) |
 
 The theory exactly as printed is `FregeanECA.V4.Printed.theory`
 ([`lean/FregeanECA/V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean)).
