@@ -1,9 +1,12 @@
 # Version 4 paper-to-proof correspondence
 
 The active manuscript is [main.tex](paper/main.tex). It has nine sections,
-**twenty numbered results with proofs and three definitions**, and no
-appendix. This index covers every printed result and its explicit auxiliary
-arguments, recording both the statement and the method used in Lean. Stable
+**twenty numbered results with proofs and three definitions**, and one
+appendix (Appendix A), which states the internal lemmas (A.1)–(A.5) behind
+Theorem 4.3 together with the Lean declaration proving each, all in
+`FregeanECA/Research/Z2Reverse`. This index covers every printed result and
+its explicit auxiliary arguments, recording both the statement and the method
+used in Lean. Stable
 TeX labels avoid dependence on pagination.
 
 Version 4 adds the bi-interpretability theorem, the truth-value results

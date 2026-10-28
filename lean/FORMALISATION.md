@@ -5,8 +5,10 @@ computation and arithmetic* (its theory is FF) is formalised in Lean 4 with
 the [Foundation](https://github.com/FormalizedFormalLogic/Foundation) library,
 what "the theory proves" means in the development, how each printed result
 corresponds to a Lean theorem, and what the development does not claim. It is
-meant to be read on its own; the paper's proofs are complete without it, and
-the formalisation is supplementary evidence, not part of the argument.
+meant to be read on its own. The paper's proofs are complete without it, with
+one exception: the internal arithmetisation behind Theorem 4.3 is given in the
+paper as a construction with its lemmas stated (Appendix A) and is proved in
+full only here.
 
 Companion files:
 
