@@ -46,31 +46,44 @@ evaluation and abstraction).
 
 ## 2. Encoding of the theories
 
-A1–A5 are encoded literally (`FregeanECA/V3/Cleaner.lean`):
+The six printed axioms A1–A6 are written out directly as formulas of the
+many-sorted language (`FregeanECA/V4/PrintedTheory.lean`, `V4.Printed.A1`–`A6`),
+and `V4.Printed.theory` (these six together with the defining clauses for
+application and K/S) is the theory the certificate certifies:
 
 1. A1 admits every formula of the functional language, including function and
-   relation quantifiers.
-2. A2 admits terms built from variables and application only, with any finite
-   number of inputs including zero; the remaining parameters are closed
-   universally outside the witness.
-3. A3 and A4 are the closed sentences of the paper; A5 is printed as T ≠ F for
-   Church's truth values and encoded as ∃x,y x ≠ y, the two being interderivable
-   over A1–A4 (`V4.Printed`). The printed axiom set,
-   with A3 = functional Basic Law V, is `V4.Printed.theory`
-   (`FregeanECA/V4/PrintedTheory.lean`), and it is the theory the certificate
-   certifies. The older modules encode A3 as injective abstraction
-   (`V3.Cleaner.theory`); `V4.Printed.axioms_iff_cleaner` and
-   `V4.Printed.provability_iff` prove that the two presentations have the same
-   models and the same theorems, which is the remark after Proposition 2.3,
-   formalised. Every endpoint is restated for the printed theory in
-   `FregeanECA/V4/Certificate.lean`.
+   relation quantifiers; the fresh relation variable is index 0 of its arity and
+   the other relation variables of that arity in φ are shifted past it, which is
+   the proviso that φ does not mention P.
+2. A2 admits terms built from variables and application only, with n ≥ 1 inputs
+   and no parameters (the side condition `Closed`). Its left side f(x₁, …, xₙ) is
+   literally f evaluated at the first input (`Term.eval`) and the resulting
+   object applied to the remaining inputs (`Term.app`). The encoded A2 of the
+   older modules (`V3.Cleaner.A2`) instead applies the abstract δf to all inputs
+   and admits parameters and the empty input list, the parameters closed
+   universally outside the witness; the two left sides differ by the defining
+   clause (δf)(x) = f(x) at the first step (`V4.Printed.A2_iff_cleaner`), and
+   `V4.Printed.parametric_comprehension` (Proposition 2.2) derives every encoded
+   instance, parameters and the empty input list included, in every model of the
+   printed axioms.
+3. A3 (functional Basic Law V), A4 (functional extensionality), A5 (coverage)
+   and A6 (T ≠ F for Church's truth values) are the closed sentences of the paper.
+   The older modules encode A3 as injective abstraction and nontriviality as
+   ∃x,y x ≠ y, and derive coverage from the zero-input encoded A2 instance
+   (`V3.Cleaner.theory`, whose five clauses are numbered A1–A5 there);
+   `V4.Printed.axioms_iff_cleaner` and `V4.Printed.provability_iff` prove that
+   the printed and the encoded presentations have the same models and the same
+   theorems, which includes the remark after Proposition 2.3 (injective
+   abstraction in place of A3 given A4) and the remark on A6 (T ≠ F against two
+   distinct objects, given the K/S clauses). Every endpoint is restated for the
+   printed theory in `FregeanECA/V4/Certificate.lean`.
 
 Two points concern the defined symbols.
 
 1. Application and the constants K, S are symbols of the encoded signature,
    accompanied by their defining clauses (δf)·x = f(x), E1 and E2. These form
    the definitional extension described in Section 2.2 of the paper, not
-   additional axioms: Lean proves from A1–A5 the closed sentence
+   additional axioms: Lean proves from A1–A6 the closed sentence
    ∀x ∃f ∀g (g = f ↔ δg = x) that licenses the definition of application
    (`V3.PaperResults.unique_preimage_provable`), and proves that K and S are
    uniquely determined (`V3.Cleaner.core_combinators_unique`), so that
@@ -128,9 +141,9 @@ between theories by the model-lift lemmas in `FregeanECA/LogicBridge.lean`.
    its own truth lemma and falsum preservation.
 4. These results were first proved for an earlier presentation of the same
    theories (the `Part2` modules) and are transferred to the encodings of
-   A1–A5 and E1–E4 by proved provability bridges, which are audited theorems
-   of the same development.
-5. **Proposition 7.3** is a model construction on the carrier ℕ.
+   FF (A1–A6) and NECA + RC (E1–E4) by proved provability bridges, which are
+   audited theorems of the same development.
+5. **Proposition 7.4** is a model construction on the carrier ℕ.
 6. **No choice functions (Proposition 6.3)** is `V4/Choice.lean`: the instance of
    functional choice for y ≠ x(x) is refuted in every model of the printed axioms
    and the negation is derived by completeness.
@@ -148,6 +161,17 @@ between theories by the model-lift lemmas in `FregeanECA/LogicBridge.lean`.
    the existential identity and closure under the connectives; these are
    not printed, because the collapse theorem makes them statements about
    the two objects `K·T` and `K·F`.
+8. **Frege Arithmetic (Corollary 7.3)** is `V4/FregeArithmetic.lean`. Frege
+   Arithmetic is represented by its Henkin models, the structures of the generic
+   FA language satisfying Hume's Principle and full comprehension, and
+   provability in it by validity in all of them (`FAValid`). `ff_interprets_fa`
+   carries every FA-valid formula to a theorem of the printed theory along the
+   Corollary 7.2 interpretation (`toFF`); `fa_interprets_ff` carries every theorem
+   of the printed theory, through its Z₂ translation and the generic Frege
+   theorem, to an FA-valid formula (`toFA`). The model-level halves are
+   `fa_model_of_ff_model` and `ff_model_of_fa_model`. FA is not an encoded
+   Foundation theory, so the completeness step for the FA language is outside the
+   kernel, exactly as for the general notion of interpretation.
 
 ## 5. The reverse interpretation
 
@@ -177,8 +201,8 @@ ones.
    dependency pins, scans for `sorry`, `admit` and `axiom`, audits the axioms
    of every declaration transitively, checks all required endpoints, and
    writes `../verification/verification.json` with source hashes.
-5. At the time of writing the development comprises 179 project modules and
-   19 vendored modules, with 7,831 audited declarations and 297 required
+5. At the time of writing the development comprises 180 project modules and
+   19 vendored modules, with 7,899 audited declarations and 297 required
    endpoints, and it builds with Lean 4.33.1 and a pinned revision of
    Foundation (see `lean-toolchain` and `lake-manifest.json`). The recorded
    fresh-source run of 28 October 2026 (`../verification/verification.json`)
@@ -189,14 +213,13 @@ ones.
 1. Kernel checking verifies the stated types. The correspondence between the
    printed statements and the Lean statements is recorded in
    [`../COVERAGE.md`](../COVERAGE.md) and was audited by hand.
-2. Four unnumbered observations in the paper are not formalised: that A5 is
-   equivalent to K ≠ K·I (Section 2.4); that the arithmetic
-   interpretations are not a bi-interpretation (Section 4.2); that
+2. Three unnumbered observations in the paper are not formalised: that the
+   arithmetic interpretations are not a bi-interpretation (Section 4.2); that
    A3 alone does not give A4 (the two-element countermodel in the remark after
    Proposition 2.3; the interderivability given A4 is formalised in
    `V4.Printed`);
    and that a function-existence schema for arbitrary formulas is
-   inconsistent with A1–A5 (Section 2.4, the Russell diagonal). The remark
+   inconsistent with A1–A6 (Section 2.4, the Russell diagonal). The remark
    after Theorem 6.2 that the Russell relation is not the membership of
    any object is a one-line diagonal argument and is not formalised
    separately; nor is the remark that the collapse extends from objects

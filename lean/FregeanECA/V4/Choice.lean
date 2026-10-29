@@ -6,9 +6,9 @@ import FregeanECA.V4.PrintedTheory
 Functional choice, AC_f, is the schema ∀x ∃y R(x,y) → ∃f ∀x R(x, f(x)) for
 available binary relations R. FF refutes its instance for the relation
 R(x,y) :↔ y ≠ x(x): the relation is total because there are two distinct
-objects (A5), and a function f with f(x) ≠ x(x) for every x would give, at
+objects (A6), and a function f with f(x) ≠ x(x) for every x would give, at
 x = δf, f(δf) ≠ (δf)(δf) = f(δf). Hence FF + AC_f is inconsistent. The
-argument uses A1 (to form R), A5 and the evaluation law only.
+argument uses A1 (to form R), A6 and the evaluation law only.
 -/
 namespace FregeanECA.V4.Choice
 
@@ -43,7 +43,7 @@ theorem choice_fails (M : Interpretation D F R) [Nonempty F] [∀ n, Nonempty (R
     (h : ∀ p, Printed.Axiom p → Valid M p) : Valid M (notF choiceInstance) := by
   intro o f r hc
   obtain ⟨a, b, hab⟩ := (nontriviality_truth M o f r).mp
-    (Printed.nontriviality_of_A5 M (h _ (Or.inl .a5)) o f r)
+    (Printed.nontriviality_of_A6 M (h _ (Or.inl .a6)) o f r)
   have ev := (evaluation_truth M o f r).mp (h _ (Or.inr .evaluation) o f r)
   have htotal : ∀ x : D, ∃ y : D, y ≠ M.applicative.apply x x := by
     intro x

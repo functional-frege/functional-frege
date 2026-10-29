@@ -3,7 +3,7 @@ import FregeanECA.V3.Certificate
 /-!
 Truth values, concepts and Frege's strokes in the applicative fragment.
 
-Church truth values: `T := K` and `F := K·I`; A5 is `T ≠ F`.  A *concept* is
+Church truth values: `T := K` and `F := K·I`; A6 is `T ≠ F`.  A *concept* is
 an object `c` with `c·x ∈ {T, F}` for every `x`, and `x ∈ c` means `c·x = T`.
 
 Every statement below is a pure applicative sentence (`Pure.Formula`).  Each

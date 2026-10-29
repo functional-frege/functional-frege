@@ -52,10 +52,10 @@ You do not need to know Lean to check the certificate: see
    Verified run:    2026-10-28T15:54:42 UTC
    Toolchain:       leanprover/lean4:v4.33.1
    Recorded result: PASS
-   Modules audited: 179 project, 19 vendored; 7831 declarations; 297 required endpoints
+   Modules audited: 179 project, 19 vendored; 7831 declarations; 306 required endpoints
 
-   Source hashes:   205 files recorded; 205 match, 0 differ, 0 missing
-   Endpoints:       297 required; 294 audited with standard axioms only
+   Source hashes:   206 files recorded; 206 match, 0 differ, 0 missing
+   Endpoints:       306 required; 306 audited with standard axioms only
 
    Certificate: printed result -> Lean theorem [axioms]
    ------------------------------------------------------------------------
@@ -82,22 +82,25 @@ Lean for you if you say yes.
 The paper presents **Functional Frege (FF)**, a many-sorted first-order theory
 with three kinds of sort: objects, functions from objects to objects, and
 relations on objects. An operator δ assigns to each function *f* an object
-δ*f*, its abstract (Frege's value-range). The five axioms are
+δ*f*, its abstract (Frege's value-range). The six axioms are
 
 | | Axiom | In words | In Lean |
 | --- | --- | --- | --- |
-| A1 | Relational comprehension | every formula defines a relation | `V3.Cleaner.A1` |
-| A2 | Functional comprehension | a function for every term built by application (f(x̄) = t); in particular every object is an abstract | `V3.Cleaner.A2` |
+| A1 | Relational comprehension | every formula defines a relation | `V4.Printed.A1` |
+| A2 | Functional comprehension | a function for every term built by application from the inputs alone: f(x̄) = θ(x̄), at least one input | `V4.Printed.A2` |
 | A3 | Functional Basic Law V | two functions have the same abstract exactly when they agree at every argument | `V4.Printed.A3` (= `lawV`) |
-| A4 | Functional extensionality | functions that agree everywhere are equal | `V3.Cleaner.A4` |
-| A5 | Nontriviality | T ≠ F, the abstracts of the two projections (Church's truth values); equivalent over A1–A4 to the existence of two distinct objects | `V3.Cleaner.A5` (encoded as ∃x,y x ≠ y; the printed form is `V4.Printed.A5`) |
+| A4 | Functional extensionality | functions that agree everywhere are equal | `V4.Printed.A4` |
+| A5 | Coverage | every object is the abstract of some function: ∀y ∃f (δf = y) | `V4.Printed.A5` |
+| A6 | Nontriviality | T ≠ F, the abstracts of the two projections (Church's truth values); equivalent over A1–A5 to the existence of two distinct objects | `V4.Printed.A6` |
 
 The theory exactly as printed is `FregeanECA.V4.Printed.theory`
 ([`lean/FregeanECA/V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean)).
-An older encoding, `FregeanECA.V3.Cleaner.theory`, states A3 as injectivity of
-δ; the module proves that the two presentations have the same models and the
-same theorems (`axioms_iff_cleaner`, `provability_iff`), and the certificate
-states every result for the printed theory. The comparison theories are
+An older encoding, `FregeanECA.V3.Cleaner.theory`, states A2 with δf applied
+to all inputs, with parameters and the empty input list, A3 as injectivity of δ
+and nontriviality as ∃x,y x ≠ y; the module proves that the two presentations
+have the same models and the same theorems (`axioms_iff_cleaner`,
+`provability_iff`), and the certificate states every result for the printed
+theory. The comparison theories are
 **NECA + RC**, nontrivial extensional combinatory algebra with full relational
 comprehension (`FregeanECA.V3.RelationalComprehension.theory`), and **Z₂**,
 full second-order arithmetic as a two-sorted first-order theory
@@ -119,10 +122,11 @@ every row, the exact Lean statement and the proof method.
 
 | Printed result | Certificate theorem | Proof developed in |
 | --- | --- | --- |
-| Definition 2.1 `def:tf`: printed axioms ≡ encoding | `printed_theory` | [`V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean) |
-| Proposition 2.2 `prop:inverse`: δ bijective, application defined | `inverse`, `unique_preimage_provable` | [`V3/PaperResults.lean`](lean/FregeanECA/V3/PaperResults.lean), [`V3/Cleaner.lean`](lean/FregeanECA/V3/Cleaner.lean) |
-| Proposition 2.3 `prop:blv`: abstract identity and extensionality | `basic_law_V_and_extensionality_provable` | [`V3/PaperResults.lean`](lean/FregeanECA/V3/PaperResults.lean) |
-| Proposition 2.4 `prop:nontriviality`: A5 independent | `nontriviality_independent` | [`V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean), [`V3/Nontriviality.lean`](lean/FregeanECA/V3/Nontriviality.lean) |
+| Definition 2.1 `def:tf`: printed axioms A1–A6 ≡ encoding | `printed_theory` | [`V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean) |
+| Proposition 2.2 `prop:parametric`: functional comprehension with parameters | `printed_theory` (conjuncts 4–5); `Printed.parametric_comprehension`, `Printed.parametric_comprehension_provable` | [`V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean) |
+| Proposition 2.3 `prop:inverse`: δ bijective, application defined | `inverse`, `unique_preimage_provable` | [`V3/PaperResults.lean`](lean/FregeanECA/V3/PaperResults.lean), [`V3/Cleaner.lean`](lean/FregeanECA/V3/Cleaner.lean) |
+| Proposition 2.4 `prop:blv`: abstract identity and extensionality | `basic_law_V_and_extensionality_provable` | [`V3/PaperResults.lean`](lean/FregeanECA/V3/PaperResults.lean) |
+| Proposition 2.5 `prop:nontriviality`: A6 independent | `nontriviality_independent` | [`V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean), [`V3/Nontriviality.lean`](lean/FregeanECA/V3/Nontriviality.lean) |
 | Theorem 3.4 `thm:correspondence`: FF and NECA + RC agree on the shared language | `core_combinators_unique`, `shared_algebra_provability`, `three_way` | [`V3/Certificate.lean`](lean/FregeanECA/V3/Certificate.lean), [`V3/Cleaner.lean`](lean/FregeanECA/V3/Cleaner.lean) |
 | Proposition 3.5 `prop:reconstruction`: recovery of the structures | `V3.ModelReconstruction.reconstruction` | [`V3/ModelReconstruction.lean`](lean/FregeanECA/V3/ModelReconstruction.lean) |
 | Theorem 3.6 `thm:bi-interpretability` | `bi_interpretable` | [`V4/BiInterpretability.lean`](lean/FregeanECA/V4/BiInterpretability.lean) |
@@ -137,7 +141,8 @@ every row, the exact Lean statement and the proof method.
 | Proposition 6.3 `prop:choice`: no object is a choice function | `no_choice_function` | [`V4/Choice.lean`](lean/FregeanECA/V4/Choice.lean) |
 | Theorem 7.1 `thm:hume`: Hume's Principle on the number domain | `hume_on_number_domain` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean), [`Part2/HumeInternal.lean`](lean/FregeanECA/Part2/HumeInternal.lean) |
 | Corollary 7.2 `cor:frege-theorem`: Z₂ through Hume's Principle | `arithmetic_through_hume` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean) |
-| Proposition 7.3 `prop:hume-expansion`: whole-domain Hume model | `whole_domain_hume` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean), [`Part2/Hume.lean`](lean/FregeanECA/Part2/Hume.lean) |
+| Corollary 7.3 `cor:fa`: Frege Arithmetic and FF mutually interpretable | `frege_arithmetic` | [`V4/FregeArithmetic.lean`](lean/FregeanECA/V4/FregeArithmetic.lean) |
+| Proposition 7.4 `prop:hume-expansion`: whole-domain Hume model | `whole_domain_hume` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean), [`Part2/Hume.lean`](lean/FregeanECA/Part2/Hume.lean) |
 | Everything above together | `checked` | [`V4/Certificate.lean`](lean/FregeanECA/V4/Certificate.lean) |
 
 Lemma 3.3 (bracket abstraction) and Lemma 4.1 (zero and successor) are
@@ -157,7 +162,7 @@ the paper, and checks three things:
    every Lean source file under `lean/` and compares it with the hash recorded
    at verification time. Any edit to any proof file would show up here.
 2. **Every endpoint was audited with standard axioms only.** For each of the
-   297 required endpoints it confirms that the recorded transitive axiom
+   306 required endpoints it confirms that the recorded transitive axiom
    dependencies are within `propext`, `Classical.choice` and `Quot.sound`,
    Lean's three standard axioms. No `sorry`, no `admit`, no added axiom.
 3. **The certificate, result by result**, as in Section 3.
@@ -203,7 +208,7 @@ It copies the sources to a fresh directory, rebuilds every project and
 vendored module without reusing any compiled file, checks the dependency pins
 of [`lean/lake-manifest.json`](lean/lake-manifest.json) against the fetched
 packages, scans for `sorry`, `admit` and `axiom`, audits the transitive axioms
-of every one of the 7,831 declarations, checks all required endpoints, runs
+of every one of the 7,899 declarations, checks all required endpoints, runs
 every certificate file, and writes `verification/verification.json` with the
 source hashes. Run it with
 
@@ -239,7 +244,7 @@ All sources are under [`lean/FregeanECA/`](lean/FregeanECA/), in the namespace
 | Directory | Role |
 | --- | --- |
 | [`V4/`](lean/FregeanECA/V4/) | The certificate, the printed theory and its equivalence with the older encoding (`PrintedTheory.lean`), bi-interpretability (`BiInterpretability.lean`), the truth-value results (`TruthValues.lean`), and Hume's Principle with the Hume-route interpretation of Z₂ (`HumeBridge.lean`) |
-| [`V3/`](lean/FregeanECA/V3/) | The literal axioms A1–A5 with A3 as injectivity (`Cleaner.lean`), NECA + RC (`RelationalComprehension.lean`), the inverse and Law V results (`PaperResults.lean`), structure recovery (`ModelReconstruction.lean`), the A5 countermodel (`Nontriviality.lean`), the V3 certificate with the three-way interpretability package |
+| [`V3/`](lean/FregeanECA/V3/) | The encoded presentation of A1–A6 with A3 as injectivity and A5 folded into A2 (`Cleaner.lean`), NECA + RC (`RelationalComprehension.lean`), the inverse and Law V results (`PaperResults.lean`), structure recovery (`ModelReconstruction.lean`), the one-object countermodel for the encoded nontriviality clause (`Nontriviality.lean`; the independence of the printed A6 is in `V4/PrintedTheory.lean`), the V3 certificate with the three-way interpretability package |
 | [`Part2/`](lean/FregeanECA/Part2/) | The interpretation of Z₂ in NECA + RC (least inductive domain, addition and multiplication graphs, comprehension), the exact βη-equation theorem, Hume's Principle on the number domain, Frege's theorem, the whole-domain Hume model |
 | [`Research/Z2Reverse/`](lean/FregeanECA/Research/Z2Reverse/) | The interpretation of NECA + RC in Z₂: lambda terms, substitution, parallel reduction, confluence and the truth lemma, all coded inside an arbitrary model of the encoded Z₂ (completed work; the directory name is historical) |
 | [`V2/`](lean/FregeanECA/V2/), [`Certificates/`](lean/FregeanECA/Certificates/), [`Comprehension/`](lean/FregeanECA/Comprehension/) | Earlier presentations of the same theories and the proved bridges that transfer their results to the literal axioms |
@@ -303,7 +308,7 @@ the Lean does the same, in four steps that recur in every module:
    proved bridge (`Printed.provability_iff`, `V3.Cleaner.provability_iff_fullFE`,
    `pure_conservativity_three_way`).
 
-Model-existence results (Theorem 4.5, Proposition 7.3) stop after step 3,
+Model-existence results (Theorem 4.5, Proposition 7.4) stop after step 3,
 since they are statements about models, not derivations.
 
 ### 7.4 A worked example: Proposition 6.3
@@ -317,7 +322,7 @@ lines and shows the whole pattern.
 - `total_truth` and `chooser_truth` say what these mean in a model, and both
   are `Iff.rfl`. (Step 2.)
 - `choice_fails` is the mathematics: in any model of the printed axioms,
-  assume the instance holds; A5 gives two distinct objects `a ≠ b`, so for each
+  assume the instance holds; A6 gives two distinct objects `a ≠ b`, so for each
   `x` one of them differs from `x(x)`, which makes `total` true; the instance
   then yields a function `g` with `g(x) ≠ x(x)` for all `x`; the evaluation
   law `ev` says `g(δg) = (δg)(δg)`; taking `x := δg` contradicts the previous
@@ -360,10 +365,10 @@ by `verify.py` at the end of a run. Its main fields:
 | --- | --- |
 | `timestamp_utc`, `toolchain`, `success` | When the run finished, with which Lean, and whether every check passed |
 | `commands` | Every command executed, its exit code, duration and log file |
-| `source_sha256` | SHA-256 of every source and configuration file (205 files); what Section 4.1 recomputes |
-| `source_modules`, `vendor_source_modules` | The 179 project and 19 vendored modules rebuilt from scratch |
-| `declaration_axioms`, `audited_declaration_count` | The transitive axiom dependencies of all 7,831 declarations |
-| `required_terminal_declarations`, `missing_audits` | The 297 endpoints that must be present, and which were not (none) |
+| `source_sha256` | SHA-256 of every source and configuration file (206 files); what Section 4.1 recomputes |
+| `source_modules`, `vendor_source_modules` | The 180 project and 19 vendored modules rebuilt from scratch |
+| `declaration_axioms`, `audited_declaration_count` | The transitive axiom dependencies of all 7,899 declarations |
+| `required_terminal_declarations`, `missing_audits` | The 306 endpoints that must be present, and which were not (none) |
 | `unexpected_axioms`, `admission_scan` | Any axiom outside the standard three, any `sorry`/`admit` (none) |
 | `external_dependencies`, `dependency_failures` | The pinned packages and pin mismatches (none) |
 | `source_changes_during_verification` | Source drift during the run (none) |
@@ -396,7 +401,7 @@ unique-existence sentences).
 
 **Not formalised.** Four unnumbered remarks of the paper are not formalised
 and are identified in [`lean/FORMALISATION.md`](lean/FORMALISATION.md),
-Section 7: that A5 is equivalent to K ≠ K·I; that the arithmetic
+Section 7: that A6 is equivalent to K ≠ K·I; that the arithmetic
 interpretations are not a bi-interpretation (the automorphism argument); that
 A3 alone does not yield A4 (the two-element countermodel); and that the
 Russell relation is not the membership of any object. No bi-interpretability

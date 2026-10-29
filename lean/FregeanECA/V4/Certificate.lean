@@ -4,16 +4,22 @@ import FregeanECA.V4.Choice
 import FregeanECA.V4.HumeBridge
 import FregeanECA.V4.BiInterpretability
 import FregeanECA.V4.TruthValues
+import FregeanECA.V4.FregeArithmetic
 import Lean.Util.CollectAxioms
 
 /-!
 Certificate for the manuscript. `TF` is the theory exactly as printed
-(`Printed.theory`: A1, A2, A3 = functional Basic Law V, A4, A5, with the
-defining clauses for application and K/S). `TFenc` is the encoded
-presentation of the same theory in which A3 is injective abstraction;
-`Printed.provability_iff` shows that the two have the same theorems and
-`Printed.axioms_iff_cleaner` that they have the same models. Every endpoint
-below is stated for `TF` and for the literal NECA + RC theory `TR`.
+(`Printed.theory`: the six axioms A1 relational comprehension, A2 functional
+comprehension for application terms in the inputs, with f(x̄) read as f
+evaluated at the first input and the result applied to the rest, A3 =
+functional Basic Law V, A4 functional extensionality, A5 coverage, A6 T ≠ F,
+with the defining clauses for application and K/S). `TFenc` is the encoded
+presentation of the same theory, whose A2 applies δf to all inputs and admits
+parameters and the empty input list, whose A3 is injective abstraction and
+whose A5 is ∃x,y (x ≠ y); `Printed.provability_iff` shows that the two have
+the same theorems and `Printed.axioms_iff_cleaner` that they have the same
+models, through `Printed.parametric_comprehension` (`prop:parametric`). Every
+endpoint below is stated for `TF` and for the literal NECA + RC theory `TR`.
 
 Run from lean/: lake env lean --trust=0 FregeanECA/V4/Certificate.lean
 The final audit rejects admissions and every extra mathematical axiom.
@@ -37,13 +43,23 @@ theorem enc_of_tf {σ : Sentence language} (h : TF ⊢ σ) : TFenc ⊢ σ :=
   (Printed.provability_iff σ).mp h
 
 /-- `def:tf`: the printed axiom set has exactly the models and exactly the
-theorems of the encoded presentation, and is consistent exactly when it is. -/
+theorems of the encoded presentation, and is consistent exactly when it is;
+and `prop:parametric`: in every model of the printed axioms, functional
+comprehension holds for every application term with parameters and any
+number of inputs, zero included (every encoded A2 instance is valid), and
+every such instance is a theorem of the printed theory. -/
 theorem printed_theory :
     (∀ {D F : Type} {R : Nat → Type} (M : Interpretation D F R),
       (∀ p, Printed.Axiom p → Valid M p) ↔ (∀ p, V3.Cleaner.Axiom p → Valid M p)) ∧
     (∀ σ : Sentence language, (TF ⊢ σ) ↔ (TFenc ⊢ σ)) ∧
-    (Entailment.Consistent TF ↔ Entailment.Consistent TFenc) :=
-  ⟨fun M => Printed.axioms_iff_cleaner M, Printed.provability_iff, Printed.consistency_iff⟩
+    (Entailment.Consistent TF ↔ Entailment.Consistent TFenc) ∧
+    (∀ {D F : Type} {R : Nat → Type} (M : Interpretation D F R),
+      (∀ p, Printed.Axiom p → Valid M p) →
+        ∀ (n : Nat) (θ : V3.Cleaner.ApplicationTerm), Valid M (V3.Cleaner.A2 n θ)) ∧
+    (∀ (n : Nat) (θ : V3.Cleaner.ApplicationTerm), TF ⊢ sentence (V3.Cleaner.A2 n θ)) :=
+  ⟨fun M => Printed.axioms_iff_cleaner M, Printed.provability_iff, Printed.consistency_iff,
+    fun M h n θ => Printed.parametric_comprehension M h n θ,
+    Printed.parametric_comprehension_provable⟩
 
 /-- `prop:inverse`: in every model of the printed axioms, δ has an inverse
 with the displayed laws and application is evaluation after it. -/
@@ -63,18 +79,18 @@ theorem basic_law_V_and_extensionality_provable :
   tf_of_enc V3.PaperResults.basic_law_V_and_extensionality_provable
 
 /-- `prop:nontriviality`: the one-object countermodel (in which T = F) and the nonderivability
-of A5 from the printed A1–A4. -/
+of A6 from the printed A1–A5 together with the defining clauses. -/
 theorem nontriviality_independent :
-    type_of% Printed.countermodel ∧ type_of% Printed.A5_not_provable :=
-  ⟨Printed.countermodel, Printed.A5_not_provable⟩
+    type_of% Printed.countermodel ∧ type_of% Printed.A6_not_provable :=
+  ⟨Printed.countermodel, Printed.A6_not_provable⟩
 
 /-- `thm:correspondence`: K and S exist uniquely from the printed core axioms
 and the definition of application. -/
 theorem core_combinators_unique {D F : Type} {R : Nat → Type}
     [Nonempty F] [∀ n, Nonempty (R n)] (M : Interpretation D F R)
     (h : ∀ p, Printed.CoreAxiom p → Valid M p) (ev : Valid M evaluation) :
-    type_of% (V3.Cleaner.core_combinators_unique M (Printed.core_to_cleaner M h) ev) :=
-  V3.Cleaner.core_combinators_unique M (Printed.core_to_cleaner M h) ev
+    type_of% (V3.Cleaner.core_combinators_unique M (Printed.core_to_cleaner M h ev) ev) :=
+  V3.Cleaner.core_combinators_unique M (Printed.core_to_cleaner M h ev) ev
 
 /-- `thm:correspondence`: the same consequences in the shared language. -/
 theorem shared_algebra_provability (p : Applicative.Formula) :
@@ -237,6 +253,27 @@ functional choice for the relation y ≠ x(x), so FF + AC_f is inconsistent. -/
 theorem no_choice_function : TF ⊢ sentence (notF Choice.choiceInstance) :=
   Choice.no_choice_provable
 
+/-- `cor:fa`: Frege Arithmetic and FF are mutually interpretable. FA is
+represented by its Henkin models (HP plus full comprehension in the generic FA
+language) and FA-provability by validity in all of them (`FAValid`); both
+directions are fixed translations (`toFF` is the Corollary 7.2 interpretation;
+`toFA` goes through Z2). The last three conjuncts are the model-theoretic halves:
+every full TS model of FF carries an FA model on its number domain, and every
+FA model yields a full TF model of FF through its internal Z2 model and the
+internal term model of `thm:reverse`, which moreover satisfies every printed
+axiom A1--A6. -/
+theorem frege_arithmetic :
+    (∀ ψ, FregeArithmetic.FAValid.{0, 0} ψ →
+      TF ⊢ sentence (FregeArithmetic.toFF ψ).functional) ∧
+    (∀ p : Functional.Formula, (TF ⊢ sentence p) →
+      FregeArithmetic.FAValid.{0, 0} (FregeArithmetic.toFA p)) ∧
+    (type_of% @FregeArithmetic.fa_model_of_ff_model.{0, 0}) ∧
+    (type_of% @FregeArithmetic.ff_model_of_fa_model.{0, 0}) ∧
+    (type_of% @FregeArithmetic.printed_model_of_fa_model.{0, 0}) :=
+  ⟨FregeArithmetic.ff_interprets_fa, FregeArithmetic.fa_interprets_ff,
+    FregeArithmetic.fa_model_of_ff_model, FregeArithmetic.ff_model_of_fa_model,
+    FregeArithmetic.printed_model_of_fa_model⟩
+
 theorem checked :
     (type_of% V3.Certificate.checked) ∧
     (type_of% printed_theory) ∧
@@ -256,13 +293,14 @@ theorem checked :
     (type_of% concepts) ∧
     (type_of% collapse) ∧
     (type_of% no_horizontal) ∧
-    (type_of% no_choice_function) :=
+    (type_of% no_choice_function) ∧
+    (type_of% frege_arithmetic) :=
   ⟨V3.Certificate.checked, printed_theory, unique_preimage_provable,
     basic_law_V_and_extensionality_provable, nontriviality_independent,
     shared_algebra_provability, three_way, equiconsistency, models_and_consistency,
     bi_interpretable, exact_equations, conservativity, hume_on_number_domain,
     arithmetic_through_hume, whole_domain_hume, concepts, collapse, no_horizontal,
-    no_choice_function⟩
+    no_choice_function, frege_arithmetic⟩
 
 end FregeanECA.V4.Certificate
 
@@ -276,8 +314,10 @@ run_cmd do
     ``FregeanECA.V4.Printed.provability_iff,
     ``FregeanECA.V4.Printed.consistency_iff,
     ``FregeanECA.V4.Printed.lawV_provable,
+    ``FregeanECA.V4.Printed.parametric_comprehension,
+    ``FregeanECA.V4.Printed.parametric_comprehension_provable,
     ``FregeanECA.V4.Printed.countermodel,
-    ``FregeanECA.V4.Printed.A5_not_provable,
+    ``FregeanECA.V4.Printed.A6_not_provable,
     ``FregeanECA.V4.Certificate.inverse,
     ``FregeanECA.V4.Certificate.unique_preimage_provable,
     ``FregeanECA.V4.Certificate.basic_law_V_and_extensionality_provable,
@@ -306,6 +346,13 @@ run_cmd do
     ``FregeanECA.V4.Certificate.collapse,
     ``FregeanECA.V4.Certificate.no_horizontal,
     ``FregeanECA.V4.Certificate.no_choice_function,
+    ``FregeanECA.V4.Certificate.frege_arithmetic,
+    ``FregeanECA.V4.FregeArithmetic.ff_interprets_fa,
+    ``FregeanECA.V4.FregeArithmetic.fa_interprets_ff,
+    ``FregeanECA.V4.FregeArithmetic.fa_interprets_algebra,
+    ``FregeanECA.V4.FregeArithmetic.fa_model_of_ff_model,
+    ``FregeanECA.V4.FregeArithmetic.ff_model_of_fa_model,
+    ``FregeanECA.V4.FregeArithmetic.printed_model_of_fa_model,
     ``FregeanECA.V4.Choice.no_choice_provable,
     ``FregeanECA.V4.Choice.choice_fails,
     ``FregeanECA.V4.TruthValues.collapse_provable,
@@ -328,6 +375,6 @@ run_cmd do
     for ax in ← collectAxioms endpoint do
       unless allowed.contains ax do
         throwError "V4 CERTIFICATE REJECTED at {endpoint}: {ax}"
-  logInfo "V4 CERTIFICATE PASS: the printed theory (A3 = functional Basic Law V) has the models and theorems of the encoded presentation; every V3 endpoint, bi-interpretability, exact beta-eta equations, conservativity over NECA, Hume's Principle on the number domain, the Hume-route Z2 transfer, the whole-domain Hume model, the connectives as objects, the collapse of total concepts, and the impossibility of Frege's horizontal, all for the printed theory; standard Lean axioms only."
+  logInfo "V4 CERTIFICATE PASS: the printed theory has six axioms (A1 relational comprehension, A2 functional comprehension for terms in the inputs, A3 functional Basic Law V, A4 functional extensionality, A5 coverage, A6 T ≠ F) and has the models and theorems of the encoded presentation, with functional comprehension with parameters derived; A6 is independent of A1–A5; every V3 endpoint, bi-interpretability, exact beta-eta equations, conservativity over NECA, Hume's Principle on the number domain, the Hume-route Z2 transfer, the whole-domain Hume model, the connectives as objects, the collapse of total concepts, the impossibility of Frege's horizontal, and the mutual interpretability of Frege Arithmetic and FF, all for the printed theory; standard Lean axioms only."
 
 #print axioms FregeanECA.V4.Certificate.checked

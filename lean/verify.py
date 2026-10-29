@@ -22,7 +22,7 @@ ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 PINS = {"Foundation": "81810b9f22c49fbb32bd89c1e9737059d83a37e6",
         "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"}
 TERMINAL_FILES = ["Audit.lean", "Part2Audit.lean", "FregeanECA/V2/Certificate.lean",
-                  "FregeanECA/V4/Certificate.lean", "FregeanECA/V4/PrintedTheory.lean", "FregeanECA/V4/Choice.lean", "FregeanECA/V4/HumeBridge.lean",
+                  "FregeanECA/V4/Certificate.lean", "FregeanECA/V4/PrintedTheory.lean", "FregeanECA/V4/Choice.lean", "FregeanECA/V4/FregeArithmetic.lean", "FregeanECA/V4/HumeBridge.lean",
                   "FregeanECA/V4/BiInterpretability.lean",
                   "FregeanECA/V4/TruthValues.lean",
                   "FregeanECA/V3/Certificate.lean", "FregeanECA/V3/Cleaner.lean",
@@ -40,8 +40,10 @@ REQUIRED_ENDPOINTS = [
     "FregeanECA.V4.Printed.provability_iff",
     "FregeanECA.V4.Printed.consistency_iff",
     "FregeanECA.V4.Printed.lawV_provable",
+    "FregeanECA.V4.Printed.parametric_comprehension",
+    "FregeanECA.V4.Printed.parametric_comprehension_provable",
     "FregeanECA.V4.Printed.countermodel",
-    "FregeanECA.V4.Printed.A5_not_provable",
+    "FregeanECA.V4.Printed.A6_not_provable",
     "FregeanECA.V4.Certificate.inverse",
     "FregeanECA.V4.Certificate.unique_preimage_provable",
     "FregeanECA.V4.Certificate.basic_law_V_and_extensionality_provable",
@@ -70,6 +72,13 @@ REQUIRED_ENDPOINTS = [
     "FregeanECA.V4.Certificate.collapse",
     "FregeanECA.V4.Certificate.no_horizontal",
     "FregeanECA.V4.Certificate.no_choice_function",
+    "FregeanECA.V4.Certificate.frege_arithmetic",
+    "FregeanECA.V4.FregeArithmetic.ff_interprets_fa",
+    "FregeanECA.V4.FregeArithmetic.fa_interprets_ff",
+    "FregeanECA.V4.FregeArithmetic.fa_interprets_algebra",
+    "FregeanECA.V4.FregeArithmetic.fa_model_of_ff_model",
+    "FregeanECA.V4.FregeArithmetic.ff_model_of_fa_model",
+    "FregeanECA.V4.FregeArithmetic.printed_model_of_fa_model",
     "FregeanECA.V4.Choice.no_choice_provable",
     "FregeanECA.V4.Choice.choice_fails",
     "FregeanECA.V4.TruthValues.collapse_provable",
@@ -304,7 +313,7 @@ def main() -> int:
               "changed_vendor_sources": changed, "external_dependencies": dependencies,
               "dependency_failures": failures, "toolchain": (root / "lean-toolchain").read_text().strip(),
               "fresh_scope": "Every project/vendor source; no project/vendor oleans copied. Pinned external dependency caches reused.",
-              "scope": "Every project and vendor definition and theorem is audited transitively. V4 is the active certificate for the literal A1-A5 theory and NECA + RC; it restates every V3 endpoint and adds the applicative-fragment, truth-value and Hume's Principle results. Inherited V2 certificates are retained as dependencies and regression checks. Paper-to-theorem correspondence is recorded in ../COVERAGE.md. Research/HigherOrderAudit is checked separately and is not a premise of the V4 certificate."}
+              "scope": "Every project and vendor definition and theorem is audited transitively. V4 is the active certificate for the printed theory FF (A1-A6) and NECA + RC; it restates every V3 endpoint and adds the applicative-fragment, truth-value and Hume's Principle results. Inherited V2 certificates are retained as dependencies and regression checks. Paper-to-theorem correspondence is recorded in ../COVERAGE.md. Research/HigherOrderAudit is checked separately and is not a premise of the V4 certificate."}
     okay = not forbidden and not changed and not failures
     if args.preflight:
         report["success"] = okay

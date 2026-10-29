@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-10-28T15:54:42.956057+00:00",
+  "timestamp_utc": "2026-10-29T15:46:38.108149+00:00",
   "success": true,
   "mode": "fresh-source-build",
   "commands": [
@@ -181,6 +181,7 @@
         "FregeanECA.V4.BiInterpretability",
         "FregeanECA.V4.Certificate",
         "FregeanECA.V4.Choice",
+        "FregeanECA.V4.FregeArithmetic",
         "FregeanECA.V4.HumeBridge",
         "FregeanECA.V4.PrintedTheory",
         "FregeanECA.V4.TruthValues",
@@ -205,9 +206,9 @@
         "Frege.VariableSupport"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "fresh-build.log",
-      "elapsed_seconds": 475.813
+      "elapsed_seconds": 491.703
     },
     {
       "command": [
@@ -218,9 +219,9 @@
         "FregeanECA/V4/Certificate.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "v4-certificate.log",
-      "elapsed_seconds": 14.422
+      "elapsed_seconds": 15.329
     },
     {
       "command": [
@@ -231,9 +232,9 @@
         "FregeanECA/V3/Certificate.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "v3-certificate.log",
-      "elapsed_seconds": 14.25
+      "elapsed_seconds": 15.0
     },
     {
       "command": [
@@ -244,9 +245,9 @@
         "FregeanECA/V2/Certificate.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "v2-certificate.log",
-      "elapsed_seconds": 14.765
+      "elapsed_seconds": 15.296
     },
     {
       "command": [
@@ -257,9 +258,9 @@
         "FregeanECA/Certificates/FunctionExtensionality.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "fe-certificate.log",
-      "elapsed_seconds": 13.938
+      "elapsed_seconds": 14.454
     },
     {
       "command": [
@@ -270,9 +271,9 @@
         "FregeanECA/Certificates/ThreeWay.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "three-way-certificate.log",
-      "elapsed_seconds": 14.875
+      "elapsed_seconds": 15.359
     },
     {
       "command": [
@@ -281,13 +282,13 @@
         "lean",
         "--trust=0",
         "-o",
-        "<temp>\\fregean-eca-check-760j7gka\\lean\\.lake\\build\\lib\\lean\\Audit.olean",
+        "<temp>\\fregean-eca-check-juk9zew2\\lean\\.lake\\build\\lib\\lean\\Audit.olean",
         "Audit.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "terminal-axioms.log",
-      "elapsed_seconds": 15.687
+      "elapsed_seconds": 16.656
     },
     {
       "command": [
@@ -296,13 +297,13 @@
         "lean",
         "--trust=0",
         "-o",
-        "<temp>\\fregean-eca-check-760j7gka\\lean\\.lake\\build\\lib\\lean\\Part2Audit.olean",
+        "<temp>\\fregean-eca-check-juk9zew2\\lean\\.lake\\build\\lib\\lean\\Part2Audit.olean",
         "Part2Audit.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "part2-axioms.log",
-      "elapsed_seconds": 14.485
+      "elapsed_seconds": 14.797
     },
     {
       "command": [
@@ -313,9 +314,9 @@
         "FregeanECA/Research/HigherOrderAudit.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "research-axioms.log",
-      "elapsed_seconds": 5.062
+      "elapsed_seconds": 5.078
     },
     {
       "command": [
@@ -326,9 +327,9 @@
         "AllDeclarationsAudit.lean"
       ],
       "returncode": 0,
-      "cwd": "<temp>\\fregean-eca-check-760j7gka\\lean",
+      "cwd": "<temp>\\fregean-eca-check-juk9zew2\\lean",
       "log": "axioms.log",
-      "elapsed_seconds": 16.532
+      "elapsed_seconds": 16.625
     }
   ],
   "source_sha256": {
@@ -505,11 +506,12 @@
     "FregeanECA/V3/Specifications.lean": "297db118862c4112b0d3d947f7d794ef26d0ad6da887d3c7b488ea8c86bcbd0d",
     "FregeanECA/V3/SuccessorVerification.lean": "468d2c201c2fc0a653d8a4f2b48619c48a77a38910c9cdc32ef9686b60dc841d",
     "FregeanECA/V4/BiInterpretability.lean": "a0f2410c25511eeefd05a1567161bd1220d9845b90d1394c83e4a3412a05080f",
-    "FregeanECA/V4/Certificate.lean": "f6b54ea8edd0d8dd86e3ec41ae5c594634d3bbe535aba999420345bc62a96912",
-    "FregeanECA/V4/Choice.lean": "2f28f8572d1009f471a712ebc2310671c13117ca2fc172698a5494b44087927c",
-    "FregeanECA/V4/HumeBridge.lean": "51141e6737e7af69d9e7f754d5fe38ccd8ff1c89e1c2c3162dd5e1541c4d0694",
-    "FregeanECA/V4/PrintedTheory.lean": "4aa3579299d404ccc8a55090e7a12aa93f2b90f222607e2d94669d5a11deea8d",
-    "FregeanECA/V4/TruthValues.lean": "5e5ffa977d5ab661b48e3dcd6be889fed8573e03d9c837375abc7fcf3231022f",
+    "FregeanECA/V4/Certificate.lean": "7bce4aecf0584dfcf9bccae118f0b49deeb0c907de99c4c425aaff480ef4993e",
+    "FregeanECA/V4/Choice.lean": "5125e156ecbfcfa5b121244bb6660c0c7ca8cdb73124a17e9f096ae620682195",
+    "FregeanECA/V4/FregeArithmetic.lean": "9a557b59deabf7221b32f8735f5cc35a8584fd74c18b40d33204d12d6f475118",
+    "FregeanECA/V4/HumeBridge.lean": "e3e213231b456dd4914ca65286168c5426394e0bedd72ba101b5a1eba2b114fc",
+    "FregeanECA/V4/PrintedTheory.lean": "64c6c67658baa381f98e7da8c7c86ad1e108faa5b1e4566f3046441daf9d64e9",
+    "FregeanECA/V4/TruthValues.lean": "71d3f6d1abdadcabb5a254ebd41be73fa57e94233f9b52855c3077e0f837252b",
     "FregeanECA.lean": "adbcf6189d484e5a5ddb6ad5eea55ce2b324e036ce896147452aec0c8869189e",
     "lake-manifest.json": "69eaa9d89a9b7521bbd8af08cb5b3f0d74473fba1b999225accae4e43791b45a",
     "lakefile.toml": "49eccac17a4e3a084457045fff05d35e965290808ed91df448d17a14594955c0",
@@ -536,7 +538,7 @@
     "vendor/Frege.lean": "b9e30e6cd7387ce6ddd9be3eaf632cb3fcb9a2e06d488e9ee4e285ce9e67964f",
     "vendor/lakefile.toml": "39898c9b6c9c65a5e469af2ea271520bd7f866123aa585c507f0077f873fd8e2",
     "vendor/PROVENANCE.json": "aeb0eb94b78f6b3eba16c402683198f0328e3299b4d0730c87ed9425166c5a19",
-    "verify.py": "0b39020283d63e3661a63ce19b4aefc4c5e2c4630d41d81d748526d22a6da784"
+    "verify.py": "8307394d40599b62929cad55bc5752b07685b657a99903d8a3eb6e86ae2fa344"
   },
   "source_modules": [
     "Audit",
@@ -714,6 +716,7 @@
     "FregeanECA.V4.BiInterpretability",
     "FregeanECA.V4.Certificate",
     "FregeanECA.V4.Choice",
+    "FregeanECA.V4.FregeArithmetic",
     "FregeanECA.V4.HumeBridge",
     "FregeanECA.V4.PrintedTheory",
     "FregeanECA.V4.TruthValues",
@@ -875,9 +878,9 @@
   "dependency_failures": [],
   "toolchain": "leanprover/lean4:v4.33.1",
   "fresh_scope": "Every project/vendor source; no project/vendor oleans copied. Pinned external dependency caches reused.",
-  "scope": "Every project and vendor definition and theorem is audited transitively. V4 is the active certificate for the literal A1-A5 theory and NECA + RC; it restates every V3 endpoint and adds the applicative-fragment, truth-value and Hume's Principle results. Inherited V2 certificates are retained as dependencies and regression checks. Paper-to-theorem correspondence is recorded in ../COVERAGE.md. Research/HigherOrderAudit is checked separately and is not a premise of the V4 certificate.",
-  "fresh_directory": "<temp>\\fregean-eca-check-760j7gka\\lean",
-  "generated_audit_sha256": "6842f82e6f00f3517c6ba7cfe400aa1d4cad665b8fcdd863b7d4b3e4a8ab84ab",
+  "scope": "Every project and vendor definition and theorem is audited transitively. V4 is the active certificate for the printed theory FF (A1-A6) and NECA + RC; it restates every V3 endpoint and adds the applicative-fragment, truth-value and Hume's Principle results. Inherited V2 certificates are retained as dependencies and regression checks. Paper-to-theorem correspondence is recorded in ../COVERAGE.md. Research/HigherOrderAudit is checked separately and is not a premise of the V4 certificate.",
+  "fresh_directory": "<temp>\\fregean-eca-check-juk9zew2\\lean",
+  "generated_audit_sha256": "87bdbaca43a9363b64dd52faff0bce275fe9bb62a6f082849c432cd29e30e128",
   "audited_axiom_dependencies": [
     "Classical.choice",
     "Quot.sound",
@@ -9666,6 +9669,11 @@
       "Classical.choice",
       "Quot.sound"
     ],
+    "FregeanECA.V4.Certificate.frege_arithmetic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "FregeanECA.V4.Certificate.hume_on_number_domain": [
       "propext",
       "Classical.choice",
@@ -9741,6 +9749,69 @@
     ],
     "FregeanECA.V4.Choice.total": [],
     "FregeanECA.V4.Choice.total_truth": [],
+    "FregeanECA.V4.FregeArithmetic.FAValid": [
+      "propext"
+    ],
+    "FregeanECA.V4.FregeArithmetic.fa_interprets_algebra": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.fa_interprets_ff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.fa_model_of_ff_model": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.ff_interprets_fa": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.ff_model_of_fa_model": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.interpret_eq": [
+      "propext"
+    ],
+    "FregeanECA.V4.FregeArithmetic.printed_model_of_fa_model": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.taggedModelEq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.taggedModelNonempty": [],
+    "FregeanECA.V4.FregeArithmetic.taggedModelStructure": [
+      "propext"
+    ],
+    "FregeanECA.V4.FregeArithmetic.toFA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.toFA'": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.FregeArithmetic.toFF": [
+      "propext"
+    ],
+    "FregeanECA.V4.FregeArithmetic.toFF_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "FregeanECA.V4.HumeBridge.internal_hume_algebra": [
       "propext",
       "Classical.choice",
@@ -9766,18 +9837,56 @@
       "Classical.choice",
       "Quot.sound"
     ],
+    "FregeanECA.V4.Printed.A1": [],
+    "FregeanECA.V4.Printed.A1_eq": [],
+    "FregeanECA.V4.Printed.A1_truth": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.A2": [],
+    "FregeanECA.V4.Printed.A2_iff_cleaner": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.A2_truth": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.A2_valid_iff_cleaner": [
+      "propext",
+      "Quot.sound"
+    ],
     "FregeanECA.V4.Printed.A3": [],
+    "FregeanECA.V4.Printed.A3_eq": [],
+    "FregeanECA.V4.Printed.A3_truth": [],
+    "FregeanECA.V4.Printed.A4": [],
+    "FregeanECA.V4.Printed.A4_eq": [],
+    "FregeanECA.V4.Printed.A4_truth": [],
     "FregeanECA.V4.Printed.A5": [],
-    "FregeanECA.V4.Printed.A5_not_provable": [
+    "FregeanECA.V4.Printed.A5_eq": [],
+    "FregeanECA.V4.Printed.A5_of_cleaner_zero": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.A5_truth": [],
+    "FregeanECA.V4.Printed.A6": [],
+    "FregeanECA.V4.Printed.A6_not_provable": [
       "propext",
       "Classical.choice",
       "Quot.sound"
     ],
-    "FregeanECA.V4.Printed.A5_of_nontriviality": [],
-    "FregeanECA.V4.Printed.A5_truth": [],
+    "FregeanECA.V4.Printed.A6_of_nontriviality": [],
+    "FregeanECA.V4.Printed.A6_truth": [],
     "FregeanECA.V4.Printed.Axiom": [],
-    "FregeanECA.V4.Printed.FirstFourAxiom": [],
-    "FregeanECA.V4.Printed.axioms_iff_cleaner": [],
+    "FregeanECA.V4.Printed.Closed": [],
+    "FregeanECA.V4.Printed.FirstFiveAxiom": [],
+    "FregeanECA.V4.Printed.applyArguments_same_apply": [
+      "propext"
+    ],
+    "FregeanECA.V4.Printed.axioms_iff_cleaner": [
+      "propext",
+      "Quot.sound"
+    ],
     "FregeanECA.V4.Printed.churchFalse": [],
     "FregeanECA.V4.Printed.churchTrue": [],
     "FregeanECA.V4.Printed.consistency_iff": [
@@ -9785,34 +9894,70 @@
       "Classical.choice",
       "Quot.sound"
     ],
-    "FregeanECA.V4.Printed.core_to_cleaner": [],
+    "FregeanECA.V4.Printed.core_to_cleaner": [
+      "propext",
+      "Quot.sound"
+    ],
     "FregeanECA.V4.Printed.countermodel": [
       "propext",
       "Quot.sound"
     ],
-    "FregeanECA.V4.Printed.firstFourTheory": [
+    "FregeanECA.V4.Printed.firstFiveTheory": [
       "propext",
       "Classical.choice",
       "Quot.sound"
     ],
+    "FregeanECA.V4.Printed.functionAtInputs": [],
+    "FregeanECA.V4.Printed.functionAtInputs_value": [
+      "propext"
+    ],
     "FregeanECA.V4.Printed.identityObject": [],
     "FregeanECA.V4.Printed.injective_of_lawV": [],
+    "FregeanECA.V4.Printed.k_exists": [
+      "propext",
+      "Quot.sound"
+    ],
     "FregeanECA.V4.Printed.lawV_of_injective": [],
     "FregeanECA.V4.Printed.lawV_provable": [
       "propext",
       "Classical.choice",
       "Quot.sound"
     ],
-    "FregeanECA.V4.Printed.nontriviality_of_A5": [],
+    "FregeanECA.V4.Printed.nontriviality_of_A6": [],
+    "FregeanECA.V4.Printed.parametric_comprehension": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.parametric_comprehension_of_core": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.parametric_comprehension_provable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.positive_value_same_apply": [],
     "FregeanECA.V4.Printed.provability_iff": [
       "propext",
       "Classical.choice",
       "Quot.sound"
     ],
-    "FregeanECA.V4.Printed.singleton_refutes_A5": [],
-    "FregeanECA.V4.Printed.singleton_satisfies_first_four": [
+    "FregeanECA.V4.Printed.s_exists": [
       "propext",
       "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.singleton_refutes_A6": [],
+    "FregeanECA.V4.Printed.singleton_satisfies_first_five": [
+      "propext",
+      "Quot.sound"
+    ],
+    "FregeanECA.V4.Printed.termOf": [],
+    "FregeanECA.V4.Printed.termOf_eq": [
+      "propext"
+    ],
+    "FregeanECA.V4.Printed.termOf_value": [
+      "propext"
     ],
     "FregeanECA.V4.Printed.theory": [
       "propext",
@@ -17385,10 +17530,25 @@
     "FregeanECA.V3.SuccessorVerification.twiceLambda.eq_1": [
       "propext"
     ],
+    "FregeanECA.V4.Printed.Closed._f": [],
+    "FregeanECA.V4.Printed.Closed._sunfold": [],
+    "FregeanECA.V4.Printed.Closed._unsafe_rec": [],
+    "FregeanECA.V4.Printed.Closed.decidable": [],
     "FregeanECA.V4.Printed.CoreAxiom.casesOn": [],
     "FregeanECA.V4.Printed.CoreAxiom.recOn": [],
-    "FregeanECA.V4.Printed.FirstFour.casesOn": [],
-    "FregeanECA.V4.Printed.FirstFour.recOn": [],
+    "FregeanECA.V4.Printed.FirstFive.casesOn": [],
+    "FregeanECA.V4.Printed.FirstFive.recOn": [],
+    "FregeanECA.V4.Printed.functionAtInputs._f": [],
+    "FregeanECA.V4.Printed.functionAtInputs._sunfold": [],
+    "FregeanECA.V4.Printed.functionAtInputs._unsafe_rec": [],
+    "FregeanECA.V4.Printed.functionAtInputs.match_1": [],
+    "FregeanECA.V4.Printed.termOf._f": [],
+    "FregeanECA.V4.Printed.termOf._sunfold": [],
+    "FregeanECA.V4.Printed.termOf._unsafe_rec": [],
+    "FregeanECA.V4.Printed.termOf.eq_1": [],
+    "FregeanECA.V4.Printed.termOf.eq_2": [],
+    "FregeanECA.V4.Printed.termOf.eq_def": [],
+    "FregeanECA.V4.Printed.termOf.match_1": [],
     "FregeanECA.V4.TruthValues.Poly._sizeOf_1": [],
     "FregeanECA.V4.TruthValues.Poly._sizeOf_inst": [],
     "FregeanECA.V4.TruthValues.Poly.abs": [],
@@ -21060,6 +21220,11 @@
     ],
     "FregeanECA.V3.Cleaner.ApplicationTerm.var.noConfusion": [],
     "FregeanECA.V3.Cleaner.ApplicationTerm.var.sizeOf_spec": [],
+    "FregeanECA.V4.Printed.Closed.decidable._aux_1": [],
+    "FregeanECA.V4.Printed.Closed.decidable._aux_3": [],
+    "FregeanECA.V4.Printed.Closed.decidable._f": [],
+    "FregeanECA.V4.Printed.Closed.decidable._sunfold": [],
+    "FregeanECA.V4.Printed.Closed.decidable._unsafe_rec": [],
     "FregeanECA.V4.TruthValues.Poly.abs._f": [],
     "FregeanECA.V4.TruthValues.Poly.abs._sunfold": [],
     "FregeanECA.V4.TruthValues.Poly.abs._unsafe_rec": [],
@@ -21421,6 +21586,9 @@
     "_private.FregeanECA.V3.SuccessorVerification.0.FregeanECA.V3.SuccessorVerification.substituteK.match_1.eq_3": [],
     "_private.FregeanECA.V3.SuccessorVerification.0.FregeanECA.V3.SuccessorVerification.substituteK.match_1.eq_4": [],
     "_private.FregeanECA.V3.SuccessorVerification.0.FregeanECA.V3.SuccessorVerification.substituteK.match_1.splitter": [],
+    "_private.FregeanECA.V4.PrintedTheory.0.FregeanECA.V4.Printed.termOf.match_1.eq_1": [],
+    "_private.FregeanECA.V4.PrintedTheory.0.FregeanECA.V4.Printed.termOf.match_1.eq_2": [],
+    "_private.FregeanECA.V4.PrintedTheory.0.FregeanECA.V4.Printed.termOf.match_1.splitter": [],
     "FregeanECA.Research.Z2Reverse.ArithmeticCodeAtoms.Definitions.mk._flat_ctor": [
       "propext"
     ],
@@ -23026,7 +23194,7 @@
     "_private.FregeanECA.Research.Z2Reverse.UniformFormulaTranslation.0.FregeanECA.Research.Z2Reverse.UniformFormulaTranslation.Atoms.tupleGraph.match_1.eq_2": [],
     "_private.FregeanECA.Research.Z2Reverse.UniformFormulaTranslation.0.FregeanECA.Research.Z2Reverse.UniformFormulaTranslation.Atoms.tupleGraph.match_1.splitter": []
   },
-  "audited_declaration_count": 7831,
+  "audited_declaration_count": 7899,
   "audit_count_matches": true,
   "required_terminal_declarations": [
     "FregeanECA.Axioms.actual_FE_iff_delta_injective",
@@ -23294,6 +23462,7 @@
     "FregeanECA.V4.Certificate.core_combinators_unique",
     "FregeanECA.V4.Certificate.equiconsistency",
     "FregeanECA.V4.Certificate.exact_equations",
+    "FregeanECA.V4.Certificate.frege_arithmetic",
     "FregeanECA.V4.Certificate.hume_on_number_domain",
     "FregeanECA.V4.Certificate.inverse",
     "FregeanECA.V4.Certificate.models_and_consistency",
@@ -23307,17 +23476,25 @@
     "FregeanECA.V4.Certificate.whole_domain_hume",
     "FregeanECA.V4.Choice.choice_fails",
     "FregeanECA.V4.Choice.no_choice_provable",
+    "FregeanECA.V4.FregeArithmetic.fa_interprets_algebra",
+    "FregeanECA.V4.FregeArithmetic.fa_interprets_ff",
+    "FregeanECA.V4.FregeArithmetic.fa_model_of_ff_model",
+    "FregeanECA.V4.FregeArithmetic.ff_interprets_fa",
+    "FregeanECA.V4.FregeArithmetic.ff_model_of_fa_model",
+    "FregeanECA.V4.FregeArithmetic.printed_model_of_fa_model",
     "FregeanECA.V4.HumeBridge.internal_hume_algebra",
     "FregeanECA.V4.HumeBridge.internal_hume_cleaner",
     "FregeanECA.V4.HumeBridge.via_hume_Z2_to_algebra",
     "FregeanECA.V4.HumeBridge.via_hume_Z2_to_cleaner",
     "FregeanECA.V4.HumeBridge.whole_domain_hume_model",
-    "FregeanECA.V4.Printed.A5_not_provable",
+    "FregeanECA.V4.Printed.A6_not_provable",
     "FregeanECA.V4.Printed.axioms_iff_cleaner",
     "FregeanECA.V4.Printed.consistency_iff",
     "FregeanECA.V4.Printed.core_to_cleaner",
     "FregeanECA.V4.Printed.countermodel",
     "FregeanECA.V4.Printed.lawV_provable",
+    "FregeanECA.V4.Printed.parametric_comprehension",
+    "FregeanECA.V4.Printed.parametric_comprehension_provable",
     "FregeanECA.V4.Printed.provability_iff",
     "FregeanECA.V4.TruthValues.collapse_provable",
     "FregeanECA.V4.TruthValues.concepts_provable",

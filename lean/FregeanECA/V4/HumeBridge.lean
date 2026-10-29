@@ -7,7 +7,8 @@ import FregeanECA.Part2.Hume
 
 /-!
 Hume's Principle on the number domain, transferred to the literal V3/V4
-theories: A1--A5 (`V3.Cleaner.theory`) and NECA + RC
+theories: FF in its encoded presentation (`V3.Cleaner.theory`; the V4
+certificate restates every result for the printed A1--A6) and NECA + RC
 (`V3.RelationalComprehension.theory`).
 
 The underlying results were proved for the inherited Part II presentations
@@ -25,7 +26,7 @@ open FFL FFL.FirstOrder Functional Axioms Guarded Encoded Part2
 open scoped FFL.FirstOrder
 
 /-- `thm:hume` for FF: the closed sentence `exists N (Nat(N) and UC_N and HP_N)`
-is derivable from A1--A5. -/
+is derivable from FF (encoded presentation). -/
 theorem internal_hume_cleaner :
     V3.Cleaner.theory ⊢ sentence HumeInternal.internalHumeSentence.functional :=
   (V3.Cleaner.provability_iff_fullFE _).mpr
@@ -59,7 +60,7 @@ theorem via_hume_Z2_to_algebra (p : SecondOrderArithmetic.Formula)
       (FregeArithmeticProofTransfer.via_hume_Z2_proof_transfer p proof))
 
 /-- `prop:hume-expansion`: the full-relation model on the carrier `Nat`
-satisfies the literal A1--A5 and NECA + RC axioms, and its cardinality
+satisfies the encoded FF axioms (`V3.Cleaner.Axiom`) and NECA + RC, and its cardinality
 map obeys Hume's Principle on the entire object domain. -/
 theorem whole_domain_hume_model :
     (∀ p, V3.Cleaner.Axiom p → Valid Hume.functional p) ∧

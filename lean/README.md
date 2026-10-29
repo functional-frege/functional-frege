@@ -63,8 +63,8 @@ actual classical derivability relation; consistency means no proof of false.
 | `pure_conservativity_three_way` | Same pure applicative consequences for NECA, NECA + RC and FF |
 | `models_and_consistency` | The concrete model and consistency of both exact V3 presentations |
 | `checked` | The principal V3 proof endpoints together |
-| `V4.Certificate.printed_theory` | The printed axiom set has the models and theorems of the encoding (`def:tf`) |
-| `V4.Certificate.bi_interpretable` | Proof transfer both ways, K∘M the identity up to provable equivalence on the algebraic language, and the isomorphism sentences for f ↦ δf derivable in FF, with the translation lemma in every model (`thm:bi-interpretability`) |
+| `V4.Certificate.printed_theory` | The six printed axioms have the models and theorems of the encoding, and functional comprehension with parameters holds in every model and is derivable (`def:tf`, `prop:parametric`) |
+| `V4.Certificate.bi_interpretable` | Proof transfer both ways, κ∘μ the identity up to provable equivalence on the algebraic language, and the isomorphism sentences for f ↦ δf derivable in FF, with the translation lemma in every model (`thm:bi-interpretability`) |
 | `V4.Certificate.exact_equations` | Both theories prove precisely the beta–eta equations between translated open terms (`thm:equations`) |
 | `V4.Certificate.conservativity` | Same pure applicative consequences for NECA, NECA + RC and FF (`thm:conservativity`) |
 | `V4.Certificate.hume_on_number_domain` | Both theories derive the closed sentence `exists N (Nat(N) and UC_N and HP_N)` (`thm:hume`) |
@@ -90,26 +90,33 @@ not a dependency-free one-file proof. Compilation is not a truth decision proced
 
 | File | Role |
 | --- | --- |
-| [V3/Cleaner.lean](FregeanECA/V3/Cleaner.lean) | Literal A1–A5 and proof of equivalence with the previous full theory plus FE |
+| [V3/Cleaner.lean](FregeanECA/V3/Cleaner.lean) | The encoded presentation of FF (five clauses: A2 with parameters and the empty input list, injective A3, nontriviality as ∃x,y x ≠ y) and proof of equivalence with the previous full theory plus FE |
 | [V3/ModelReconstruction.lean](FregeanECA/V3/ModelReconstruction.lean) | Delta bijection, structure recovery and all functional formulas |
 | [V3/Specifications.lean](FregeanECA/V3/Specifications.lean) | Composition equation, specification rule and available binary graph |
 | [V3/RelationalComprehension.lean](FregeanECA/V3/RelationalComprehension.lean) | Exactly ECA plus RC; the old closure algebra is a proved library bridge |
-| [V3/Nontriviality.lean](FregeanECA/V3/Nontriviality.lean) | Singleton countermodel and actual A5 nonderivability from A1–A4 |
+| [V3/Nontriviality.lean](FregeanECA/V3/Nontriviality.lean) | Singleton countermodel and actual nonderivability of the encoded nontriviality clause from the other encoded clauses |
 | [V3/PaperResults.lean](FregeanECA/V3/PaperResults.lean) | Printed inverse, BLV and model statements; the retained companion specification bundle |
 | [V3/SuccessorVerification.lean](FregeanECA/V3/SuccessorVerification.lean) | Literal lambda translation with K substitution; code identity and successor-domain specification, including actual derivability |
 | [V3/Certificate.lean](FregeanECA/V3/Certificate.lean) | Actual V3 theorem package and rejecting axiom audit |
 | [V4/BiInterpretability.lean](FregeanECA/V4/BiInterpretability.lean) | The components of bi-interpretability: double-translation interderivability, the isomorphism sentences for f ↦ δf, and the translation lemma |
-| [V4/PrintedTheory.lean](FregeanECA/V4/PrintedTheory.lean) | The theory exactly as printed (A3 = functional Basic Law V); proof that it has the same models and theorems as the older encoding with injective A3; the one-object countermodel for the independence of A5 |
-| [V4/HumeBridge.lean](FregeanECA/V4/HumeBridge.lean) | Hume's Principle on the number domain, the Hume-route Z2 transfer and the whole-domain Hume model, transferred to the literal A1–A5 and NECA + RC theories through the certified provability bridges |
+| [V4/PrintedTheory.lean](FregeanECA/V4/PrintedTheory.lean) | The six printed axioms A1–A6 written out directly (A2 with f evaluated at the first input then applied, A3 = functional Basic Law V, A5 = coverage, A6 = T ≠ F); functional comprehension with parameters (`parametric_comprehension`); proof that the printed theory has the same models and theorems as the encoded presentation; the one-object countermodel for the independence of A6 from A1–A5 |
+| [V4/HumeBridge.lean](FregeanECA/V4/HumeBridge.lean) | Hume's Principle on the number domain, the Hume-route Z2 transfer and the whole-domain Hume model, transferred to FF (encoded presentation) and NECA + RC through the certified provability bridges |
 | [V4/TruthValues.lean](FregeanECA/V4/TruthValues.lean) | Church truth values: the connectives as objects, quantification as identity, the collapse of total concepts and the impossibility of a truth test, a total negation and a total conditional, as pure applicative sentences transferred to both theories |
 | [V4/Certificate.lean](FregeanECA/V4/Certificate.lean) | V4 theorem package: every V3 endpoint plus the applicative-fragment, truth-value and Hume results, with a rejecting axiom audit |
 
-A2 has a variable/application-only finite term grammar and permits zero
-inputs. Free parameters are universally closed. The zero-input instance
-proves the entire quantified coverage sentence in Foundation's calculus.
+The printed A2 (`V4.Printed.A2`) has a variable/application-only term
+grammar, requires at least one input and no parameters, and writes f(x̄) as f
+evaluated at the first input and the result applied to the rest. The encoded
+A2 (`V3.Cleaner.A2`) applies δf to all inputs and permits parameters and zero
+inputs, with free parameters universally closed; `V4.Printed.parametric_comprehension`
+derives every encoded instance from the printed axioms. The zero-input
+encoded instance is coverage (the printed A5), and it proves the entire
+quantified coverage sentence in Foundation's calculus.
 A3 is functional Basic Law V in `V4.Printed` and injectivity of delta in the
 older `V3.Cleaner` encoding; the two are proved interderivable given A4. A4 is
-function extensionality. Application and
+function extensionality. A6 is T ≠ F in `V4.Printed` and ∃x,y x ≠ y in
+`V3.Cleaner`; the two are proved interderivable given the K/S clauses.
+Application and
 K/S equations are separated as `DefinitionAxiom`; inverse existence and
 unique K/S witnesses are proved from the appropriate core clauses.
 
