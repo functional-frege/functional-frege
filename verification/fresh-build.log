@@ -1,4 +1,4 @@
-ℹ [903/1025] Replayed Foundation.FirstOrder.Basic.BinderNotation
+ℹ [1046/1304] Replayed Foundation.FirstOrder.Basic.BinderNotation
 info: Foundation/FirstOrder/Basic/BinderNotation.lean:256:0: op(+).operator
   ![op(+).operator
       ![&1,
@@ -25,23 +25,22 @@ info: Foundation/FirstOrder/Basic/BinderNotation.lean:694:0: (“#0 = #1”) �
 info: Foundation/FirstOrder/Basic/BinderNotation.lean:695:0: ∀¹ ∀¹ ((“#1 = #0”) 🡒 (“#0 = #1”)) : Semiformula ?m.48 ?m.49 ?m.3
 info: Foundation/FirstOrder/Basic/BinderNotation.lean:805:0: “#0 = #1” : Semiformula ?m.16 ?m.17 ?m.18
 info: Foundation/FirstOrder/Basic/BinderNotation.lean:817:0: ∀¹ ((“#0 = #1”) 🡒 ∀¹ ((“#0 = #3”) 🡒 (“#1 = #0”))) : Semiformula ?m.43 ?m.44 ?m.3
-✔ [1106/1304] Built Frege.RelationClosure (2.2s)
-✔ [1107/1304] Built Frege.Application (2.3s)
-✔ [1108/1304] Built Frege.Programs (2.6s)
-✔ [1109/1304] Built FregeanECA.Positive (3.6s)
-✔ [1110/1304] Built FregeanECA.Counterexample (3.5s)
-ℹ [1111/1304] Built FregeanECA.Research.HigherOrderAudit (3.4s)
+✔ [1106/1304] Built Frege.RelationClosure (3.1s)
+✔ [1107/1304] Built Frege.Application (3.2s)
+✔ [1108/1304] Built FregeanECA.Positive (6.5s)
+✔ [1109/1304] Built Frege.Programs (3.0s)
+✔ [1110/1304] Built FregeanECA.Counterexample (5.4s)
+ℹ [1111/1304] Built FregeanECA.Research.HigherOrderAudit (5.2s)
 info: FregeanECA/Research/HigherOrderAudit.lean:95:0: 'FregeanECA.Research.HigherOrderAudit.rows_give_abstraction' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/Research/HigherOrderAudit.lean:96:0: 'FregeanECA.Research.HigherOrderAudit.row_existence_gives_abstraction' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 info: FregeanECA/Research/HigherOrderAudit.lean:97:0: 'FregeanECA.Research.HigherOrderAudit.diagonal_instance_is_inconsistent' does not depend on any axioms
-✔ [1112/1304] Built Frege.CombinatoryAlgebra (2.6s)
-✔ [1113/1304] Built Frege.OpenLambdaSyntax (2.6s)
-✔ [1114/1304] Built Frege.Execution (2.6s)
-✔ [1115/1304] Built Frege.ParallelBeta (2.6s)
-✔ [1116/1304] Built FregeanECA.Syntax (4.1s)
-ℹ [1117/1304] Built FregeanECA.PositiveAudit (3.0s)
+✔ [1112/1304] Built Frege.CombinatoryAlgebra (3.8s)
+✔ [1113/1304] Built Frege.OpenLambdaSyntax (3.8s)
+✔ [1114/1304] Built Frege.Execution (3.7s)
+✔ [1115/1304] Built Frege.ParallelBeta (3.7s)
+ℹ [1116/1304] Built FregeanECA.PositiveAudit (5.8s)
 info: FregeanECA/PositiveAudit.lean:3:0: 'FregeanECA.Positive.push_predicate_preserves_inclusion' depends on axioms: [propext]
 info: FregeanECA/PositiveAudit.lean:4:0: 'FregeanECA.Positive.positive_truth_is_monotone' depends on axioms: [propext]
 info: FregeanECA/PositiveAudit.lean:5:0: 'FregeanECA.Positive.positive_truth_depends_only_on_assigned_extensions' depends on axioms: [propext]
@@ -51,26 +50,27 @@ info: FregeanECA/PositiveAudit.lean:8:0: 'FregeanECA.Positive.constant_program_r
 info: FregeanECA/PositiveAudit.lean:9:0: 'FregeanECA.Positive.equality_and_preimages_supply_top' depends on axioms: [propext]
 info: FregeanECA/PositiveAudit.lean:10:0: 'FregeanECA.Positive.equality_and_preimages_supply_bottom' depends on axioms: [propext]
 info: FregeanECA/PositiveAudit.lean:11:0: 'FregeanECA.Positive.closure_supplies_predicate_quantifier_collapse' depends on axioms: [propext]
-✔ [1118/1304] Built Frege.Reduction (2.2s)
-✔ [1119/1304] Built Frege.OpenLambdaInstantiation (2.2s)
-✔ [1120/1304] Built Frege.BetaConfluence (2.2s)
-✔ [1121/1304] Built FregeanECA.Representation (2.2s)
-✔ [1122/1304] Built Frege.OpenLambdaAlgebra (1.6s)
-✔ [1123/1304] Built FregeanECA.Part2.Arithmetic (2.9s)
-✔ [1124/1304] Built Frege.BetaEtaConversion (1.7s)
-✔ [1125/1304] Built Frege.VariableSupport (1.8s)
-✔ [1126/1304] Built FregeanECA.LogicBridge (14s)
-✔ [1127/1304] Built Frege.EtaReduction (1.7s)
-✔ [1128/1304] Built FregeanECA.Part2.OracleLanguage (14s)
-✔ [1129/1304] Built Frege.EtaConfluence (1.9s)
-✔ [1130/1304] Built Frege.BetaEtaCommutation (1.8s)
-✔ [1131/1304] Built FregeanECA.Research.Z2Reverse.TermCodes (8.8s)
-✔ [1132/1304] Built Frege.BetaEtaConfluence (1.7s)
-✔ [1133/1304] Built Frege.BetaEtaSeparation (1.6s)
-✔ [1134/1304] Built FregeanECA.Guarded (14s)
-✔ [1135/1304] Built FregeanECA.Model (1.8s)
-✔ [1136/1304] Built Frege (1.7s)
-ℹ [1138/1304] Built FregeanECA.ComputationalAbstraction (3.3s)
+✔ [1117/1304] Built FregeanECA.Syntax (5.9s)
+✔ [1118/1304] Built FregeanECA.Representation (2.9s)
+✔ [1119/1304] Built Frege.Reduction (2.0s)
+✔ [1120/1304] Built Frege.BetaConfluence (2.9s)
+✔ [1121/1304] Built Frege.OpenLambdaInstantiation (2.9s)
+✔ [1122/1304] Built Frege.OpenLambdaAlgebra (2.8s)
+✔ [1123/1304] Built FregeanECA.Part2.Arithmetic (4.8s)
+✔ [1124/1304] Built Frege.BetaEtaConversion (2.3s)
+✔ [1125/1304] Built Frege.VariableSupport (2.4s)
+✔ [1126/1304] Built Frege.EtaReduction (2.5s)
+✔ [1127/1304] Built FregeanECA.Part2.OracleLanguage (20s)
+✔ [1128/1304] Built FregeanECA.LogicBridge (21s)
+✔ [1129/1304] Built Frege.EtaConfluence (2.6s)
+✔ [1130/1304] Built Frege.BetaEtaCommutation (2.7s)
+✔ [1131/1304] Built FregeanECA.Research.Z2Reverse.TermCodes (12s)
+✔ [1132/1304] Built Frege.BetaEtaConfluence (2.6s)
+✔ [1133/1304] Built Frege.BetaEtaSeparation (2.4s)
+✔ [1134/1304] Built FregeanECA.Guarded (21s)
+✔ [1135/1304] Built FregeanECA.Model (2.6s)
+✔ [1136/1304] Built Frege (2.6s)
+ℹ [1138/1304] Built FregeanECA.ComputationalAbstraction (4.4s)
 info: FregeanECA/ComputationalAbstraction.lean:73:0: 'FregeanECA.ComputationalAbstraction.range_equality_iff_same_values' does not depend on any axioms
 info: FregeanECA/ComputationalAbstraction.lean:74:0: 'FregeanECA.ComputationalAbstraction.canonical_abstraction_exact' depends on axioms: [propext, Quot.sound]
 info: FregeanECA/ComputationalAbstraction.lean:75:0: 'FregeanECA.ComputationalAbstraction.beta_eta_iff_same_values' depends on axioms: [propext, Quot.sound]
@@ -78,8 +78,8 @@ info: FregeanECA/ComputationalAbstraction.lean:76:0: 'FregeanECA.ComputationalAb
 info: FregeanECA/ComputationalAbstraction.lean:77:0: 'FregeanECA.ComputationalAbstraction.canonical_fregean_ranges_exact' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-✔ [1139/1304] Built FregeanECA.Comprehension (3.3s)
-ℹ [1140/1304] Built FregeanECA.LogicBridgeAudit (13s)
+✔ [1139/1304] Built FregeanECA.Comprehension (4.5s)
+ℹ [1140/1304] Built FregeanECA.LogicBridgeAudit (20s)
 info: FregeanECA/LogicBridgeAudit.lean:3:0: 'FregeanECA.LogicBridge.provable_of_model_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/LogicBridgeAudit.lean:4:0: 'FregeanECA.LogicBridge.provable_iff_of_model_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/LogicBridgeAudit.lean:5:0: 'FregeanECA.LogicBridge.conservative_of_model_expansions' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -90,12 +90,14 @@ info: FregeanECA/LogicBridgeAudit.lean:9:0: 'FregeanECA.LogicBridge.consistent_o
 info: FregeanECA/LogicBridgeAudit.lean:10:0: 'FregeanECA.LogicBridge.no_proof_of_falsum_of_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/LogicBridgeAudit.lean:11:0: 'FFL.FirstOrder.Theory.Proof.complete' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/LogicBridgeAudit.lean:12:0: 'FFL.FirstOrder.Theory.Proof.sound' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [1141/1304] Built FregeanECA.Part2.OracleFiniteSyntax (15s)
-✔ [1142/1304] Built FregeanECA.Part2.OracleAssignments (15s)
-✔ [1143/1304] Built FregeanECA.V2.Positive (4.4s)
-✔ [1144/1304] Built FregeanECA.Part2.FregeArithmeticSyntax (4.5s)
-✔ [1145/1304] Built FregeanECA.Part2.FormulaTuples (4.4s)
-ℹ [1146/1304] Built FregeanECA.Comprehension.Audit (4.4s)
+✔ [1141/1304] Built FregeanECA.Part2.OracleFiniteSyntax (20s)
+✔ [1142/1304] Built FregeanECA.Part2.OracleAssignments (21s)
+✔ [1143/1304] Built FregeanECA.Axioms (7.5s)
+✔ [1144/1304] Built FregeanECA.V2.Positive (7.5s)
+✔ [1145/1304] Built FregeanECA.Part2.Closure (7.5s)
+✔ [1146/1304] Built FregeanECA.Part2.FregeArithmeticSyntax (7.5s)
+✔ [1147/1304] Built FregeanECA.Part2.FormulaTuples (7.5s)
+ℹ [1148/1304] Built FregeanECA.Comprehension.Audit (7.5s)
 info: FregeanECA/Comprehension/Audit.lean:3:0: 'FregeanECA.Positive.reversed_application_agrees' depends on axioms: [propext, Quot.sound]
 info: FregeanECA/Comprehension/Audit.lean:4:0: 'FregeanECA.Positive.terms_have_codes' depends on axioms: [propext, Quot.sound]
 info: FregeanECA/Comprehension/Audit.lean:5:0: 'FregeanECA.Positive.closure_under_term_preimages' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -104,12 +106,9 @@ info: FregeanECA/Comprehension/Audit.lean:7:0: 'FregeanECA.Positive.closure_proj
 info: FregeanECA/Comprehension/Audit.lean:8:0: 'FregeanECA.Positive.positive_closure_implies_comprehension' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/Comprehension/Audit.lean:9:0: 'FregeanECA.Positive.positive_comprehension_implies_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/Comprehension/Audit.lean:10:0: 'FregeanECA.Positive.positive_closure_iff_comprehension' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [1147/1304] Built FregeanECA.Axioms (4.8s)
-✔ [1148/1304] Built FregeanECA.Part2.Closure (4.8s)
-✔ [1149/1304] Built FregeanECA.Equivalence (4.9s)
-✔ [1150/1304] Built FregeanECA.Part2.FregeArithmeticBasic (3.0s)
-✔ [1151/1304] Built FregeanECA.AxiomsFunctional (3.3s)
-⚠ [1152/1304] Built FregeanECA.Concrete (3.3s)
+✔ [1149/1304] Built FregeanECA.Equivalence (7.6s)
+✔ [1150/1304] Built FregeanECA.AxiomsFunctional (5.3s)
+⚠ [1151/1304] Built FregeanECA.Concrete (5.3s)
 warning: FregeanECA/Concrete.lean:17:18: Variable name `source` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -122,10 +121,10 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _target
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [1153/1304] Built FregeanECA.Pure (3.4s)
-✔ [1154/1304] Built FregeanECA.Part2.FregeArithmeticDefinable (3.6s)
-✔ [1155/1304] Built FregeanECA.Part2.FregeArithmeticPredecessor (3.4s)
-⚠ [1156/1304] Built FregeanECA.GuardedModels (15s)
+✔ [1152/1304] Built FregeanECA.Pure (5.4s)
+✔ [1153/1304] Built FregeanECA.Part2.FregeArithmeticBasic (5.7s)
+✔ [1154/1304] Built FregeanECA.Part2.FregeArithmeticDefinable (5.9s)
+⚠ [1155/1304] Built FregeanECA.GuardedModels (22s)
 warning: FregeanECA/GuardedModels.lean:284:2: Try this: 
   letI̵
 
@@ -142,22 +141,25 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [1157/1304] Built FregeanECA.ActualFE (3.7s)
-ℹ [1158/1304] Built FregeanECA.LambdaInterpretation (3.6s)
+ℹ [1156/1304] Built FregeanECA.LambdaInterpretation (5.1s)
 info: FregeanECA/LambdaInterpretation.lean:280:0: 'FregeanECA.LambdaInterpretation.conversion_sound' depends on axioms: [propext, Quot.sound]
 info: FregeanECA/LambdaInterpretation.lean:281:0: 'FregeanECA.LambdaInterpretation.canonical_meaning' depends on axioms: [propext, Quot.sound]
 info: FregeanECA/LambdaInterpretation.lean:282:0: 'FregeanECA.LambdaInterpretation.canonical_equation_reflects_conversion' depends on axioms: [propext, Quot.sound]
-✔ [1159/1304] Built FregeanECA.AxiomsSpecification (3.8s)
-✔ [1160/1304] Built FregeanECA.Part2.FregeArithmeticAncestral (3.6s)
-✔ [1161/1304] Built FregeanECA.Part2.Models (3.6s)
-✔ [1162/1304] Built FregeanECA.AxiomsRelational (3.7s)
-✔ [1163/1304] Built FregeanECA.CounterexampleSyntax (3.6s)
-✔ [1164/1304] Built FregeanECA.Part2.FregeArithmeticTheorem (4.1s)
-✔ [1165/1304] Built FregeanECA.Part2.Correspondence (4.1s)
-✔ [1166/1304] Built FregeanECA.Part2.Axioms (4.2s)
-✔ [1167/1304] Built FregeanECA.Part2.ArithmeticFromFull (4.2s)
-✔ [1168/1304] Built FregeanECA.Part2.OracleSyntaxFacts (16s)
-ℹ [1169/1304] Built FregeanECA.Part2.ModelsAudit (4.1s)
+✔ [1157/1304] Built FregeanECA.ActualFE (5.2s)
+✔ [1158/1304] Built FregeanECA.AxiomsSpecification (5.4s)
+✔ [1159/1304] Built FregeanECA.Part2.FregeArithmeticPredecessor (4.0s)
+✔ [1160/1304] Built FregeanECA.Part2.Models (5.1s)
+✔ [1161/1304] Built FregeanECA.CounterexampleSyntax (5.1s)
+✔ [1162/1304] Built FregeanECA.AxiomsRelational (5.2s)
+✔ [1163/1304] Built FregeanECA.Part2.FregeArithmeticAncestral (5.3s)
+✔ [1164/1304] Built FregeanECA.Part2.OracleSyntaxFacts (23s)
+✔ [1165/1304] Built FregeanECA.Part2.Correspondence (5.8s)
+✔ [1166/1304] Built FregeanECA.Part2.ArithmeticFromFull (5.8s)
+ℹ [1167/1304] Built FregeanECA.V3.Specifications (5.8s)
+info: FregeanECA/V3/Specifications.lean:74:0: 'FregeanECA.V3.Specifications.composition_correct' does not depend on any axioms
+info: FregeanECA/V3/Specifications.lean:75:0: 'FregeanECA.V3.Specifications.composition_specification' does not depend on any axioms
+info: FregeanECA/V3/Specifications.lean:76:0: 'FregeanECA.V3.Specifications.graph_specification' depends on axioms: [propext, Classical.choice]
+ℹ [1168/1304] Built FregeanECA.Part2.ModelsAudit (5.8s)
 info: FregeanECA/Part2/ModelsAudit.lean:3:0: 'FregeanECA.Part2.fullRelations_comprehend_all_formulas' depends on axioms: [propext]
 info: FregeanECA/Part2/ModelsAudit.lean:4:0: 'FregeanECA.Part2.copyExpansion_comprehends_all_functional_formulas' depends on axioms: [propext]
 info: FregeanECA/Part2/ModelsAudit.lean:5:0: 'FregeanECA.Part2.duplicateExpansion_comprehends_all_functional_formulas' depends on axioms: [propext]
@@ -171,21 +173,19 @@ info: FregeanECA/Part2/ModelsAudit.lean:12:0: 'FregeanECA.Part2.full_comprehensi
 info: FregeanECA/Part2/ModelsAudit.lean:13:0: 'FregeanECA.Part2.full_comprehension_excludes_unrestricted_predicate_representation' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [1170/1304] Built FregeanECA.V3.Specifications (4.2s)
-info: FregeanECA/V3/Specifications.lean:74:0: 'FregeanECA.V3.Specifications.composition_correct' does not depend on any axioms
-info: FregeanECA/V3/Specifications.lean:75:0: 'FregeanECA.V3.Specifications.composition_specification' does not depend on any axioms
-info: FregeanECA/V3/Specifications.lean:76:0: 'FregeanECA.V3.Specifications.graph_specification' depends on axioms: [propext, Classical.choice]
-✔ [1171/1304] Built FregeanECA.V2.Full (3.2s)
-✔ [1172/1304] Built FregeanECA.Part2.NaturalECA (14s)
-✔ [1173/1304] Built FregeanECA.Part2.AlgebraAxioms (3.1s)
-⚠ [1174/1304] Built FregeanECA.Part2.ArithmeticGraphs (6.1s)
+✔ [1169/1304] Built FregeanECA.Part2.Axioms (5.9s)
+✔ [1170/1304] Built FregeanECA.Part2.FregeArithmeticTheorem (5.7s)
+✔ [1171/1304] Built FregeanECA.Part2.NaturalECA (20s)
+✔ [1172/1304] Built FregeanECA.V2.Full (4.4s)
+✔ [1173/1304] Built FregeanECA.Part2.AlgebraAxioms (4.3s)
+⚠ [1174/1304] Built FregeanECA.Part2.ArithmeticGraphs (8.4s)
 warning: FregeanECA/Part2/ArithmeticGraphs.lean:236:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 warning: FregeanECA/Part2/ArithmeticGraphs.lean:421:4: try 'simp' instead of 'simpa'
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [1175/1304] Built FregeanECA.Bare (18s)
+⚠ [1175/1304] Built FregeanECA.Bare (25s)
 warning: FregeanECA/Bare.lean:188:2: Try this: 
   letI̵
 
@@ -226,16 +226,16 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [1176/1304] Built FregeanECA.V2.Axioms (3.8s)
-✔ [1177/1304] Built FregeanECA.Part2.GeneratedRelations (3.8s)
-✔ [1178/1304] Built FregeanECA.Research.Z2Reverse.RelationCoding (4.2s)
-ℹ [1179/1304] Built FregeanECA.GuardedModelsAudit (16s)
+✔ [1176/1304] Built FregeanECA.V2.Axioms (5.4s)
+✔ [1177/1304] Built FregeanECA.Part2.GeneratedRelations (5.4s)
+ℹ [1178/1304] Built FregeanECA.GuardedModelsAudit (23s)
 info: FregeanECA/GuardedModelsAudit.lean:3:0: 'FregeanECA.Guarded.models_sortTheory_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/GuardedModelsAudit.lean:4:0: 'FregeanECA.Guarded.extractedRealization' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/GuardedModelsAudit.lean:5:0: 'FregeanECA.Guarded.taggedRealization' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/GuardedModelsAudit.lean:6:0: 'FregeanECA.Guarded.tagged_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/GuardedModelsAudit.lean:7:0: 'FregeanECA.Guarded.tagged_sortCorrect' depends on axioms: [propext, Classical.choice]
-⚠ [1180/1304] Built FregeanECA.TheoryEncoding (17s)
+✔ [1179/1304] Built FregeanECA.Research.Z2Reverse.RelationCoding (5.9s)
+⚠ [1180/1304] Built FregeanECA.TheoryEncoding (24s)
 warning: FregeanECA/TheoryEncoding.lean:20:33: Variable name `p` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -290,15 +290,15 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [1181/1304] Built FregeanECA.Part2.FregeArithmeticAdapter (6.9s)
-✔ [1182/1304] Built FregeanECA.Part2.HumeOrder (6.9s)
-✔ [1183/1304] Built FregeanECA.Part2.SecondOrderArithmetic (7.0s)
-✔ [1184/1304] Built FregeanECA.Part2.Hume (14s)
-✔ [1185/1304] Built FregeanECA.Part2.FregeArithmeticRecursion (7.4s)
-✔ [1186/1304] Built FregeanECA.Part2.HumeFinite (7.6s)
-✔ [1187/1304] Built FregeanECA.Part2.FormulaRenaming (7.8s)
-✔ [1188/1304] Built FregeanECA.Part2.ArithmeticFreeVariables (7.9s)
-⚠ [1189/1304] Built FregeanECA.Part2.DefinableRelations (17s)
+✔ [1181/1304] Built FregeanECA.Part2.FregeArithmeticAdapter (9.9s)
+✔ [1182/1304] Built FregeanECA.Part2.HumeOrder (9.9s)
+✔ [1183/1304] Built FregeanECA.Part2.SecondOrderArithmetic (10s)
+✔ [1184/1304] Built FregeanECA.Part2.Hume (19s)
+✔ [1185/1304] Built FregeanECA.Part2.FregeArithmeticRecursion (9.5s)
+✔ [1186/1304] Built FregeanECA.Part2.FormulaRenaming (9.4s)
+✔ [1187/1304] Built FregeanECA.Part2.HumeFinite (9.6s)
+✔ [1188/1304] Built FregeanECA.Part2.ArithmeticFreeVariables (10s)
+⚠ [1189/1304] Built FregeanECA.Part2.DefinableRelations (22s)
 warning: FregeanECA/Part2/DefinableRelations.lean:41:0: automatically included section variable(s) unused in theorem `FregeanECA.Part2.FirstOrderRelations.last_argument_definable`:
   [L.Eq]
   [Structure.Eq L D]
@@ -320,10 +320,9 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [L.Eq] [Structure.Eq L D] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [1190/1304] Built FregeanECA.Part2.HumeBijections (6.4s)
-✔ [1191/1304] Built FregeanECA.Part2.FregeArithmeticData (6.7s)
-✔ [1192/1304] Built FregeanECA.Part2.ArithmeticClosure (6.7s)
-⚠ [1193/1304] Built FregeanECA.Interpretability (18s)
+✔ [1190/1304] Built FregeanECA.Part2.HumeBijections (8.1s)
+✔ [1191/1304] Built FregeanECA.Part2.FregeArithmeticData (8.6s)
+⚠ [1192/1304] Built FregeanECA.Interpretability (23s)
 warning: FregeanECA/Interpretability.lean:77:2: Try this: 
   letI̵
 
@@ -340,8 +339,9 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [1194/1304] Built FregeanECA.Theorems (18s)
-warning: FregeanECA/Theorems.lean:37:4: Try this: 
+✔ [1193/1304] Built FregeanECA.Part2.ArithmeticClosure (8.2s)
+⚠ [1194/1304] Built FregeanECA.Theorems (23s)
+warning: FregeanECA/Theorems.lean:39:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -349,7 +349,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: FregeanECA/Theorems.lean:50:4: Try this: 
+warning: FregeanECA/Theorems.lean:52:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -357,7 +357,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: FregeanECA/Theorems.lean:87:4: Try this: 
+warning: FregeanECA/Theorems.lean:89:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -365,7 +365,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: FregeanECA/Theorems.lean:90:4: Try this: 
+warning: FregeanECA/Theorems.lean:92:4: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -373,10 +373,10 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [1195/1304] Built FregeanECA.Part2.OracleTargetTranslation (18s)
-✔ [1196/1304] Built FregeanECA.Part2.ArithmeticEncoding (21s)
-✔ [1197/1304] Built FregeanECA.Part2.HumeCounting (7.4s)
-⚠ [1198/1304] Built FregeanECA.Part2.OracleModel (18s)
+✔ [1195/1304] Built FregeanECA.Part2.OracleTargetTranslation (24s)
+✔ [1196/1304] Built FregeanECA.Part2.ArithmeticEncoding (26s)
+✔ [1197/1304] Built FregeanECA.Part2.HumeCounting (9.8s)
+⚠ [1198/1304] Built FregeanECA.Part2.OracleModel (22s)
 warning: FregeanECA/Part2/OracleModel.lean:54:2: Try this: 
   letI̵
 
@@ -441,19 +441,10 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-ℹ [1199/1304] Built FregeanECA.Certificates.PartOne (20s)
+ℹ [1199/1304] Built FregeanECA.Certificates.PartOne (23s)
 info: FregeanECA/Certificates/PartOne.lean:43:0: PART I CERTIFICATE PASS: standard Lean axioms only; require exit code 0.
 info: FregeanECA/Certificates/PartOne.lean:49:0: 'FregeanECA.Certificates.PartOne.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [1200/1304] Built FregeanECA.Conservativity (20s)
-warning: FregeanECA/Conservativity.lean:39:4: Try this: 
-  haveI̵
-
-The goal is a proposition, so `have` is preferred over `haveI`.
-The difference between `have` and `haveI` is that `haveI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [1201/1304] Built FregeanECA.Part2.Theorems (20s)
+⚠ [1200/1304] Built FregeanECA.Part2.Theorems (23s)
 warning: FregeanECA/Part2/Theorems.lean:27:4: Try this: 
   haveI̵
 
@@ -478,8 +469,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [1202/1304] Built FregeanECA.Countertheorems (21s)
-warning: FregeanECA/Countertheorems.lean:34:2: Try this: 
+⚠ [1201/1304] Built FregeanECA.Countertheorems (24s)
+warning: FregeanECA/Countertheorems.lean:36:2: Try this: 
   letI̵
 
 The goal is a proposition, so `let` is preferred over `letI`.
@@ -487,11 +478,20 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [1203/1304] Built FregeanECA.RelativeConsistency (21s)
-✔ [1204/1304] Built FregeanECA.Part2.FregeArithmeticZ2 (19s)
-✔ [1205/1304] Built FregeanECA.Research.Z2Reverse.ArithmeticModel (20s)
-✔ [1206/1304] Built FregeanECA.Part2.OracleCountermodelBase (20s)
-⚠ [1207/1304] Built FregeanECA.Part2.OracleTargetBindings (20s)
+⚠ [1202/1304] Built FregeanECA.Conservativity (24s)
+warning: FregeanECA/Conservativity.lean:39:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [1203/1304] Built FregeanECA.RelativeConsistency (24s)
+✔ [1204/1304] Built FregeanECA.Part2.FregeArithmeticZ2 (23s)
+✔ [1205/1304] Built FregeanECA.Research.Z2Reverse.ArithmeticModel (24s)
+✔ [1206/1304] Built FregeanECA.Part2.OracleCountermodelBase (25s)
+⚠ [1207/1304] Built FregeanECA.Part2.OracleTargetBindings (25s)
 warning: FregeanECA/Part2/OracleTargetBindings.lean:69:2: Try this: 
   letI̵
 
@@ -500,7 +500,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [1208/1304] Built FregeanECA.Part2.OracleFiniteTables (21s)
+⚠ [1208/1304] Built FregeanECA.Part2.OracleFiniteTables (25s)
 warning: FregeanECA/Part2/OracleFiniteTables.lean:158:50: This simp argument is unused:
   Semiformula.eval_all
 
@@ -515,7 +515,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp only [formulaTruth, Semiformula.Evalb]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [1209/1304] Built FregeanECA.Part2.Conservativity (20s)
+⚠ [1209/1304] Built FregeanECA.Part2.Conservativity (24s)
 warning: FregeanECA/Part2/Conservativity.lean:21:4: Try this: 
   haveI̵
 
@@ -524,8 +524,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [1210/1304] Built FregeanECA.V2.Theorems (20s)
-⚠ [1211/1304] Built FregeanECA.Part2.Consequences (21s)
+✔ [1210/1304] Built FregeanECA.V2.Theorems (25s)
+⚠ [1211/1304] Built FregeanECA.Part2.Consequences (25s)
 warning: FregeanECA/Part2/Consequences.lean:13:2: Try this: 
   haveI̵
 
@@ -542,8 +542,8 @@ The difference between `have` and `haveI` is that `haveI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-✔ [1212/1304] Built FregeanECA.Part2.ArithmeticInterpretation (21s)
-⚠ [1213/1304] Built FregeanECA.Part2.HumeInternal (21s)
+✔ [1212/1304] Built FregeanECA.Part2.ArithmeticInterpretation (25s)
+⚠ [1213/1304] Built FregeanECA.Part2.HumeInternal (25s)
 warning: FregeanECA/Part2/HumeInternal.lean:129:68: This simp argument is unused:
   and_imp
 
@@ -552,10 +552,10 @@ Hint: Omit it from the simp argument list.
     segment_at_truth, functional_graph_formula_truth, injective_graph_formula_truth, Positive.Term.value, pushObject]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [1214/1304] Built FregeanECA.Research.Z2Reverse.NativeInduction (19s)
-✔ [1215/1304] Built FregeanECA.Research.Z2Reverse.ModelTruth (19s)
-✔ [1216/1304] Built FregeanECA.Part2.OracleTupleClauses (18s)
-⚠ [1217/1304] Built FregeanECA.Part2.OracleTableBindings (19s)
+✔ [1214/1304] Built FregeanECA.Research.Z2Reverse.NativeInduction (24s)
+✔ [1215/1304] Built FregeanECA.Research.Z2Reverse.ModelTruth (24s)
+✔ [1216/1304] Built FregeanECA.Part2.OracleTupleClauses (22s)
+⚠ [1217/1304] Built FregeanECA.Part2.OracleTableBindings (23s)
 warning: FregeanECA/Part2/OracleTableBindings.lean:57:2: Try this: 
   letI̵
 
@@ -628,7 +628,9 @@ Hint: Omit it from the simp argument list.
     tabledStructure, Oracle.interpretation]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-ℹ [1218/1304] Built FregeanECA.Part2.FunctionExtensionality (19s)
+ℹ [1218/1304] Built FregeanECA.V3.RelationalComprehension (24s)
+info: FregeanECA/V3/RelationalComprehension.lean:27:0: 'FregeanECA.V3.RelationalComprehension.closure_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1219/1304] Built FregeanECA.Part2.FunctionExtensionality (24s)
 info: FregeanECA/Part2/FunctionExtensionality.lean:157:0: 'FregeanECA.Part2.FunctionExtensionality.mutual_proof_interpretations' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -637,24 +639,8 @@ info: FregeanECA/Part2/FunctionExtensionality.lean:158:0: 'FregeanECA.Part2.Func
  Quot.sound]
 info: FregeanECA/Part2/FunctionExtensionality.lean:159:0: 'FregeanECA.Part2.FunctionExtensionality.pure_conservativity' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/Part2/FunctionExtensionality.lean:160:0: 'FregeanECA.Part2.FunctionExtensionality.consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1219/1304] Built FregeanECA.V3.RelationalComprehension (19s)
-info: FregeanECA/V3/RelationalComprehension.lean:27:0: 'FregeanECA.V3.RelationalComprehension.closure_provability' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [1220/1304] Built FregeanECA.Part2.ArithmeticModelInterpretation (19s)
-⚠ [1221/1304] Built FregeanECA.Part2.FregeArithmeticInterpretation (19s)
-warning: FregeanECA/Part2/FregeArithmeticInterpretation.lean:46:4: Variable name `k` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _k
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: FregeanECA/Part2/FregeArithmeticInterpretation.lean:95:26: This simp argument is unused:
-  nextNatural
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [predicateIndex, pushPredicate]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-ℹ [1222/1304] Built FregeanECA.Part2.ProgramEquations (20s)
+✔ [1220/1304] Built FregeanECA.Part2.ArithmeticModelInterpretation (24s)
+ℹ [1221/1304] Built FregeanECA.Part2.ProgramEquations (25s)
 info: FregeanECA/Part2/ProgramEquations.lean:96:0: 'FregeanECA.Part2.ProgramEquations.bare_program_equation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/Part2/ProgramEquations.lean:97:0: 'FregeanECA.Part2.ProgramEquations.full_functional_program_equation_iff' depends on axioms: [propext,
  Classical.choice,
@@ -668,32 +654,47 @@ info: FregeanECA/Part2/ProgramEquations.lean:99:0: 'FregeanECA.Part2.ProgramEqua
 info: FregeanECA/Part2/ProgramEquations.lean:100:0: 'FregeanECA.Part2.ProgramEquations.full_algebra_pointwise_program_equation_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [1223/1304] Built FregeanECA.Research.Z2Reverse.ArithmeticSentenceTruth (19s)
+⚠ [1222/1304] Built FregeanECA.Part2.FregeArithmeticInterpretation (24s)
+warning: FregeanECA/Part2/FregeArithmeticInterpretation.lean:46:4: Variable name `k` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _k
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: FregeanECA/Part2/FregeArithmeticInterpretation.lean:95:26: This simp argument is unused:
+  nextNatural
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [predicateIndex, pushPredicate]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [1223/1304] Built FregeanECA.Research.Z2Reverse.ArithmeticSentenceTruth (24s)
 info: FregeanECA/Research/Z2Reverse/ArithmeticSentenceTruth.lean:67:0: 'FregeanECA.Research.Z2Reverse.ArithmeticModel.sentence_truth_backward' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 info: FregeanECA/Research/Z2Reverse/ArithmeticSentenceTruth.lean:68:0: 'FregeanECA.Research.Z2Reverse.ArithmeticModel.sentence_truth_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-✔ [1224/1304] Built FregeanECA.Research.Z2Reverse.NativeArithmetic (20s)
-✔ [1225/1304] Built FregeanECA.Research.Z2Reverse.ArithmeticLanguage (20s)
-✔ [1226/1304] Built FregeanECA.Part2.OracleCodedClauses (17s)
-ℹ [1227/1304] Built FregeanECA.V3.ModelReconstruction (17s)
+✔ [1224/1304] Built FregeanECA.Research.Z2Reverse.NativeArithmetic (26s)
+✔ [1225/1304] Built FregeanECA.Research.Z2Reverse.ArithmeticLanguage (26s)
+✔ [1226/1304] Built FregeanECA.Part2.OracleCodedClauses (22s)
+✔ [1227/1304] Built FregeanECA.Part2.FregeArithmeticHumeModel (22s)
+ℹ [1228/1304] Built FregeanECA.Certificates.PartTwo (22s)
+info: FregeanECA/Certificates/PartTwo.lean:61:0: PART II CERTIFICATE PASS: standard Lean axioms only; require exit code 0.
+info: FregeanECA/Certificates/PartTwo.lean:67:0: 'FregeanECA.Certificates.PartTwo.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1229/1304] Built FregeanECA.V3.ModelReconstruction (23s)
 info: FregeanECA/V3/ModelReconstruction.lean:68:0: 'FregeanECA.V3.ModelReconstruction.reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V3/ModelReconstruction.lean:69:0: 'FregeanECA.V3.ModelReconstruction.formula_round_trip' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1228/1304] Built FregeanECA.Certificates.FunctionExtensionality (17s)
+ℹ [1230/1304] Built FregeanECA.Certificates.FunctionExtensionality (23s)
 info: FregeanECA/Certificates/FunctionExtensionality.lean:31:0: FUNCTION EXTENSIONALITY CERTIFICATE PASS: proof interpretations, pure-language conservativity, consistency; standard Lean axioms only.
 info: FregeanECA/Certificates/FunctionExtensionality.lean:38:0: 'FregeanECA.Certificates.FunctionExtensionality.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1229/1304] Built FregeanECA.V3.Cleaner (17s)
+ℹ [1231/1304] Built FregeanECA.V3.Cleaner (23s)
 info: FregeanECA/V3/Cleaner.lean:355:0: 'FregeanECA.V3.Cleaner.provability_iff_fullFE' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V3/Cleaner.lean:356:0: 'FregeanECA.V3.Cleaner.coverage_from_zero' does not depend on any axioms
 info: FregeanECA/V3/Cleaner.lean:357:0: 'FregeanECA.V3.Cleaner.zero_instance_proves_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V3/Cleaner.lean:358:0: 'FregeanECA.V3.Cleaner.inverse_application' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [1230/1304] Built FregeanECA.Part2.FregeArithmeticHumeModel (17s)
-ℹ [1231/1304] Built FregeanECA.Certificates.PartTwo (17s)
-info: FregeanECA/Certificates/PartTwo.lean:61:0: PART II CERTIFICATE PASS: standard Lean axioms only; require exit code 0.
-info: FregeanECA/Certificates/PartTwo.lean:67:0: 'FregeanECA.Certificates.PartTwo.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [1232/1304] Built FregeanECA.Research.Z2Reverse.NativeOrder (15s)
+✔ [1232/1304] Built FregeanECA.Research.Z2Reverse.InternalLambdaCode (206s)
+⚠ [1233/1304] Built FregeanECA.Research.Z2Reverse.NativeOrder (20s)
 warning: FregeanECA/Research/Z2Reverse/NativeOrder.lean:127:0: automatically included section variable(s) unused in theorem `FregeanECA.Research.Z2Reverse.ArithmeticModel.add_eq_of_lt`:
   model
   sets
@@ -701,12 +702,18 @@ consider restructuring your `variable` declarations so that the variables are no
   omit model sets in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [1233/1304] Built FregeanECA.Research.Z2Reverse.NativeFormulaTools (16s)
-✔ [1234/1304] Built FregeanECA.Research.Z2Reverse.InternalLambdaCode (157s)
-✔ [1235/1304] Built FregeanECA.Part2.OracleTableMatrix (17s)
-ℹ [1236/1304] Built FregeanECA.V3.Nontriviality (15s)
+✔ [1234/1304] Built FregeanECA.Research.Z2Reverse.NativeFormulaTools (21s)
+✔ [1235/1304] Built FregeanECA.Part2.OracleTableMatrix (23s)
+ℹ [1236/1304] Built FregeanECA.Part2.FregeArithmeticTranslation (20s)
+info: FregeanECA/Part2/FregeArithmeticTranslation.lean:187:0: 'FregeanECA.Part2.FregeArithmeticInterpretation.translation_truth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/Part2/FregeArithmeticTranslation.lean:188:0: 'FregeanECA.Part2.FregeArithmeticInterpretation.interpreted_full_conditions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1237/1304] Built FregeanECA.V3.Nontriviality (19s)
 info: FregeanECA/V3/Nontriviality.lean:78:0: 'FregeanECA.V3.Nontriviality.A5_not_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1237/1304] Built FregeanECA.V3.PaperResults (15s)
+ℹ [1238/1304] Built FregeanECA.V3.PaperResults (19s)
 info: FregeanECA/V3/PaperResults.lean:151:0: 'FregeanECA.V3.PaperResults.inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V3/PaperResults.lean:152:0: 'FregeanECA.V3.PaperResults.unique_preimage_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V3/PaperResults.lean:153:0: 'FregeanECA.V3.PaperResults.basic_law_V_and_extensionality_provable' depends on axioms: [propext,
@@ -715,17 +722,10 @@ info: FregeanECA/V3/PaperResults.lean:153:0: 'FregeanECA.V3.PaperResults.basic_l
 info: FregeanECA/V3/PaperResults.lean:154:0: 'FregeanECA.V3.PaperResults.concrete_models' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V3/PaperResults.lean:155:0: 'FregeanECA.V3.PaperResults.concrete_encoded_models' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V3/PaperResults.lean:156:0: 'FregeanECA.V3.PaperResults.specification' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1238/1304] Built FregeanECA.Part2.FregeArithmeticTranslation (15s)
-info: FregeanECA/Part2/FregeArithmeticTranslation.lean:187:0: 'FregeanECA.Part2.FregeArithmeticInterpretation.translation_truth' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-info: FregeanECA/Part2/FregeArithmeticTranslation.lean:188:0: 'FregeanECA.Part2.FregeArithmeticInterpretation.interpreted_full_conditions' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-✔ [1239/1304] Built FregeanECA.Research.Z2Reverse.ArithmeticCodeAtoms (16s)
-✔ [1240/1304] Built FregeanECA.Research.Z2Reverse.NativePA (19s)
-✔ [1241/1304] Built FregeanECA.Research.Z2Reverse.InternalLambdaScope (19s)
-⚠ [1242/1304] Built FregeanECA.Part2.OracleCountermodel (16s)
+✔ [1239/1304] Built FregeanECA.Research.Z2Reverse.ArithmeticCodeAtoms (20s)
+✔ [1240/1304] Built FregeanECA.Research.Z2Reverse.InternalLambdaScope (24s)
+✔ [1241/1304] Built FregeanECA.Research.Z2Reverse.NativePA (24s)
+⚠ [1242/1304] Built FregeanECA.Part2.OracleCountermodel (20s)
 warning: FregeanECA/Part2/OracleCountermodel.lean:34:2: Try this: 
   letI̵
 
@@ -734,53 +734,53 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-ℹ [1243/1304] Built FregeanECA.V3.SuccessorVerification (17s)
-info: FregeanECA/V3/SuccessorVerification.lean:138:0: 'FregeanECA.V3.SuccessorVerification.verifies' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: FregeanECA/V3/SuccessorVerification.lean:139:0: 'FregeanECA.V3.SuccessorVerification.available_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: FregeanECA/V3/SuccessorVerification.lean:140:0: 'FregeanECA.V3.SuccessorVerification.code_identity_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: FregeanECA/V3/SuccessorVerification.lean:141:0: 'FregeanECA.V3.SuccessorVerification.specification_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1244/1304] Built FregeanECA.Part2.StandardFregeRoute (17s)
-info: FregeanECA/Part2/StandardFregeRoute.lean:34:0: 'FregeanECA.Part2.StandardFregeRoute.part_two_has_frege_peano' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-ℹ [1245/1304] Built FregeanECA.Part2.FregeArithmeticProofTransfer (17s)
+ℹ [1243/1304] Built FregeanECA.Part2.FregeArithmeticProofTransfer (21s)
 info: FregeanECA/Part2/FregeArithmeticProofTransfer.lean:142:0: 'FregeanECA.Part2.FregeArithmeticProofTransfer.via_hume_Z2_proof_transfer' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 info: FregeanECA/Part2/FregeArithmeticProofTransfer.lean:143:0: 'FregeanECA.Part2.FregeArithmeticProofTransfer.via_hume_Z2_proof_transfer_fregean' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [1246/1304] Built FregeanECA.V4.PrintedTheory (18s)
+ℹ [1244/1304] Built FregeanECA.Part2.StandardFregeRoute (22s)
+info: FregeanECA/Part2/StandardFregeRoute.lean:34:0: 'FregeanECA.Part2.StandardFregeRoute.part_two_has_frege_peano' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1245/1304] Built FregeanECA.V3.SuccessorVerification (21s)
+info: FregeanECA/V3/SuccessorVerification.lean:139:0: 'FregeanECA.V3.SuccessorVerification.verifies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/SuccessorVerification.lean:140:0: 'FregeanECA.V3.SuccessorVerification.available_domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/SuccessorVerification.lean:141:0: 'FregeanECA.V3.SuccessorVerification.code_identity_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FregeanECA/V3/SuccessorVerification.lean:142:0: 'FregeanECA.V3.SuccessorVerification.specification_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1246/1304] Built FregeanECA.V4.PrintedTheory (22s)
 info: FregeanECA/V4/PrintedTheory.lean:535:0: 'FregeanECA.V4.Printed.parametric_comprehension' depends on axioms: [propext, Quot.sound]
 info: FregeanECA/V4/PrintedTheory.lean:536:0: 'FregeanECA.V4.Printed.provability_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/PrintedTheory.lean:537:0: 'FregeanECA.V4.Printed.consistency_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/PrintedTheory.lean:538:0: 'FregeanECA.V4.Printed.A6_not_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [1247/1304] Built FregeanECA.Research.Z2Reverse.FormulaTranslation (18s)
-✔ [1248/1304] Built FregeanECA.Research.Z2Reverse.NativeAtomTranslation (18s)
-✔ [1249/1304] Built FregeanECA.Research.Z2Reverse.SourceArithmetic (18s)
-✔ [1250/1304] Built FregeanECA.Research.Z2Reverse.InternalPAInduction (18s)
-✔ [1251/1304] Built FregeanECA.Research.Z2Reverse.InternalFreeSubstitution (21s)
-ℹ [1252/1304] Built FregeanECA.Certificates.HumeRoute (16s)
+✔ [1247/1304] Built FregeanECA.Research.Z2Reverse.FormulaTranslation (23s)
+✔ [1248/1304] Built FregeanECA.Research.Z2Reverse.InternalPAInduction (23s)
+✔ [1249/1304] Built FregeanECA.Research.Z2Reverse.SourceArithmetic (24s)
+✔ [1250/1304] Built FregeanECA.Research.Z2Reverse.NativeAtomTranslation (24s)
+✔ [1251/1304] Built FregeanECA.Research.Z2Reverse.InternalFreeSubstitution (28s)
+ℹ [1252/1304] Built FregeanECA.Certificates.HumeRoute (22s)
 info: FregeanECA/Certificates/HumeRoute.lean:60:0: HUME-ROUTE CERTIFICATE PASS: standard Lean axioms only; require exit code 0.
 info: FregeanECA/Certificates/HumeRoute.lean:66:0: 'FregeanECA.Certificates.HumeRoute.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1253/1304] Built FregeanECA.V4.HumeBridge (17s)
+ℹ [1253/1304] Built FregeanECA.V4.HumeBridge (22s)
 info: FregeanECA/V4/HumeBridge.lean:81:0: 'FregeanECA.V4.HumeBridge.internal_hume_cleaner' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/HumeBridge.lean:82:0: 'FregeanECA.V4.HumeBridge.internal_hume_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/HumeBridge.lean:83:0: 'FregeanECA.V4.HumeBridge.via_hume_Z2_to_cleaner' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/HumeBridge.lean:84:0: 'FregeanECA.V4.HumeBridge.via_hume_Z2_to_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/HumeBridge.lean:85:0: 'FregeanECA.V4.HumeBridge.whole_domain_hume_model' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1254/1304] Built FregeanECA.V4.Choice (17s)
-info: FregeanECA/V4/Choice.lean:64:0: 'FregeanECA.V4.Choice.no_choice_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1255/1304] Built FregeanECA.Certificate (17s)
+ℹ [1254/1304] Built FregeanECA.Certificate (22s)
 info: FregeanECA/Certificate.lean:311:0: CERTIFICATE AXIOM AUDIT PASS: only standard Lean axioms occur. Require exit code 0 for a successful certificate check.
 info: FregeanECA/Certificate.lean:319:0: 'FregeanECA.Certificate.checked_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [1256/1304] Built FregeanECA.Research.Z2Reverse.ComprehensionTransfer (14s)
-✔ [1257/1304] Built FregeanECA.Research.Z2Reverse.InternalPaths (16s)
-✔ [1258/1304] Built FregeanECA.Research.Z2Reverse.InternalLambdaEmbedding (16s)
-✔ [1259/1304] Built FregeanECA.Research.Z2Reverse.SourceComprehension (12s)
-✔ [1260/1304] Built FregeanECA.Research.Z2Reverse.InternalConfluence (12s)
-✔ [1261/1304] Built FregeanECA.Research.Z2Reverse.InternalBinderRecursion (14s)
-ℹ [1262/1304] Built FregeanECA.Research.Z2Reverse.InternalCombinedConfluence (13s)
+ℹ [1255/1304] Built FregeanECA.V4.Choice (21s)
+info: FregeanECA/V4/Choice.lean:64:0: 'FregeanECA.V4.Choice.no_choice_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1256/1304] Built FregeanECA.Research.Z2Reverse.ComprehensionTransfer (19s)
+✔ [1257/1304] Built FregeanECA.Research.Z2Reverse.InternalPaths (23s)
+✔ [1258/1304] Built FregeanECA.Research.Z2Reverse.InternalLambdaEmbedding (22s)
+✔ [1259/1304] Built FregeanECA.Research.Z2Reverse.SourceComprehension (16s)
+✔ [1260/1304] Built FregeanECA.Research.Z2Reverse.InternalConfluence (16s)
+✔ [1261/1304] Built FregeanECA.Research.Z2Reverse.InternalBinderRecursion (18s)
+ℹ [1262/1304] Built FregeanECA.Research.Z2Reverse.InternalCombinedConfluence (17s)
 info: FregeanECA/Research/Z2Reverse/InternalCombinedConfluence.lean:131:0: 'FregeanECA.Research.Z2Reverse.InternalCombinedConfluence.union_confluent' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -790,7 +790,7 @@ info: FregeanECA/Research/Z2Reverse/InternalCombinedConfluence.lean:132:0: 'Freg
 info: FregeanECA/Research/Z2Reverse/InternalCombinedConfluence.lean:133:0: 'FregeanECA.Research.Z2Reverse.InternalCombinedConfluence.union_stationary_conversion_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [1263/1304] Built FregeanECA.Research.Z2Reverse.InternalBindFree (16s)
+ℹ [1263/1304] Built FregeanECA.Research.Z2Reverse.InternalBindFree (22s)
 info: FregeanECA/Research/Z2Reverse/InternalBindFree.lean:175:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.preserves_scope' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -800,11 +800,11 @@ info: FregeanECA/Research/Z2Reverse/InternalBindFree.lean:176:0: 'FregeanECA.Res
 info: FregeanECA/Research/Z2Reverse/InternalBindFree.lean:177:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.abstractFree_scoped' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-✔ [1264/1304] Built FregeanECA.Research.Z2Reverse.InternalBoundShift (17s)
-✔ [1265/1304] Built FregeanECA.Research.Z2Reverse.InternalCommutationLift (12s)
-✔ [1266/1304] Built FregeanECA.Research.Z2Reverse.InternalShiftLaws (18s)
-✔ [1267/1304] Built FregeanECA.Research.Z2Reverse.InternalBoundSubstitution (18s)
-ℹ [1268/1304] Built FregeanECA.Research.Z2Reverse.InternalTermQuotient (27s)
+✔ [1264/1304] Built FregeanECA.Research.Z2Reverse.InternalBoundShift (22s)
+✔ [1265/1304] Built FregeanECA.Research.Z2Reverse.InternalCommutationLift (17s)
+✔ [1266/1304] Built FregeanECA.Research.Z2Reverse.InternalShiftLaws (24s)
+✔ [1267/1304] Built FregeanECA.Research.Z2Reverse.InternalBoundSubstitution (24s)
+ℹ [1268/1304] Built FregeanECA.Research.Z2Reverse.InternalTermQuotient (36s)
 info: FregeanECA/Research/Z2Reverse/InternalTermQuotient.lean:149:0: 'FregeanECA.Research.Z2Reverse.InternalTermQuotient.Conversion.decode_onto' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -814,9 +814,9 @@ info: FregeanECA/Research/Z2Reverse/InternalTermQuotient.lean:150:0: 'FregeanECA
 info: FregeanECA/Research/Z2Reverse/InternalTermQuotient.lean:151:0: 'FregeanECA.Research.Z2Reverse.InternalTermQuotient.Conversion.application_decode' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-✔ [1269/1304] Built FregeanECA.Research.Z2Reverse.InternalSubstitutionLaws (27s)
-✔ [1270/1304] Built FregeanECA.Research.Z2Reverse.InternalCompleteDevelopment (27s)
-ℹ [1271/1304] Built FregeanECA.Research.Z2Reverse.InternalAvoidsIndex (27s)
+✔ [1269/1304] Built FregeanECA.Research.Z2Reverse.InternalSubstitutionLaws (36s)
+✔ [1270/1304] Built FregeanECA.Research.Z2Reverse.InternalCompleteDevelopment (36s)
+ℹ [1271/1304] Built FregeanECA.Research.Z2Reverse.InternalAvoidsIndex (36s)
 info: FregeanECA/Research/Z2Reverse/InternalAvoidsIndex.lean:225:0: 'FregeanECA.Research.Z2Reverse.InternalAvoidsIndex.shift_avoids' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -826,7 +826,7 @@ info: FregeanECA/Research/Z2Reverse/InternalAvoidsIndex.lean:226:0: 'FregeanECA.
 info: FregeanECA/Research/Z2Reverse/InternalAvoidsIndex.lean:227:0: 'FregeanECA.Research.Z2Reverse.InternalAvoidsIndex.avoids_iff_shift' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [1272/1304] Built FregeanECA.Research.Z2Reverse.InternalAbstraction (27s)
+ℹ [1272/1304] Built FregeanECA.Research.Z2Reverse.InternalAbstraction (36s)
 info: FregeanECA/Research/Z2Reverse/InternalAbstraction.lean:72:0: 'FregeanECA.Research.Z2Reverse.InternalAbstraction.substitute_bindFree' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -836,16 +836,16 @@ info: FregeanECA/Research/Z2Reverse/InternalAbstraction.lean:73:0: 'FregeanECA.R
 info: FregeanECA/Research/Z2Reverse/InternalAbstraction.lean:74:0: 'FregeanECA.Research.Z2Reverse.InternalAbstraction.abstractFree_fresh_application' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [1273/1304] Built FregeanECA.Research.Z2Reverse.InternalIdentitySubstitution (27s)
+ℹ [1273/1304] Built FregeanECA.Research.Z2Reverse.InternalIdentitySubstitution (36s)
 info: FregeanECA/Research/Z2Reverse/InternalIdentitySubstitution.lean:51:0: 'FregeanECA.Research.Z2Reverse.InternalBoundSubstitution.substitute_shift_above' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 info: FregeanECA/Research/Z2Reverse/InternalIdentitySubstitution.lean:52:0: 'FregeanECA.Research.Z2Reverse.InternalBoundSubstitution.beta_shift_one_identity' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-✔ [1274/1304] Built FregeanECA.Research.Z2Reverse.InternalParallelBeta (27s)
-✔ [1275/1304] Built FregeanECA.Research.Z2Reverse.InternalAtomicDefinitions (16s)
-ℹ [1276/1304] Built FregeanECA.Research.Z2Reverse.InternalBindFreeLaws (16s)
+✔ [1274/1304] Built FregeanECA.Research.Z2Reverse.InternalParallelBeta (36s)
+✔ [1275/1304] Built FregeanECA.Research.Z2Reverse.InternalAtomicDefinitions (19s)
+ℹ [1276/1304] Built FregeanECA.Research.Z2Reverse.InternalBindFreeLaws (21s)
 info: FregeanECA/Research/Z2Reverse/InternalBindFreeLaws.lean:104:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.bindFree_shift' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -855,26 +855,26 @@ info: FregeanECA/Research/Z2Reverse/InternalBindFreeLaws.lean:105:0: 'FregeanECA
 info: FregeanECA/Research/Z2Reverse/InternalBindFreeLaws.lean:106:0: 'FregeanECA.Research.Z2Reverse.InternalBindFree.bindFree_beta' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-✔ [1277/1304] Built FregeanECA.Research.Z2Reverse.InternalParallelBetaConfluence (24s)
-✔ [1278/1304] Built FregeanECA.Research.Z2Reverse.InternalEtaReduction (24s)
-✔ [1279/1304] Built FregeanECA.Research.Z2Reverse.InternalCombinators (13s)
-✔ [1280/1304] Built FregeanECA.Research.Z2Reverse.InternalEtaLaws (14s)
-✔ [1281/1304] Built FregeanECA.Research.Z2Reverse.InternalEtaConfluence (18s)
-✔ [1282/1304] Built FregeanECA.Research.Z2Reverse.InternalEtaPaths (19s)
-✔ [1283/1304] Built FregeanECA.Research.Z2Reverse.InternalBetaEtaCommutation (13s)
-✔ [1284/1304] Built FregeanECA.Research.Z2Reverse.InternalConversionCongruence (13s)
-ℹ [1285/1304] Built FregeanECA.Research.Z2Reverse.InternalExtensionality (13s)
+✔ [1277/1304] Built FregeanECA.Research.Z2Reverse.InternalParallelBetaConfluence (23s)
+✔ [1278/1304] Built FregeanECA.Research.Z2Reverse.InternalEtaReduction (29s)
+✔ [1279/1304] Built FregeanECA.Research.Z2Reverse.InternalCombinators (18s)
+✔ [1280/1304] Built FregeanECA.Research.Z2Reverse.InternalEtaLaws (19s)
+✔ [1281/1304] Built FregeanECA.Research.Z2Reverse.InternalEtaConfluence (24s)
+✔ [1282/1304] Built FregeanECA.Research.Z2Reverse.InternalEtaPaths (24s)
+✔ [1283/1304] Built FregeanECA.Research.Z2Reverse.InternalBetaEtaCommutation (19s)
+✔ [1284/1304] Built FregeanECA.Research.Z2Reverse.InternalConversionCongruence (19s)
+ℹ [1285/1304] Built FregeanECA.Research.Z2Reverse.InternalExtensionality (20s)
 info: FregeanECA/Research/Z2Reverse/InternalExtensionality.lean:137:0: 'FregeanECA.Research.Z2Reverse.InternalExtensionality.extensional' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 info: FregeanECA/Research/Z2Reverse/InternalExtensionality.lean:138:0: 'FregeanECA.Research.Z2Reverse.InternalExtensionality.quotient_extensional' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-✔ [1286/1304] Built FregeanECA.Research.Z2Reverse.InternalQuotientAlgebra (13s)
-✔ [1287/1304] Built FregeanECA.Research.Z2Reverse.InternalConversionFormula (14s)
-✔ [1288/1304] Built FregeanECA.Research.Z2Reverse.InternalQuotientNontriviality (12s)
-✔ [1289/1304] Built FregeanECA.Research.Z2Reverse.UniformFormulaTranslation (12s)
-ℹ [1290/1304] Built FregeanECA.Research.Z2Reverse.ProgressCertificate (12s)
+✔ [1286/1304] Built FregeanECA.Research.Z2Reverse.InternalQuotientAlgebra (20s)
+✔ [1287/1304] Built FregeanECA.Research.Z2Reverse.InternalConversionFormula (21s)
+✔ [1288/1304] Built FregeanECA.Research.Z2Reverse.InternalQuotientNontriviality (17s)
+✔ [1289/1304] Built FregeanECA.Research.Z2Reverse.UniformFormulaTranslation (18s)
+ℹ [1290/1304] Built FregeanECA.Research.Z2Reverse.ProgressCertificate (18s)
 info: FregeanECA/Research/Z2Reverse/ProgressCertificate.lean:32:0: Z2 REVERSE COMPONENTS PASS (89 endpoints; standard whitelist only). Final mutual interpretability is audited by Certificates.ThreeWay.
 info: FregeanECA/Research/Z2Reverse/ProgressCertificate.lean:130:0: 'FregeanECA.Research.Z2Reverse.SourceArithmetic.extracted_models_pa' depends on axioms: [propext,
  Classical.choice,
@@ -900,15 +900,15 @@ info: FregeanECA/Research/Z2Reverse/ProgressCertificate.lean:136:0: 'FregeanECA.
 info: FregeanECA/Research/Z2Reverse/ProgressCertificate.lean:137:0: 'FregeanECA.Research.Z2Reverse.SourceComprehension.extracted_fcAlgebra' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-✔ [1291/1304] Built FregeanECA.Research.Z2Reverse.InternalSourceModel (12s)
-✔ [1292/1304] Built FregeanECA.Research.Z2Reverse.GuardedFormulaTranslation (13s)
-✔ [1293/1304] Built FregeanECA.Research.Z2Reverse.ReverseConsistency (12s)
-✔ [1294/1304] Built FregeanECA.Research.Z2Reverse.ReverseProofTransfer (12s)
-ℹ [1295/1304] Built FregeanECA.Part2.MutualInterpretability (12s)
+✔ [1291/1304] Built FregeanECA.Research.Z2Reverse.InternalSourceModel (18s)
+✔ [1292/1304] Built FregeanECA.Research.Z2Reverse.GuardedFormulaTranslation (19s)
+✔ [1293/1304] Built FregeanECA.Research.Z2Reverse.ReverseConsistency (16s)
+✔ [1294/1304] Built FregeanECA.Research.Z2Reverse.ReverseProofTransfer (16s)
+ℹ [1295/1304] Built FregeanECA.Part2.MutualInterpretability (16s)
 info: FregeanECA/Part2/MutualInterpretability.lean:87:0: 'FregeanECA.Part2.MutualInterpretability.three_way' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/Part2/MutualInterpretability.lean:88:0: 'FregeanECA.Part2.MutualInterpretability.equiconsistency' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/Part2/MutualInterpretability.lean:89:0: 'FregeanECA.Part2.MutualInterpretability.FE_to_Z2' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1296/1304] Built FregeanECA.Certificates.ThreeWay (12s)
+ℹ [1296/1304] Built FregeanECA.Certificates.ThreeWay (17s)
 info: FregeanECA/Certificates/ThreeWay.lean:32:0: THREE-WAY CERTIFICATE PASS: all six proof-transfer directions, equiconsistency, and optional FE extension; standard Lean axioms only.
 info: FregeanECA/Certificates/ThreeWay.lean:46:0: 'FregeanECA.Certificates.ThreeWay.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/Certificates/ThreeWay.lean:47:0: 'FregeanECA.Research.Z2Reverse.ReverseProofTransfer.source_semantics' depends on axioms: [propext,
@@ -918,33 +918,33 @@ info: FregeanECA/Certificates/ThreeWay.lean:48:0: 'FregeanECA.Research.Z2Reverse
  Classical.choice,
  Quot.sound]
 info: FregeanECA/Certificates/ThreeWay.lean:49:0: 'FregeanECA.Part2.ArithmeticInterpretation.interpretation_preserves_falsum' depends on axioms: [propext, Quot.sound]
-ℹ [1297/1304] Built FregeanECA.V3.Certificate (12s)
+ℹ [1297/1304] Built FregeanECA.V3.Certificate (17s)
 info: FregeanECA/V3/Certificate.lean:165:0: V3 CERTIFICATE PASS: literal cleaner A1--A5 bridge, zero-input coverage, six proof-transfer directions, equiconsistency, consistency, pure conservativity, and exact beta-eta equations; standard Lean axioms only.
 info: FregeanECA/V3/Certificate.lean:200:0: 'FregeanECA.V3.Certificate.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1298/1304] Built FregeanECA.V2.Certificate (13s)
+ℹ [1298/1304] Built FregeanECA.V2.Certificate (19s)
 info: FregeanECA/V2/Certificate.lean:119:0: V2 CERTIFICATE PASS: PC/FC equivalences, consistency, computation, HP over a domain of numbers, and three-way mutual interpretability with Z2; standard Lean axioms only.
 info: FregeanECA/V2/Certificate.lean:130:0: 'FregeanECA.V2.Certificate.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V2/Certificate.lean:131:0: 'FregeanECA.V2.fcAlgebra_iff_fullComprehension' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V2/Certificate.lean:132:0: 'FregeanECA.V2.fullTSConditions_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V2/Certificate.lean:133:0: 'FregeanECA.V2.openSpecification_satisfies_fcAlgebra' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1299/1304] Built FregeanECA.V4.FregeArithmetic (13s)
+ℹ [1299/1304] Built FregeanECA.V4.BiInterpretability (19s)
+info: FregeanECA/V4/BiInterpretability.lean:122:0: 'FregeanECA.V4.BiInterpretability.double_translation_provability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FregeanECA/V4/BiInterpretability.lean:123:0: 'FregeanECA.V4.BiInterpretability.bi_interpretability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1300/1304] Built FregeanECA.V4.FregeArithmetic (19s)
 info: FregeanECA/V4/FregeArithmetic.lean:224:0: 'FregeanECA.V4.FregeArithmetic.ff_interprets_fa' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/FregeArithmetic.lean:225:0: 'FregeanECA.V4.FregeArithmetic.fa_interprets_ff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/FregeArithmetic.lean:226:0: 'FregeanECA.V4.FregeArithmetic.fa_interprets_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/FregeArithmetic.lean:227:0: 'FregeanECA.V4.FregeArithmetic.fa_model_of_ff_model' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/FregeArithmetic.lean:228:0: 'FregeanECA.V4.FregeArithmetic.ff_model_of_fa_model' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/FregeArithmetic.lean:229:0: 'FregeanECA.V4.FregeArithmetic.printed_model_of_fa_model' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1300/1304] Built FregeanECA.V4.BiInterpretability (13s)
-info: FregeanECA/V4/BiInterpretability.lean:122:0: 'FregeanECA.V4.BiInterpretability.double_translation_provability' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-info: FregeanECA/V4/BiInterpretability.lean:123:0: 'FregeanECA.V4.BiInterpretability.bi_interpretability' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1301/1304] Built FregeanECA.V4.TruthValues (14s)
+ℹ [1301/1304] Built FregeanECA.V4.TruthValues (19s)
 info: FregeanECA/V4/TruthValues.lean:711:0: 'FregeanECA.V4.TruthValues.collapse_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/TruthValues.lean:712:0: 'FregeanECA.V4.TruthValues.concepts_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: FregeanECA/V4/TruthValues.lean:713:0: 'FregeanECA.V4.TruthValues.strokes_provable' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1302/1304] Built FregeanECA.V4.Certificate (11s)
+ℹ [1302/1304] Built FregeanECA.V4.Certificate (17s)
 info: FregeanECA/V4/Certificate.lean:308:0: V4 CERTIFICATE PASS: the printed theory has six axioms (A1 relational comprehension, A2 functional comprehension for terms in the inputs, A3 functional Basic Law V, A4 functional extensionality, A5 coverage, A6 T ≠ F) and has the models and theorems of the encoded presentation, with functional comprehension with parameters derived; A6 is independent of A1–A5; every V3 endpoint, bi-interpretability, exact beta-eta equations, conservativity over NECA, Hume's Principle on the number domain, the Hume-route Z2 transfer, the whole-domain Hume model, the connectives as objects, the collapse of total concepts, the impossibility of Frege's horizontal, and the mutual interpretability of Frege Arithmetic and FF, all for the printed theory; standard Lean axioms only.
 info: FregeanECA/V4/Certificate.lean:380:0: 'FregeanECA.V4.Certificate.checked' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [1303/1304] Built FregeanECA (11s)
+✔ [1303/1304] Built FregeanECA (16s)
 Build completed successfully (1304 jobs).

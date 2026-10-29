@@ -256,7 +256,7 @@ theorem no_choice_function : TF ⊢ sentence (notF Choice.choiceInstance) :=
 /-- `cor:fa`: Frege Arithmetic and FF are mutually interpretable. FA is
 represented by its Henkin models (HP plus full comprehension in the generic FA
 language) and FA-provability by validity in all of them (`FAValid`); both
-directions are fixed translations (`toFF` is the Corollary 7.2 interpretation;
+directions are fixed translations (`toFF` is the `cor:frege-theorem` interpretation;
 `toFA` goes through Z2). The last three conjuncts are the model-theoretic halves:
 every full TS model of FF carries an FA model on its number domain, and every
 FA model yields a full TF model of FF through its internal Z2 model and the

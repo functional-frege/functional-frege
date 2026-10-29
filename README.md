@@ -26,7 +26,7 @@ You do not need to know Lean to check the certificate: see
   - [7.1 Start from the certificate](#71-start-from-the-certificate)
   - [7.2 Reading a statement](#72-reading-a-statement)
   - [7.3 The pattern every derivability proof follows](#73-the-pattern-every-derivability-proof-follows)
-  - [7.4 A worked example: Proposition 6.3](#74-a-worked-example-proposition-63)
+  - [7.4 A worked example: Proposition 4.3](#74-a-worked-example-proposition-43)
   - [7.5 Following a longer proof](#75-following-a-longer-proof)
   - [7.6 Tools that help](#76-tools-that-help)
 - [8. The verification record](#8-the-verification-record)
@@ -49,10 +49,10 @@ You do not need to know Lean to check the certificate: see
    ```text
    Functional Frege: certificate check (offline)
    ========================================================================
-   Verified run:    2026-10-28T15:54:42 UTC
+   Verified run:    2026-10-29T19:39:24 UTC
    Toolchain:       leanprover/lean4:v4.33.1
    Recorded result: PASS
-   Modules audited: 179 project, 19 vendored; 7831 declarations; 306 required endpoints
+   Modules audited: 180 project, 19 vendored; 7899 declarations; 306 required endpoints
 
    Source hashes:   206 files recorded; 206 match, 0 differ, 0 missing
    Endpoints:       306 required; 306 audited with standard axioms only
@@ -126,26 +126,26 @@ every row, the exact Lean statement and the proof method.
 | Proposition 2.2 `prop:parametric`: functional comprehension with parameters | `printed_theory` (conjuncts 4–5); `Printed.parametric_comprehension`, `Printed.parametric_comprehension_provable` | [`V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean) |
 | Proposition 2.3 `prop:inverse`: δ bijective, application defined | `inverse`, `unique_preimage_provable` | [`V3/PaperResults.lean`](lean/FregeanECA/V3/PaperResults.lean), [`V3/Cleaner.lean`](lean/FregeanECA/V3/Cleaner.lean) |
 | Proposition 2.4 `prop:blv`: abstract identity and extensionality | `basic_law_V_and_extensionality_provable` | [`V3/PaperResults.lean`](lean/FregeanECA/V3/PaperResults.lean) |
-| Proposition 2.5 `prop:nontriviality`: A6 independent | `nontriviality_independent` | [`V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean), [`V3/Nontriviality.lean`](lean/FregeanECA/V3/Nontriviality.lean) |
+| Remark 2.5 `prop:nontriviality`: A6 independent | `nontriviality_independent` | [`V4/PrintedTheory.lean`](lean/FregeanECA/V4/PrintedTheory.lean), [`V3/Nontriviality.lean`](lean/FregeanECA/V3/Nontriviality.lean) |
 | Theorem 3.4 `thm:correspondence`: FF and NECA + RC agree on the shared language | `core_combinators_unique`, `shared_algebra_provability`, `three_way` | [`V3/Certificate.lean`](lean/FregeanECA/V3/Certificate.lean), [`V3/Cleaner.lean`](lean/FregeanECA/V3/Cleaner.lean) |
 | Proposition 3.5 `prop:reconstruction`: recovery of the structures | `V3.ModelReconstruction.reconstruction` | [`V3/ModelReconstruction.lean`](lean/FregeanECA/V3/ModelReconstruction.lean) |
 | Theorem 3.6 `thm:bi-interpretability` | `bi_interpretable` | [`V4/BiInterpretability.lean`](lean/FregeanECA/V4/BiInterpretability.lean) |
-| Theorem 4.2 `thm:arithmetic`: NECA + RC interprets Z₂ | `three_way` (arrows 3 and 4) | [`Part2/ArithmeticInterpretation.lean`](lean/FregeanECA/Part2/ArithmeticInterpretation.lean) |
-| Theorem 4.3 `thm:reverse`: Z₂ interprets NECA + RC | `three_way` (arrows 1 and 2) | [`Research/Z2Reverse/`](lean/FregeanECA/Research/Z2Reverse/) |
-| Corollary 4.4 `thm:three-way`: mutual interpretability, equiconsistency | `three_way`, `equiconsistency` | [`V3/Certificate.lean`](lean/FregeanECA/V3/Certificate.lean) |
-| Theorem 4.5 `thm:consistency`: the open-term model | `models_and_consistency` | [`Concrete.lean`](lean/FregeanECA/Concrete.lean), [`V3/PaperResults.lean`](lean/FregeanECA/V3/PaperResults.lean) |
-| Theorem 5.1 `thm:equations`: exactly the βη-equations | `exact_equations` | [`Part2/ProgramEquations.lean`](lean/FregeanECA/Part2/ProgramEquations.lean) |
-| Theorem 5.2 `thm:conservativity`: conservative over NECA | `conservativity` | [`V3/Certificate.lean`](lean/FregeanECA/V3/Certificate.lean) |
-| Proposition 6.1 `prop:concepts`: truth values and connectives | `concepts` | [`V4/TruthValues.lean`](lean/FregeanECA/V4/TruthValues.lean) |
-| Theorem 6.2 `thm:collapse`: bivalent objects are constant | `collapse`, `no_horizontal` | [`V4/TruthValues.lean`](lean/FregeanECA/V4/TruthValues.lean) |
-| Proposition 6.3 `prop:choice`: no object is a choice function | `no_choice_function` | [`V4/Choice.lean`](lean/FregeanECA/V4/Choice.lean) |
-| Theorem 7.1 `thm:hume`: Hume's Principle on the number domain | `hume_on_number_domain` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean), [`Part2/HumeInternal.lean`](lean/FregeanECA/Part2/HumeInternal.lean) |
-| Corollary 7.2 `cor:frege-theorem`: Z₂ through Hume's Principle | `arithmetic_through_hume` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean) |
-| Corollary 7.3 `cor:fa`: Frege Arithmetic and FF mutually interpretable | `frege_arithmetic` | [`V4/FregeArithmetic.lean`](lean/FregeanECA/V4/FregeArithmetic.lean) |
-| Proposition 7.4 `prop:hume-expansion`: whole-domain Hume model | `whole_domain_hume` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean), [`Part2/Hume.lean`](lean/FregeanECA/Part2/Hume.lean) |
+| Theorem 3.8 `thm:arithmetic`: NECA + RC interprets Z₂ | `three_way` (arrows 3 and 4) | [`Part2/ArithmeticInterpretation.lean`](lean/FregeanECA/Part2/ArithmeticInterpretation.lean) |
+| Theorem 3.10 `thm:reverse`: Z₂ interprets NECA + RC | `three_way` (arrows 1 and 2) | [`Research/Z2Reverse/`](lean/FregeanECA/Research/Z2Reverse/) |
+| Corollary 3.11 `thm:three-way`: mutual interpretability, equiconsistency | `three_way`, `equiconsistency` | [`V3/Certificate.lean`](lean/FregeanECA/V3/Certificate.lean) |
+| Remark 3.9 `thm:consistency`: the open-term model | `models_and_consistency` | [`Concrete.lean`](lean/FregeanECA/Concrete.lean), [`V3/PaperResults.lean`](lean/FregeanECA/V3/PaperResults.lean) |
+| Proposition 3.12(ii) `prop:applicative`: exactly the βη-equations | `exact_equations` | [`Part2/ProgramEquations.lean`](lean/FregeanECA/Part2/ProgramEquations.lean) |
+| Proposition 3.12(i) `prop:applicative`: conservative over NECA | `conservativity` | [`V3/Certificate.lean`](lean/FregeanECA/V3/Certificate.lean) |
+| Proposition 4.1 `prop:concepts`: truth values and connectives | `concepts` | [`V4/TruthValues.lean`](lean/FregeanECA/V4/TruthValues.lean) |
+| Theorem 4.2 `thm:collapse`: bivalent objects are constant | `collapse`, `no_horizontal` | [`V4/TruthValues.lean`](lean/FregeanECA/V4/TruthValues.lean) |
+| Proposition 4.3 `prop:choice`: no object is a choice function | `no_choice_function` | [`V4/Choice.lean`](lean/FregeanECA/V4/Choice.lean) |
+| Theorem 3.13 `thm:hume`: Hume's Principle on the number domain | `hume_on_number_domain` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean), [`Part2/HumeInternal.lean`](lean/FregeanECA/Part2/HumeInternal.lean) |
+| Corollary 3.14 `cor:frege-theorem`: Z₂ through Hume's Principle | `arithmetic_through_hume` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean) |
+| Corollary 3.15 `cor:fa`: Frege Arithmetic and FF mutually interpretable | `frege_arithmetic` | [`V4/FregeArithmetic.lean`](lean/FregeanECA/V4/FregeArithmetic.lean) |
+| Remark 3.16 `prop:hume-expansion`: whole-domain Hume model | `whole_domain_hume` | [`V4/HumeBridge.lean`](lean/FregeanECA/V4/HumeBridge.lean), [`Part2/Hume.lean`](lean/FregeanECA/Part2/Hume.lean) |
 | Everything above together | `checked` | [`V4/Certificate.lean`](lean/FregeanECA/V4/Certificate.lean) |
 
-Lemma 3.3 (bracket abstraction) and Lemma 4.1 (zero and successor) are
+Lemma 3.3 (bracket abstraction) and Lemma 3.7 (zero and successor) are
 auxiliary lemmas used inside these proofs; `COVERAGE.md` names their Lean
 counterparts.
 
@@ -308,10 +308,10 @@ the Lean does the same, in four steps that recur in every module:
    proved bridge (`Printed.provability_iff`, `V3.Cleaner.provability_iff_fullFE`,
    `pure_conservativity_three_way`).
 
-Model-existence results (Theorem 4.5, Proposition 7.4) stop after step 3,
+Model-existence results (Remarks 3.9 and 3.16) stop after step 3,
 since they are statements about models, not derivations.
 
-### 7.4 A worked example: Proposition 6.3
+### 7.4 A worked example: Proposition 4.3
 
 [`lean/FregeanECA/V4/Choice.lean`](lean/FregeanECA/V4/Choice.lean) is forty
 lines and shows the whole pattern.
@@ -326,7 +326,7 @@ lines and shows the whole pattern.
   `x` one of them differs from `x(x)`, which makes `total` true; the instance
   then yields a function `g` with `g(x) ≠ x(x)` for all `x`; the evaluation
   law `ev` says `g(δg) = (δg)(δg)`; taking `x := δg` contradicts the previous
-  line. (Step 3.) Compare the paper's proof of Proposition 6.3: it is the same
+  line. (Step 3.) Compare the paper's proof of Proposition 4.3: it is the same
   argument sentence for sentence.
 - `no_choice_provable` lifts this to `Printed.theory ⊢ sentence (notF choiceInstance)`
   by `provable_of_valid` and the bridge `Printed.provability_iff`. (Step 4.)
@@ -334,11 +334,11 @@ lines and shows the whole pattern.
 
 ### 7.5 Following a longer proof
 
-For Theorem 6.2, start at `V4.Certificate.collapse`, follow it to
+For Theorem 4.2, start at `V4.Certificate.collapse`, follow it to
 `TruthValues.collapse_provable`, then to `collapse_valid` (the fixed-point
 argument, with the fixed point built explicitly as `S·(K·g)·(S·I·I)`) and
 `bare_of_valid` / `both_of_bare` (completeness and the conservativity bridge).
-For the arithmetic (Theorem 4.2), [`COVERAGE.md`](COVERAGE.md) lists the
+For the arithmetic (Theorem 3.8), [`COVERAGE.md`](COVERAGE.md) lists the
 individual lemmas in the order the paper's proof uses them, from the least
 inductive domain to the recursion equations. Whenever a name is unfamiliar,
 search the `lean/` folder for `theorem <name>` or `def <name>`; every name is
@@ -401,10 +401,12 @@ unique-existence sentences).
 
 **Not formalised.** Four unnumbered remarks of the paper are not formalised
 and are identified in [`lean/FORMALISATION.md`](lean/FORMALISATION.md),
-Section 7: that A6 is equivalent to K ≠ K·I; that the arithmetic
-interpretations are not a bi-interpretation (the automorphism argument); that
-A3 alone does not yield A4 (the two-element countermodel); and that the
-Russell relation is not the membership of any object. No bi-interpretability
+Section 7: that the arithmetic interpretations are not a bi-interpretation
+(the automorphism argument); that A3 alone does not yield A4 (the two-element
+countermodel); that a function-existence schema for arbitrary formulas is
+inconsistent with A1–A6 (the Russell diagonal); and that the Russell relation
+is not the membership of any object. Everything the paper cites to the
+literature as standard is proved in the development. No bi-interpretability
 with Z₂, no conservativity over Z₂, and no consistency claim beyond the
 open-term model are asserted anywhere.
 

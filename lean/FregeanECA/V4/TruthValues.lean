@@ -628,7 +628,7 @@ theorem bare_of_valid (φ : Pure.Formula)
   have eca := (Bare.models_theory_iff D).mp model
   exact (Bare.sentence_truth D φ).mpr (valid (Bare.extracted D) eca)
 
-/-- Transfer from the bare calculus to NECA + RC and to FF (Theorem 5.2). -/
+/-- Transfer from the bare calculus to NECA + RC and to FF (`prop:applicative`). -/
 theorem both_of_bare (φ : Pure.Formula) (proof : Bare.theory ⊢ Bare.sentence φ) :
     (TR ⊢ sentence φ.functional) ∧ (TF ⊢ sentence φ.functional) :=
   ⟨(V3.Certificate.pure_conservativity_three_way φ).1.mp proof,

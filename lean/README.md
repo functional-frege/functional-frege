@@ -2,9 +2,9 @@
 
 Start with [V4/Certificate.lean](FregeanECA/V4/Certificate.lean). It restates
 every endpoint of [V3/Certificate.lean](FregeanECA/V3/Certificate.lean) and
-adds the bi-interpretability theorem of Section 3 and the results printed in
-Sections 5, 6 and 7 of the manuscript: exact beta-eta equations, conservativity
-over NECA, the truth-value results, Hume's Principle on the number domain, the
+adds the bi-interpretability theorem and the results printed in Sections 3.5,
+3.6 and 4 of the manuscript: exact beta-eta equations, conservativity over
+NECA, the truth-value results, Hume's Principle on the number domain, the
 Hume-route Z2 transfer and the whole-domain Hume model. The new theorems live in
 [V4/BiInterpretability.lean](FregeanECA/V4/BiInterpretability.lean),
 [V4/HumeBridge.lean](FregeanECA/V4/HumeBridge.lean) and
@@ -14,8 +14,8 @@ impossibility of a truth test, a total negation and a total conditional).
 [COVERAGE.md](../COVERAGE.md) maps every numbered result of the manuscript to
 exact theorem types and records the scope of the mathematical and formal
 claims. [FORMALISATION.md](FORMALISATION.md) is the self-contained guide to the
-encoding and its limits. The manuscript contains twenty proved results and
-three definitions. The companion additionally retains the Hoare-style composition
+encoding and its limits. The manuscript contains twenty-one numbered results,
+three of them remarks, and three definitions. The companion additionally retains the Hoare-style composition
 rule and the successor-composition example, which are not printed.
 
 ## Check the proofs
@@ -65,8 +65,8 @@ actual classical derivability relation; consistency means no proof of false.
 | `checked` | The principal V3 proof endpoints together |
 | `V4.Certificate.printed_theory` | The six printed axioms have the models and theorems of the encoding, and functional comprehension with parameters holds in every model and is derivable (`def:tf`, `prop:parametric`) |
 | `V4.Certificate.bi_interpretable` | Proof transfer both ways, κ∘μ the identity up to provable equivalence on the algebraic language, and the isomorphism sentences for f ↦ δf derivable in FF, with the translation lemma in every model (`thm:bi-interpretability`) |
-| `V4.Certificate.exact_equations` | Both theories prove precisely the beta–eta equations between translated open terms (`thm:equations`) |
-| `V4.Certificate.conservativity` | Same pure applicative consequences for NECA, NECA + RC and FF (`thm:conservativity`) |
+| `V4.Certificate.exact_equations` | Both theories prove precisely the beta–eta equations between translated open terms (`prop:applicative`, part ii) |
+| `V4.Certificate.conservativity` | Same pure applicative consequences for NECA, NECA + RC and FF (`prop:applicative`, part i) |
 | `V4.Certificate.hume_on_number_domain` | Both theories derive the closed sentence `exists N (Nat(N) and UC_N and HP_N)` (`thm:hume`) |
 | `V4.Certificate.arithmetic_through_hume` | Every Z2 proof transfers into both theories through the fixed Hume-route translation (`cor:frege-theorem`) |
 | `V4.Certificate.whole_domain_hume` | A full-relation model of both literal theories with a whole-domain cardinality map satisfying HP (`prop:hume-expansion`) |
@@ -138,10 +138,10 @@ Mutual interpretability with Z2 does not assert bi-interpretability or
 arithmetic conservativity. The function/algebra reconstruction is a separate,
 stronger relationship between those two presentations. Inherited HP results
 concern a defined number domain; whole-D HP has only a separate model
-expansion result and is not asserted in the active V3 manuscript.
+expansion result (Remark 3.16 of the manuscript) and is not asserted as a theorem.
 
 The model construction and consistency are checked in Lean's metatheory.
-COVERAGE.md matches all twenty printed proved results, three definitions and
+COVERAGE.md matches all twenty-one printed numbered results, three definitions and
 auxiliary arguments to their formal statements and methods, and separately
 indexes the additional companion results. The printed
 name FF (Functional Frege) corresponds to the certificate's abbreviation TF,

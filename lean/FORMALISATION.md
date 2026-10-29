@@ -6,7 +6,7 @@ the [Foundation](https://github.com/FormalizedFormalLogic/Foundation) library,
 what "the theory proves" means in the development, how each printed result
 corresponds to a Lean theorem, and what the development does not claim. It is
 meant to be read on its own. The paper's proofs are complete without it, with
-one exception: the internal arithmetisation behind Theorem 4.3 is given in the
+one exception: the internal arithmetisation behind Theorem 3.10 is given in the
 paper as a construction with its lemmas stated (Appendix A) and is proved in
 full only here.
 
@@ -89,7 +89,7 @@ Two points concern the defined symbols.
    uniquely determined (`V3.Cleaner.core_combinators_unique`), so that
    adjoining these symbols with their equations is conservative.
 2. Z₂ is encoded (`FregeanECA/Part2/ArithmeticEncoding.lean`) with the axioms
-   of Section 4.1 of the paper: full comprehension for every formula,
+   of Section 3.3 of the paper: full comprehension for every formula,
    including formulas with set quantifiers, second-order induction, set
    extensionality, and the first-argument recursion equations.
 
@@ -113,7 +113,7 @@ between theories by the model-lift lemmas in `FregeanECA/LogicBridge.lean`.
    notion of an interpretation between theories is not itself formalised;
    the certificate states the specific sentences that the definition
    requires.
-2. **The interpretation theorems (Theorems 3.4, 4.2 and 4.3)** are proved by
+2. **The interpretation theorems (Theorems 3.4, 3.8 and 3.10)** are proved by
    the method their proofs describe: a fixed translation of the whole formula
    grammar, a model construction, soundness of the given derivation in the
    constructed model, and completeness for the target theory. They are
@@ -121,33 +121,33 @@ between theories by the model-lift lemmas in `FregeanECA/LogicBridge.lean`.
    syntactic transformations of proof trees.
 3. **Proposition 3.5** is a semantic statement about interpretations of the
    encoded theories.
-4. **Consistency (Theorem 4.5)** constructs a model in Lean's type theory and
+4. **The open-term model (Remark 3.9)** constructs a model in Lean's type theory and
    is a theorem of that metatheory.
 
 ## 4. The applicative fragment and Hume's Principle
 
-1. **Exact equations (Theorem 5.1)** is proved for the encoded theory of
+1. **Exact equations (Proposition 3.12(ii))** is proved for the encoded theory of
    E1–E4 in the pure language and transferred to FF and NECA + RC by
-   Theorem 5.2 (`V3.Certificate.program_equations_both`). The translation τ
+   Proposition 3.12(i) (`V3.Certificate.program_equations_both`). The translation τ
    is the bracket algorithm of Lemma 3.3 applied to a de Bruijn
    representation of open terms (`FregeanECA/LambdaInterpretation.lean`).
-2. **Conservativity (Theorem 5.2)** is `V3.Certificate.pure_conservativity_three_way`:
+2. **Conservativity (Proposition 3.12(i))** is `V3.Certificate.pure_conservativity_three_way`:
    NECA, NECA + RC and FF prove the same pure applicative sentences.
-3. **Hume's Principle on the number domain (Theorem 7.1)** is a closed
+3. **Hume's Principle on the number domain (Theorem 3.13)** is a closed
    sentence of the encoded shared language, proved by completeness from the
    semantic argument in every Henkin model of the axioms
-   (`V4/HumeBridge.lean`). The interpretation of Corollary 7.2 is a fixed
+   (`V4/HumeBridge.lean`). The interpretation of Corollary 3.14 is a fixed
    translation of the Z₂ grammar through the definable cardinal graph, with
    its own truth lemma and falsum preservation.
 4. These results were first proved for an earlier presentation of the same
    theories (the `Part2` modules) and are transferred to the encodings of
    FF (A1–A6) and NECA + RC (E1–E4) by proved provability bridges, which are
    audited theorems of the same development.
-5. **Proposition 7.4** is a model construction on the carrier ℕ.
-6. **No choice functions (Proposition 6.3)** is `V4/Choice.lean`: the instance of
+5. **Whole-domain Hume's Principle (Remark 3.16)** is a model construction on the carrier ℕ.
+6. **No choice functions (Proposition 4.3)** is `V4/Choice.lean`: the instance of
    functional choice for y ≠ x(x) is refuted in every model of the printed axioms
    and the negation is derived by completeness.
-7. **Truth values (Proposition 6.1 and Theorem 6.2)** are pure applicative
+7. **Truth values (Proposition 4.1 and Theorem 4.2)** are pure applicative
    sentences (`V4/TruthValues.lean`): the connectives as objects and
    quantification as identity (`concepts_provable`), the collapse of
    total concepts (`collapse_provable`), and the impossibility of a truth
@@ -156,17 +156,17 @@ between theories by the model-lift lemmas in `FregeanECA/LogicBridge.lean`.
    in every structure satisfying `Pure.ECAConditions`, with an explicit
    bracket abstraction (`Poly.abs`) and the fixed-point construction
    `m := S·(K·g)·(S·I·I)` where needed, lifted to `Bare.theory` by
-   completeness and transferred to both theories by Theorem 5.2. The
+   completeness and transferred to both theories by Proposition 3.12(i). The
    bundle `concepts_provable` also certifies Law V for bivalent objects,
    the existential identity and closure under the connectives; these are
    not printed, because the collapse theorem makes them statements about
    the two objects `K·T` and `K·F`.
-8. **Frege Arithmetic (Corollary 7.3)** is `V4/FregeArithmetic.lean`. Frege
+8. **Frege Arithmetic (Corollary 3.15)** is `V4/FregeArithmetic.lean`. Frege
    Arithmetic is represented by its Henkin models, the structures of the generic
    FA language satisfying Hume's Principle and full comprehension, and
    provability in it by validity in all of them (`FAValid`). `ff_interprets_fa`
    carries every FA-valid formula to a theorem of the printed theory along the
-   Corollary 7.2 interpretation (`toFF`); `fa_interprets_ff` carries every theorem
+   Corollary 3.14 interpretation (`toFF`); `fa_interprets_ff` carries every theorem
    of the printed theory, through its Z₂ translation and the generic Frege
    theorem, to an FA-valid formula (`toFA`). The model-level halves are
    `fa_model_of_ff_model` and `ff_model_of_fa_model`. FA is not an encoded
@@ -175,14 +175,14 @@ between theories by the model-lift lemmas in `FregeanECA/LogicBridge.lean`.
 
 ## 5. The reverse interpretation
 
-For Theorem 4.3, lambda terms, binder depths, substitutions, parallel
+For Theorem 3.10, lambda terms, binder depths, substitutions, parallel
 reductions and conversion derivations are coded by numbers of an arbitrary
 model of the encoded Z₂ (`FregeanECA/Research/Z2Reverse/`). Every induction
 used is an instance of the encoded induction axiom on a definable predicate,
 so the construction is valid when the coded lengths are nonstandard.
 Confluence of beta, eta and beta–eta reduction for these coded terms is proved
 internally. The external confluence results for finite open terms, used in
-Theorem 4.5, come from a separately maintained library that is vendored with
+Remark 3.9, come from a separately maintained library that is vendored with
 the development (`vendor/Frege/`); they are not used in place of the internal
 ones.
 
@@ -202,11 +202,17 @@ ones.
    of every declaration transitively, checks all required endpoints, and
    writes `../verification/verification.json` with source hashes.
 5. At the time of writing the development comprises 180 project modules and
-   19 vendored modules, with 7,899 audited declarations and 297 required
+   19 vendored modules, with 7,899 audited declarations and 306 required
    endpoints, and it builds with Lean 4.33.1 and a pinned revision of
    Foundation (see `lean-toolchain` and `lake-manifest.json`). The recorded
-   fresh-source run of 28 October 2026 (`../verification/verification.json`)
+   fresh-source run of 29 October 2026 (`../verification/verification.json`)
    reports no admissions, no unexpected axioms and no source drift.
+6. The development is self-contained. The standard results that the paper
+   cites to the literature, among them the open-term model and its
+   extensionality, the equational correspondence between the λη-calculus and
+   extensional combinatory logic, the fixed-point theorem of combinatory
+   logic, Dedekind's construction of the numbers and Frege's theorem, are
+   proved within it; no result is imported from the literature.
 
 ## 7. Limits
 
@@ -214,19 +220,20 @@ ones.
    printed statements and the Lean statements is recorded in
    [`../COVERAGE.md`](../COVERAGE.md) and was audited by hand.
 2. Three unnumbered observations in the paper are not formalised: that the
-   arithmetic interpretations are not a bi-interpretation (Section 4.2); that
+   arithmetic interpretations are not a bi-interpretation (the footnote to
+   Corollary 3.11); that
    A3 alone does not give A4 (the two-element countermodel in the remark after
    Proposition 2.3; the interderivability given A4 is formalised in
    `V4.Printed`);
    and that a function-existence schema for arbitrary formulas is
    inconsistent with A1–A6 (Section 2.4, the Russell diagonal). The remark
-   after Theorem 6.2 that the Russell relation is not the membership of
+   after Theorem 4.2 that the Russell relation is not the membership of
    any object is a one-line diagonal argument and is not formalised
    separately; nor is the remark that the collapse extends from objects
-   to functions, which follows from Theorem 6.2 and Proposition 2.2 in
+   to functions, which follows from Theorem 4.2 and Proposition 2.3 in
    one line.
 3. No bi-interpretability with Z₂, no conservativity over Z₂, and no
-   consistency claim beyond that of Section 4.3 is asserted.
+   consistency claim beyond that of Remark 3.9 is asserted.
 
 ## 8. Checking the proofs yourself
 

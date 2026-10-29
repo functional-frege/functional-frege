@@ -14,7 +14,7 @@ and FA-provability by validity in all of them (`FAValid`).
 
 Both directions are fixed formula translations.
 
-* `toFF` is the Corollary 7.2 interpretation (`cor:frege-theorem`): the
+* `toFF` is the `cor:frege-theorem` interpretation: the
   number domain is fixed by its least-inductive definition, a number witness
   guards the default object assignment, and the FA formula is read on the
   internal number domain with the internal cardinality map
@@ -53,9 +53,9 @@ def FAValid (ψ : Part2.FregeArithmetic.Formula) : Prop :=
     Part2.FregeArithmetic.FullConditions M →
     ∀ (o : ObjectAssignment D) (r : PredicateAssignment R), ψ.truth M o r
 
-/-! ### FA into FF: the Corollary 7.2 translation -/
+/-! ### FA into FF: the `cor:frege-theorem` translation -/
 
-/-- The Corollary 7.2 translation of an FA formula into the applicative
+/-- The `cor:frege-theorem` translation of an FA formula into the applicative
 language: the number domain `N` is fixed by its least-inductive definition,
 a number witness guards the default object assignment, and the formula is
 read on the internal number domain by `FregeArithmeticInterpretation.translate`.

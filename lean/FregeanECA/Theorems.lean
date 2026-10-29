@@ -20,14 +20,16 @@ theorem shared_validity {D : Type u} {F : Type v} {R : Nat → Type w}
   · intro h o f r
     exact (shared_formula_preserves_truth M p o f r).mpr (h o r)
 
-/-- Proposition 3.2: equality of actual first-order provability, not a
+/-- Companion result, not printed in the paper: equality of actual first-order
+provability, not a
 definition of proof as semantic validity. -/
 theorem specification_comprehension_provability (σ : Sentence language) :
     (specificationTheory ⊢ σ) ↔ (comprehensionTheory ⊢ σ) :=
   same_validity_same_proofs _ _
     (fun M => specification_and_relational_axioms_same_models M) σ
 
-/-- Theorem 4.1 for every classical sentence of the shared language, including
+/-- Companion to `thm:correspondence` for every classical sentence of the shared
+language, including
 relation identity and quantification. Free variables are universally closed. -/
 theorem functional_specification_provability (p : Applicative.Formula) :
     (functionalTheory ⊢ sentence p.functional) ↔

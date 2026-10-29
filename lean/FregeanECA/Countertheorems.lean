@@ -15,7 +15,8 @@ theorem unprovable_of_countermodel {D F : Type} {R : Nat → Type}
   exact fails ((taggedModel_truth M p).mp
     (Theory.Proof.sound_small proof (taggedModel_valid M axioms holds)))
 
-/-- Proposition 4.2: TF cannot prove primitive function extensionality. -/
+/-- Companion result, not printed in the paper: TF cannot prove primitive
+function extensionality. -/
 theorem function_extensionality_not_provable :
     functionalTheory ⊬ sentence functionExtensionality :=
   unprovable_of_countermodel openDuplicate _ _
@@ -27,7 +28,8 @@ def closureNontrivialAxiom (p : Functional.Formula) : Prop :=
 
 abbrev closureNontrivialTheory := theory closureNontrivialAxiom
 
-/-- Proposition 6.1: even adding nontriviality to the five closure families
+/-- Companion result, not printed in the paper: even adding nontriviality to the
+five closure families
 does not prove the parameter-singleton instance of positive comprehension. -/
 theorem closure_does_not_prove_positive_comprehension :
     closureNontrivialTheory ⊬ sentence CounterexampleSyntax.singletonComprehension := by

@@ -2,7 +2,8 @@ import FregeanECA.V3.PaperResults
 import FregeanECA.Part2.ArithmeticInterpretation
 import FregeanECA.LambdaInterpretation
 
-/-! The literal worked program in Section 5.3: translate lambda x. k (k x),
+/-! The literal worked program, a checked companion example that is no longer
+printed in the paper: translate lambda x. k (k x),
 substitute K for the free name k, identify its composition code, and prove
 its specification on the available least inductive number relation. -/
 namespace FregeanECA.V3.SuccessorVerification
