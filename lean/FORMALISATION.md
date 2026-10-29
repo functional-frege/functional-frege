@@ -66,7 +66,7 @@ application and K/S) is the theory the certificate certifies:
    `V4.Printed.parametric_comprehension` (Proposition 2.2) derives every encoded
    instance, parameters and the empty input list included, in every model of the
    printed axioms.
-3. A3 (functional Basic Law V), A4 (functional extensionality), A5 (coverage)
+3. A3 (Basic Law V), A4 (functional extensionality), A5 (coverage)
    and A6 (T ≠ F for Church's truth values) are the closed sentences of the paper.
    The older modules encode A3 as injective abstraction and nontriviality as
    ∃x,y x ≠ y, and derive coverage from the zero-input encoded A2 instance

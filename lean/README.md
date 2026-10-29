@@ -99,7 +99,7 @@ not a dependency-free one-file proof. Compilation is not a truth decision proced
 | [V3/SuccessorVerification.lean](FregeanECA/V3/SuccessorVerification.lean) | Literal lambda translation with K substitution; code identity and successor-domain specification, including actual derivability |
 | [V3/Certificate.lean](FregeanECA/V3/Certificate.lean) | Actual V3 theorem package and rejecting axiom audit |
 | [V4/BiInterpretability.lean](FregeanECA/V4/BiInterpretability.lean) | The components of bi-interpretability: double-translation interderivability, the isomorphism sentences for f ↦ δf, and the translation lemma |
-| [V4/PrintedTheory.lean](FregeanECA/V4/PrintedTheory.lean) | The six printed axioms A1–A6 written out directly (A2 with f evaluated at the first input then applied, A3 = functional Basic Law V, A5 = coverage, A6 = T ≠ F); functional comprehension with parameters (`parametric_comprehension`); proof that the printed theory has the same models and theorems as the encoded presentation; the one-object countermodel for the independence of A6 from A1–A5 |
+| [V4/PrintedTheory.lean](FregeanECA/V4/PrintedTheory.lean) | The six printed axioms A1–A6 written out directly (A2 with f evaluated at the first input then applied, A3 = Basic Law V, A5 = coverage, A6 = T ≠ F); functional comprehension with parameters (`parametric_comprehension`); proof that the printed theory has the same models and theorems as the encoded presentation; the one-object countermodel for the independence of A6 from A1–A5 |
 | [V4/HumeBridge.lean](FregeanECA/V4/HumeBridge.lean) | Hume's Principle on the number domain, the Hume-route Z2 transfer and the whole-domain Hume model, transferred to FF (encoded presentation) and NECA + RC through the certified provability bridges |
 | [V4/TruthValues.lean](FregeanECA/V4/TruthValues.lean) | Church truth values: the connectives as objects, quantification as identity, the collapse of total concepts and the impossibility of a truth test, a total negation and a total conditional, as pure applicative sentences transferred to both theories |
 | [V4/Certificate.lean](FregeanECA/V4/Certificate.lean) | V4 theorem package: every V3 endpoint plus the applicative-fragment, truth-value and Hume results, with a rejecting axiom audit |
@@ -112,7 +112,7 @@ inputs, with free parameters universally closed; `V4.Printed.parametric_comprehe
 derives every encoded instance from the printed axioms. The zero-input
 encoded instance is coverage (the printed A5), and it proves the entire
 quantified coverage sentence in Foundation's calculus.
-A3 is functional Basic Law V in `V4.Printed` and injectivity of delta in the
+A3 is Basic Law V in `V4.Printed` and injectivity of delta in the
 older `V3.Cleaner` encoding; the two are proved interderivable given A4. A4 is
 function extensionality. A6 is T ≠ F in `V4.Printed` and ∃x,y x ≠ y in
 `V3.Cleaner`; the two are proved interderivable given the K/S clauses.

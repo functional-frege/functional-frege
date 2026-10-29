@@ -8,7 +8,7 @@ The theory exactly as printed in the paper (`def:tf`): the six axioms
   A1  Relational comprehension   ∃P ∀x̄ (P(x̄) ↔ φ(x̄)),  |x̄| ≥ 1, φ not containing P
   A2  Functional comprehension   ∃f ∀x̄ (f(x̄) = θ(x̄)),  |x̄| ≥ 1, θ an application
                                   term all of whose variables are among the inputs x̄
-  A3  Functional Basic Law V     ∀f,g (δf = δg ↔ ∀x f(x) = g(x))
+  A3  Basic Law V                ∀f,g (δf = δg ↔ ∀x f(x) = g(x))
   A4  Functional extensionality  ∀f,g ((∀x f(x) = g(x)) → f = g)
   A5  Coverage                   ∀y ∃f (δf = y)
   A6  Nontriviality              T ≠ F
@@ -88,7 +88,7 @@ instance exactly when `Closed (n + 1) θ`: every variable of θ is an input. -/
 def A2 (n : Nat) (θ : ApplicationTerm) : Formula :=
   .existsFunction (allObjects (n + 1) (.equal (functionAtInputs n) (termOf θ)))
 
-/-- A3 as printed: functional Basic Law V, ∀f,g (δf = δg ↔ ∀x f(x) = g(x)). -/
+/-- A3 as printed: Basic Law V, ∀f,g (δf = δg ↔ ∀x f(x) = g(x)). -/
 def A3 : Formula := allFunctions 2
   (iffF (.equal (.delta 0) (.delta 1))
     (.forallObject (.equal (.eval 0 (.var 0)) (.eval 1 (.var 0)))))
@@ -216,9 +216,9 @@ theorem A6_truth (M : Interpretation D F R) (o : Nat → D) (f : Nat → F)
       M.applicative.constantK ≠ M.applicative.apply M.applicative.constantK (identityObject M) :=
   Iff.rfl
 
-/-! ### A3: functional Basic Law V versus injective abstraction -/
+/-! ### A3: Basic Law V versus injective abstraction -/
 
-/-- Given A4, functional Basic Law V makes abstraction injective. -/
+/-- Given A4, Basic Law V makes abstraction injective. -/
 theorem injective_of_lawV (M : Interpretation D F R)
     (lv : Valid M A3) (ext : Valid M A4) : Valid M V3.Cleaner.A3 := by
   intro o f r
@@ -228,7 +228,7 @@ theorem injective_of_lawV (M : Interpretation D F R)
   intro a b
   exact ⟨fun hab => he a b ((hv a b).mp hab), congrArg M.delta⟩
 
-/-- Given A4, injective abstraction yields functional Basic Law V. -/
+/-- Given A4, injective abstraction yields Basic Law V. -/
 theorem lawV_of_injective (M : Interpretation D F R)
     (inj : Valid M V3.Cleaner.A3) (ext : Valid M A4) : Valid M A3 := by
   intro o f r

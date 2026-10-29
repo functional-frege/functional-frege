@@ -49,7 +49,7 @@ You do not need to know Lean to check the certificate: see
    ```text
    Functional Frege: certificate check (offline)
    ========================================================================
-   Verified run:    2026-10-29T19:39:24 UTC
+   Verified run:    2026-10-29T20:09:03 UTC
    Toolchain:       leanprover/lean4:v4.33.1
    Recorded result: PASS
    Modules audited: 180 project, 19 vendored; 7899 declarations; 306 required endpoints
@@ -88,7 +88,7 @@ relations on objects. An operator δ assigns to each function *f* an object
 | --- | --- | --- | --- |
 | A1 | Relational comprehension | every formula defines a relation | `V4.Printed.A1` |
 | A2 | Functional comprehension | a function for every term built by application from the inputs alone: f(x̄) = θ(x̄), at least one input | `V4.Printed.A2` |
-| A3 | Functional Basic Law V | two functions have the same abstract exactly when they agree at every argument | `V4.Printed.A3` (= `lawV`) |
+| A3 | Basic Law V | two functions have the same abstract exactly when they agree at every argument | `V4.Printed.A3` (= `lawV`) |
 | A4 | Functional extensionality | functions that agree everywhere are equal | `V4.Printed.A4` |
 | A5 | Coverage | every object is the abstract of some function: ∀y ∃f (δf = y) | `V4.Printed.A5` |
 | A6 | Nontriviality | T ≠ F, the abstracts of the two projections (Church's truth values); equivalent over A1–A5 to the existence of two distinct objects | `V4.Printed.A6` |

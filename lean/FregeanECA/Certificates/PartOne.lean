@@ -19,7 +19,7 @@ def theory (axioms : Functional.Formula → Prop) : Theory Guarded.language :=
     {sentence | ∃ p, axioms p ∧ Guarded.sentence p = sentence}
 
 /-- Positive relational comprehension, finite functional comprehension,
-functional Basic Law V, coverage, and nontriviality; no function-identity FE. -/
+Basic Law V, coverage, and nontriviality; no function-identity FE. -/
 abbrev TF := theory Axioms.FunctionalAxiom
 
 /-- Nontrivial ECA plus the five positive relation-closure schemes. -/

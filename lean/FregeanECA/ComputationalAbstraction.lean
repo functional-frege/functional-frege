@@ -3,7 +3,7 @@ import FregeanECA.Model
 /-!
 # Functional abstraction and exact beta-eta equality
 
-Functional Basic Law V concerns equality of value-range objects, not identity
+Basic Law V concerns equality of value-range objects, not identity
 in the function sort. In the canonical open lambda-term model its equivalence
 relation is exactly ordinary beta-eta conversion, and this is equivalent to
 agreement on every input of that model.
@@ -20,7 +20,7 @@ namespace FregeanECA.ComputationalAbstraction
 open Frege OpenLambda
 universe u v
 
-/-- Functional Basic Law V: represented maps have the same value-range object
+/-- Basic Law V: represented maps have the same value-range object
 exactly when they agree at every argument. This is A3 itself, made explicit. -/
 theorem range_equality_iff_same_values {D : Type u} {F : Type v}
     (R : Representation D F) (f g : F) :

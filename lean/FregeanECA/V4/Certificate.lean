@@ -12,7 +12,7 @@ Certificate for the manuscript. `TF` is the theory exactly as printed
 (`Printed.theory`: the six axioms A1 relational comprehension, A2 functional
 comprehension for application terms in the inputs, with f(x̄) read as f
 evaluated at the first input and the result applied to the rest, A3 =
-functional Basic Law V, A4 functional extensionality, A5 coverage, A6 T ≠ F,
+Basic Law V, A4 functional extensionality, A5 coverage, A6 T ≠ F,
 with the defining clauses for application and K/S). `TFenc` is the encoded
 presentation of the same theory, whose A2 applies δf to all inputs and admits
 parameters and the empty input list, whose A3 is injective abstraction and
@@ -375,6 +375,6 @@ run_cmd do
     for ax in ← collectAxioms endpoint do
       unless allowed.contains ax do
         throwError "V4 CERTIFICATE REJECTED at {endpoint}: {ax}"
-  logInfo "V4 CERTIFICATE PASS: the printed theory has six axioms (A1 relational comprehension, A2 functional comprehension for terms in the inputs, A3 functional Basic Law V, A4 functional extensionality, A5 coverage, A6 T ≠ F) and has the models and theorems of the encoded presentation, with functional comprehension with parameters derived; A6 is independent of A1–A5; every V3 endpoint, bi-interpretability, exact beta-eta equations, conservativity over NECA, Hume's Principle on the number domain, the Hume-route Z2 transfer, the whole-domain Hume model, the connectives as objects, the collapse of total concepts, the impossibility of Frege's horizontal, and the mutual interpretability of Frege Arithmetic and FF, all for the printed theory; standard Lean axioms only."
+  logInfo "V4 CERTIFICATE PASS: the printed theory has six axioms (A1 relational comprehension, A2 functional comprehension for terms in the inputs, A3 Basic Law V, A4 functional extensionality, A5 coverage, A6 T ≠ F) and has the models and theorems of the encoded presentation, with functional comprehension with parameters derived; A6 is independent of A1–A5; every V3 endpoint, bi-interpretability, exact beta-eta equations, conservativity over NECA, Hume's Principle on the number domain, the Hume-route Z2 transfer, the whole-domain Hume model, the connectives as objects, the collapse of total concepts, the impossibility of Frege's horizontal, and the mutual interpretability of Frege Arithmetic and FF, all for the printed theory; standard Lean axioms only."
 
 #print axioms FregeanECA.V4.Certificate.checked

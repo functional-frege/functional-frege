@@ -10,14 +10,14 @@
 ## Status
 
 - 27 October 2026, incremental: `lake build` completed and the V4 certificate,
-  restated for the printed theory (A3 = functional Basic Law V), passed under
+  restated for the printed theory (A3 = Basic Law V), passed under
   `--trust=0` with only `propext`, `Classical.choice` and `Quot.sound`
   (`build.log`, `v4-certificate-incremental.log`).
-- 29 October 2026, fresh-source audit (`verify.py`), final run at 19:39 UTC,
-  after the Lean comments were aligned with the restructured paper (a
-  comment-only change; the run of 15:46 UTC the same day, after the
+- 29 October 2026, fresh-source audit (`verify.py`), final run at 20:09 UTC,
+  after the Lean comments were aligned with the restructured paper and the
+  axiom name Basic Law V (comment-only changes; the run of 15:46 UTC the same day, after the
   six-axiom printed-theory module `V4/PrintedTheory.lean` with A3 =
-  functional Basic Law V, A5 = coverage and A6 = T ≠ F, and the choice module
+  Basic Law V, A5 = coverage and A6 = T ≠ F, and the choice module
   `V4/Choice.lean`, had the same counts): **PASS**. All ten commands exited 0
   (V4, V3, V2, FE and three-way certificates; terminal, Part II and research
   audits; full declaration audit). 180 project modules, 19 vendored modules,
